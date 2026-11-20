@@ -1,0 +1,215 @@
+/* About page top sections, modelled on the Vertora About page:
+   1. vt-hero    giant title with floating photos + edge labels
+   2. vt-story   statement + stats on a dotted background
+   3. vt-feature centered copy with logogram, round button, big image with inset
+   4. vt-glass   pinned stage with a rotating glass GRAVL logogram (WebGL)            */
+.vt-hero,.vt-story,.vt-feature,.vt-glass{--vt-ink:#0b0b0b;--vt-mute:#6b6b6b;--vt-bg:#f8f7f3;color:var(--vt-ink)}
+.vt-dots{background-color:var(--vt-bg);background-image:radial-gradient(rgba(0,0,0,.16) 1px,transparent 1.3px);background-size:24px 24px}
+
+/* ---------- 1. hero ---------- */
+.vt-hero{position:relative;background:var(--vt-bg);height:calc(100svh - 94px);container-type:size;overflow:clip}
+.vt-hero.has-photo-zoom{height:calc(200svh - 94px)}
+.vt-stage{position:relative;width:min(100%,calc(190svh - 178.6px),1920px);margin-inline:auto;height:calc(100svh - 94px)}
+.vt-title{position:absolute;left:0;right:0;top:46%;transform:translateY(-52%);z-index:3;margin:0;text-align:center;pointer-events:none;
+  font-family:var(--display);font-weight:600;font-size:min(11.6vw,calc(21svh - 19.74px),215px);line-height:.88;letter-spacing:-.07em;color:var(--vt-ink)}
+.vt-line{display:block;overflow:hidden;padding-bottom:.06em}
+.vt-line>span{display:block;transform:translateY(105%);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.vt-title .vt-line:last-child{color:var(--teal)}
+.vt-line:nth-child(2)>span{transition-delay:.12s}
+.vt-hero.is-in .vt-line>span{transform:none}
+.vt-edge{position:absolute;top:60.9%;z-index:3;font:600 14px/1 var(--body,inherit);letter-spacing:.1em;text-transform:uppercase;color:var(--vt-ink);opacity:0;transition:opacity 1s ease .6s}
+.vt-edge.l{left:7.1%}.vt-edge.r{right:7.1%}
+.vt-hero.is-in .vt-edge{opacity:1}
+.vt-fl{position:absolute;z-index:1;margin:0;border-radius:8px;overflow:hidden;background:#e4e1d9;
+  translate:calc(var(--mx,0px) + var(--fx,0) * 1px) calc(var(--py,0) * 1px + var(--fy,0) * 1px);opacity:0;scale:.82;transition:opacity 1s ease,scale 1.2s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--n,0) * 120ms + .2s)}
+.vt-fl img{display:block;width:100%;height:100%;object-fit:cover}
+.vt-hero.is-in .vt-fl{opacity:1;scale:1}
+.vt-fl--a{left:18.1%;top:6.8%;width:16%;aspect-ratio:300/208;--n:0}
+.vt-fl--b{left:60.7%;top:23%;width:16%;aspect-ratio:300/208;--n:1;z-index:2}
+/* photo c grows into a full-bleed image as you scroll (size / position are driven by about-vertora.js) */
+.vt-fl--c{left:12.6%;bottom:4%;width:27%;height:26%;--n:2;z-index:2}
+.vt-fl--d{left:66.7%;bottom:6%;width:14%;height:25%;--n:3}
+.vt-fl--b img{object-position:50% 78%}
+.vt-fl--c img{object-position:50% 40%}
+.vt-fl--d img{object-position:50% 70%}
+
+/* ---------- 2. story ---------- */
+.vt-story{padding-block:clamp(70px,9vw,150px)}
+.vt-wrap{width:min(1290px,86%);margin-inline:auto}
+.vt-story .vt-wrap{display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,.6fr);grid-template-areas:"label lead" "img stats";column-gap:clamp(24px,5vw,80px);row-gap:clamp(36px,5vw,80px)}
+.vt-label{grid-area:label;font:600 14px/1 var(--body,inherit);letter-spacing:.1em;text-transform:uppercase;margin:0}
+.vt-story .vt-wrap p.vt-lead.vt-lead{grid-area:lead;margin:0;font-family:var(--display);font-weight:500 !important;font-size:clamp(26px,2.85vw,46px) !important;line-height:1.1;letter-spacing:-.045em;color:var(--vt-ink)}
+.vt-pic{grid-area:img;align-self:end;margin:0;border-radius:clamp(14px,1.4vw,24px);overflow:hidden;aspect-ratio:376/277;width:min(100%,376px);background:#e4e1d9}
+.vt-pic img{display:block;width:100%;height:100%;object-fit:cover;scale:1.18;transition:scale 1.6s cubic-bezier(.2,.8,.2,1)}
+.vt-pic.is-in img{scale:1}
+.vt-stats{grid-area:stats;border-top:1px solid rgba(0,0,0,.18);display:grid;padding-top:clamp(28px,3.4vw,56px);gap:clamp(30px,4.2vw,72px)}
+.vt-row{display:grid;grid-template-columns:minmax(0,.46fr) minmax(0,.54fr);gap:20px;align-items:center}
+.vt-num{font-family:var(--display);font-weight:500;font-size:clamp(54px,6vw,96px);line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.vt-num span.vt-sfx.vt-sfx{font-size:inherit;font-weight:inherit}
+.vt-story .vt-row p.vt-desc.vt-desc{margin:0;max-width:34ch;font-size:clamp(15px,1.15vw,17px) !important;font-weight:400 !important;line-height:1.55;color:var(--vt-mute)}
+
+.vt-lead .vt-w{display:inline-block;white-space:nowrap}
+.vt-lead .vt-ch{color:rgb(216,210,196)}
+
+/* ---------- 3. feature ---------- */
+.vt-feature{padding-block:clamp(60px,8vw,130px)}
+.vt-feature .vt-wrap{display:grid;grid-template-columns:minmax(0,.46fr) minmax(0,.54fr);align-items:center;column-gap:clamp(24px,5vw,90px);width:min(1290px,88%)}
+.vt-fcopy{display:flex;flex-direction:column;align-items:center;text-align:center}
+.vt-mark{width:clamp(56px,5vw,80px);color:var(--vt-ink);margin-bottom:clamp(28px,4vw,64px)}
+.vt-mark svg{display:block;width:100%;height:auto;overflow:visible;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 2.2s cubic-bezier(.6,0,.2,1)}
+.vt-fcopy.is-in .vt-mark svg{stroke-dashoffset:0}
+.vt-fhead{margin:0;font-family:var(--display);font-weight:500;font-size:clamp(28px,3.2vw,50px);line-height:1.08;letter-spacing:-.05em;max-width:15ch;color:var(--vt-ink)}
+.vt-feature .vt-fcopy p.vt-fsub.vt-fsub{margin:clamp(16px,1.8vw,26px) 0 0;max-width:36ch;font-size:clamp(15px,1.15vw,17px) !important;font-weight:400 !important;line-height:1.55;color:var(--vt-mute)}
+.vt-go{margin-top:clamp(36px,5vw,78px);display:grid;place-items:center;width:clamp(76px,6.6vw,96px);aspect-ratio:1;border-radius:50%;background:#000;color:#fff;position:relative;overflow:hidden;isolation:isolate;text-decoration:none}
+.vt-go::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:50%;background:#2c2c2c;transform:scale(0);transition:transform .55s cubic-bezier(.7,0,.2,1)}
+.vt-go:hover::before,.vt-go:focus-visible::before{transform:scale(1.05)}
+.vt-go svg{width:22px;height:22px;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.vt-go:hover svg{transform:translateX(5px)}
+.vt-go:focus-visible{outline:2px solid #000;outline-offset:4px}
+.vt-fmedia{position:relative;margin:0;border-radius:clamp(18px,2vw,32px);overflow:hidden;aspect-ratio:630/720;background:#1b1b1f;clip-path:inset(0 0 100% 0);transition:clip-path 1.4s cubic-bezier(.7,0,.2,1)}
+.vt-fmedia.is-in{clip-path:inset(0 0 0 0)}
+.vt-fmedia>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;scale:1.2;translate:0 calc(var(--py,0) * 1px);transition:scale 1.8s cubic-bezier(.2,.8,.2,1)}
+.vt-fmedia.is-in>img{scale:1.06}
+.vt-inset{position:absolute;left:50%;top:46%;width:38%;aspect-ratio:242/276;margin:0;border-radius:clamp(8px,.9vw,14px);overflow:hidden;translate:-50% calc(-50% + var(--py2,0) * 1px);box-shadow:0 24px 60px rgba(0,0,0,.35);opacity:0;scale:.7;transition:opacity .9s ease .7s,scale 1.2s cubic-bezier(.2,.8,.2,1) .7s}
+.vt-inset img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 75%}
+.vt-fmedia.is-in .vt-inset{opacity:1;scale:1}
+
+/* ---------- 4. glass logogram ---------- */
+.vt-glass{position:relative;height:320svh}
+.vt-gstage{position:sticky;top:0;height:100svh;overflow:hidden}
+.vt-gstage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.vt-gfallback{position:absolute;inset:0;display:none;place-items:center}
+.vt-gfallback svg{width:min(46vw,380px);height:auto;color:#14161c;filter:drop-shadow(0 18px 30px rgba(20,22,40,.25))}
+.vt-glass.is-static{height:auto}
+.vt-glass.is-static .vt-gstage{position:relative;height:min(80svh,620px)}
+.vt-glass.is-static .vt-gfallback{display:grid}
+.vt-glass.is-static canvas{display:none}
+
+/* ---------- 5. orbit content on the teal (modelled on the Vertora home "services" ring section) ---------- */
+.vt-glass{height:560svh}
+.vt-orbit{--u:min(calc(100vw / 1902), calc(100svh / 907));--teal-ink:#0b0b0b;position:absolute;inset:0;z-index:2;overflow:hidden;visibility:hidden;opacity:var(--oo,0);pointer-events:none;color:var(--teal-ink);
+  background-image:radial-gradient(rgba(255,255,255,.4) 1px,transparent 1.3px);background-size:24px 24px}
+.vt-obox{position:absolute;left:50%;top:50%;width:calc(1902 * var(--u));height:calc(907 * var(--u));translate:-50% -50%}
+.vt-ring{position:absolute;left:calc(948 * var(--u));top:calc(468 * var(--u));border-radius:50%;translate:-50% -50%;scale:var(--rs,.6);pointer-events:none;animation:vt-spin 120s linear infinite}
+.vt-ring--1{width:calc(484 * var(--u));aspect-ratio:1;border:1px dotted rgba(11,11,11,.8)}
+.vt-ring--2{width:calc(668 * var(--u));aspect-ratio:1;border:1px dashed rgba(11,11,11,.32);animation-duration:200s;animation-direction:reverse}
+.vt-ring--3{width:calc(862 * var(--u));aspect-ratio:1;border:1px dashed rgba(255,255,255,.55);animation-duration:280s}
+@keyframes vt-spin{to{rotate:360deg}}
+.vt-ctext{position:absolute;left:calc(948 * var(--u));top:calc(468 * var(--u));translate:-50% -50%;width:calc(380 * var(--u));min-width:200px;margin:0;text-align:center;font-family:var(--display);font-weight:500;font-size:max(19px,calc(34 * var(--u)));line-height:1.12;letter-spacing:-.045em;color:var(--teal-ink);opacity:var(--ct,0)}
+.vt-oc{position:absolute;width:calc(520 * var(--u));height:calc(304 * var(--u));border-radius:14px;background:#fff;color:#0b0b0b;padding:calc(50 * var(--u));
+  translate:0 calc(var(--cy,0) * 1px);rotate:var(--cr,0deg);opacity:var(--co,0);pointer-events:none;cursor:pointer;outline:none;transition:background-color .55s ease,color .55s ease}
+.vt-orbit.is-ready .vt-oc{pointer-events:auto}
+.vt-oc--1{left:calc(148 * var(--u));top:calc(55 * var(--u))}
+.vt-oc--2{left:calc(1228 * var(--u));top:calc(155 * var(--u))}
+.vt-oc--3{left:calc(148 * var(--u));top:calc(510 * var(--u))}
+.vt-oc--4{left:calc(1228 * var(--u));top:calc(590 * var(--u))}
+.vt-ot{margin:0;max-width:calc(280 * var(--u));min-width:150px;font-family:var(--display);font-weight:500;font-size:max(18px,calc(26 * var(--u)));line-height:1.15;letter-spacing:-.04em}
+.vt-orbit .vt-oc p.vt-od.vt-od{position:absolute;left:calc(50 * var(--u));bottom:calc(44 * var(--u));margin:0;max-width:calc(400 * var(--u));min-width:200px;font-size:max(13px,calc(18 * var(--u))) !important;font-weight:400 !important;line-height:1.5;color:#6b6b6b;transition:color .55s ease}
+.vt-onum{position:absolute;right:calc(20 * var(--u));top:calc(20 * var(--u));display:grid;place-items:center;width:max(28px,calc(40 * var(--u)));aspect-ratio:1;border-radius:50%;background:#000;color:#fff;font:600 max(11px,calc(15 * var(--u)))/1 var(--body,inherit);transition:opacity .4s ease}
+.vt-oimg{position:absolute;right:calc(20 * var(--u));top:calc(20 * var(--u));width:max(96px,calc(152 * var(--u)));aspect-ratio:152/113;border-radius:calc(14 * var(--u));overflow:hidden;opacity:0;clip-path:inset(0 0 100% 0);transition:clip-path .7s cubic-bezier(.7,0,.2,1),opacity .4s ease}
+.vt-oimg img{display:block;width:100%;height:100%;object-fit:cover}
+.vt-oc.is-active{background:#000;color:#fff}
+.vt-orbit .vt-oc.is-active p.vt-od.vt-od{color:rgba(255,255,255,.9)}
+.vt-oc.is-active .vt-onum{opacity:0}
+.vt-oc.is-active .vt-oimg{opacity:1;clip-path:inset(0 0 0 0)}
+.vt-oc:focus-visible{outline:2px solid #000;outline-offset:3px}
+
+/* small screens: a single centred column, no absolute design box */
+@media (max-width:860px){
+  .vt-orbit{--u:1px;display:flex}
+  .vt-obox{position:relative;left:auto;top:auto;translate:none;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:78px 6vw 24px}
+  .vt-ring{left:50%;top:44%}
+  .vt-ring--1{width:80vmin}.vt-ring--2{width:105vmin}.vt-ring--3{width:130vmin}
+  .vt-ctext{position:relative;left:auto;top:auto;translate:none;width:auto;min-width:0;order:-1;font-size:22px;margin-bottom:6px}
+  .vt-oc,.vt-oc--1,.vt-oc--2,.vt-oc--3,.vt-oc--4{position:relative;left:auto;top:auto;width:100%;height:auto;padding:18px 20px}
+  .vt-ot{font-size:18px;max-width:60%;min-width:0}
+  .vt-orbit .vt-oc p.vt-od.vt-od{position:static;margin-top:10px;max-width:none;min-width:0;font-size:13.5px !important;line-height:1.45}
+  .vt-onum{right:14px;top:14px;width:28px;font-size:11px}
+  .vt-oimg{right:14px;top:14px;width:88px}
+}
+@media (prefers-reduced-motion:reduce){.vt-ring{animation:none}}
+
+/* no WebGL: show the teal stage with the content laid out plainly (no pinning, no ring layout) */
+.vt-glass.is-static .vt-gstage{background:var(--teal);height:auto;min-height:0}
+.vt-glass.is-static .vt-gfallback{display:none}
+.vt-glass.is-static .vt-orbit{position:relative;inset:auto;visibility:visible;opacity:1;display:block;padding:72px 0 80px;overflow:visible}
+.vt-glass.is-static .vt-obox{position:relative;left:auto;top:auto;translate:none;width:min(560px,90%);height:auto;margin:0 auto;display:flex;flex-direction:column;gap:12px;padding:0}
+.vt-glass.is-static .vt-ring{display:none}
+.vt-glass.is-static .vt-ctext{position:relative;left:auto;top:auto;translate:none;width:auto;min-width:0;order:-1;font-size:26px;opacity:1;margin-bottom:12px}
+.vt-glass.is-static .vt-oc{position:relative;left:auto;top:auto;width:100%;height:auto;padding:20px 22px;opacity:1;translate:none;rotate:none;pointer-events:auto}
+.vt-glass.is-static .vt-ot{font-size:20px;max-width:65%;min-width:0}
+.vt-glass.is-static .vt-orbit .vt-oc p.vt-od.vt-od{position:static;margin-top:10px;max-width:none;min-width:0;font-size:14px !important}
+.vt-glass.is-static .vt-onum{right:14px;top:14px;width:30px}
+
+/* ---------- 3b. feature pinned: "Vision" slide first, then "Mission" (scrubbed by scroll, see about-vertora.js) ---------- */
+.vt-feature{padding-block:0;height:360svh;position:relative}
+.vt-fpin{position:sticky;top:0;height:100svh;display:flex;align-items:center;box-sizing:border-box;padding-top:clamp(70px,10vh,100px);padding-bottom:clamp(16px,4vh,40px)}
+.vt-fpin .vt-wrap{width:min(1290px,88%)}
+.vt-fslides{display:grid;justify-items:center}
+.vt-fslide{grid-area:1 / 1;display:flex;flex-direction:column;align-items:center;opacity:var(--so,1);transform:translateY(var(--sy,0px));will-change:opacity,transform}
+.vt-fslide[data-slide="mission"]{--so:0}
+.vt-fmedia{container-type:inline-size;height:min(calc(100svh - 150px),50vw);width:auto;max-width:100%;justify-self:end;aspect-ratio:630/720}
+/* image stack, as in the reference: the centred inset (layer b) scales up from ~46% to full size and becomes the new photo,
+   while the previous photo (layer a) recedes to 90% scale / 50% opacity */
+.vt-fmedia{background:transparent;overflow:visible}
+.vt-layer{position:absolute;inset:0;border-radius:clamp(18px,2vw,32px);overflow:hidden;background:#1b1b1f;transform-origin:50% 50%}
+.vt-layer img{display:block;width:100%;height:100%;object-fit:cover;scale:1;translate:none}
+.vt-layer--a{scale:var(--as,1);opacity:var(--ao,1)}
+.vt-layer--a img{object-position:50% 30%}
+.vt-layer--b{z-index:2;scale:var(--bs,.36);opacity:var(--bo,0);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.vt-layer--b img{object-position:50% 60%}
+.vt-fword{position:absolute;left:0;right:0;bottom:4%;height:1em;font-size:9vw;font-size:18cqw;z-index:3;pointer-events:none}
+.vt-fw{position:absolute;inset:0;display:block;text-align:center;white-space:nowrap;font-family:var(--display);font-weight:600;font-size:inherit;line-height:1;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px #fff;opacity:var(--wo,1);transform:translateY(var(--wy,0px));will-change:opacity,transform}
+.vt-fw--b{--wo:0}
+/* reduced motion / very short viewports: no pinning, both slides shown one after the other */
+.vt-feature.is-static{height:auto;padding-block:clamp(60px,8vw,130px)}
+.vt-feature.is-static .vt-fpin{position:relative;height:auto;padding:0}
+.vt-feature.is-static .vt-fslides{display:flex;flex-direction:column;gap:36px}
+.vt-feature.is-static .vt-fslide{opacity:1;transform:none}
+.vt-feature.is-static .vt-fw--b,.vt-feature.is-static .vt-layer--b{display:none}
+.vt-feature.is-static .vt-fmedia{height:auto;width:100%;max-width:630px}
+@media (max-width:860px){
+  .vt-fpin .vt-wrap{grid-template-columns:1fr;row-gap:16px;align-content:center}
+  .vt-fmedia{height:min(34svh,88vw);width:100%;aspect-ratio:auto;justify-self:stretch}
+  .vt-fhead{font-size:clamp(24px,7vw,32px);max-width:16ch}
+  .vt-mark{width:44px;margin-bottom:12px}
+  .vt-feature .vt-fcopy p.vt-fsub.vt-fsub{font-size:14px !important;margin-top:10px}
+  .vt-go{margin-top:14px;width:60px}
+  .vt-fword{font-size:16vw;font-size:19cqw}
+}
+
+/* ---------- Lenis (smooth scroll) ---------- */
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto !important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+.lenis.lenis-smooth iframe{pointer-events:none}
+
+/* everything after the dark "Our promise" section sits on white */
+.vt-after{background:#fff;position:relative}
+
+/* ---------- scroll reveals ---------- */
+.vt [data-rv]{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 110ms)}
+.vt [data-rv].is-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .vt-line>span,.vt-edge,.vt-fl,.vt-pic img,.vt-fmedia,.vt-fmedia>img,.vt-inset,.vt-mark svg{transition:none}
+  .vt-line>span{transform:none}.vt-edge{opacity:1}.vt-fl{opacity:1;scale:1}.vt-fmedia{clip-path:none}.vt-inset{opacity:1;scale:1}.vt-mark svg{stroke-dashoffset:0}
+  .vt [data-rv]{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- small screens ---------- */
+@media (max-width:860px){
+  .vt-title{font-size:min(19vw,calc(19svh - 17.86px),170px);top:46%}
+  .vt-edge{top:67%;bottom:auto}
+  .vt-edge.l{left:6%}.vt-edge.r{right:6%}
+  .vt-fl--a{left:5%;top:5%;width:36%}
+  .vt-fl--b{left:58%;top:17%;width:36%}
+  .vt-fl--c{left:5%;bottom:5%;width:52%;height:24%}
+  .vt-fl--d{left:64%;bottom:8%;width:30%;height:22%}
+  .vt-story .vt-wrap{grid-template-columns:1fr;grid-template-areas:"label" "lead" "stats" "img"}
+  .vt-pic{width:min(100%,420px)}
+  .vt-row{grid-template-columns:1fr;gap:10px}
+  .vt-feature .vt-wrap{grid-template-columns:1fr;row-gap:48px}
+  .vt-fmedia{aspect-ratio:4/4.6}
+}

@@ -1,0 +1,90 @@
+.signup-dialog {
+  width: min(1000px, calc(100% - 48px));
+  max-width: none;
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  padding: 14px;
+  border: 0;
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.signup-dialog::backdrop {
+  background: rgb(14 17 18 / 62%);
+  backdrop-filter: blur(4px);
+}
+html:has(.signup-dialog[open]) { overflow: hidden; }
+.signup-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.signup-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 540px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.signup-close {
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  right: 4px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--paper);
+}
+.signup-copy {
+  align-self: center;
+  min-width: 0;
+  padding: 58px clamp(24px,3vw,48px) 36px;
+}
+.signup-copy .h2 { font-size: clamp(32px,3.6vw,50px); text-wrap: balance; }
+#signup-description { margin-block: 16px 24px; color: var(--muted); }
+#popup-signup { display: grid; gap: 12px; }
+#popup-signup[hidden] { display: none; }
+#popup-email {
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  padding: 10px 16px;
+  border: 1px solid #92959a;
+  border-radius: 10px;
+  color: var(--ink);
+  background: white;
+  font: inherit;
+  font-size: 16px;
+}
+.signup-later {
+  display: block;
+  margin: 8px auto 0;
+  min-height: 44px;
+  text-transform: none;
+  letter-spacing: normal;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.signup-result { padding-block: 12px; }
+@media (max-width: 680px) {
+  .signup-dialog { width: min(440px, calc(100% - 24px)); padding: 10px; }
+  .signup-layout { grid-template-columns: 1fr; }
+  .signup-photo { height: clamp(120px,24dvh,210px); object-position: center 54%; }
+  .signup-copy { padding: 24px 12px 6px; }
+  .signup-close { top: 8px; right: 8px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .signup-dialog[open] { animation: signup-arrive .25s ease-out both; }
+  @keyframes signup-arrive {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+}

@@ -1,0 +1,40 @@
+.heading-switch-words {
+  display: inline-grid;
+  max-width: 100%;
+  vertical-align: top;
+  overflow: clip;
+  padding-block: .06em .1em;
+  margin-block: -.06em -.1em;
+}
+.heading-switch-words > span {
+  grid-area: 1 / 1;
+  align-self: start;
+  visibility: hidden;
+}
+.heading-switch-words > .is-current { visibility: visible; }
+.heading-switch-static {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .heading-switch-words > .is-entering {
+    animation: heading-in 400ms var(--ease) both;
+  }
+  .heading-switch-words > .is-leaving {
+    visibility: visible;
+    animation: heading-out 350ms ease-out both;
+  }
+  @keyframes heading-in {
+    from { opacity: 0; transform: translateY(.75em); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes heading-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-.75em); }
+  }
+}

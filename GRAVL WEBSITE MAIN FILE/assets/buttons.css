@@ -1,0 +1,91 @@
+/* Shared storefront buttons and label roll. */
+:root{
+  --button-fill:#111312;
+  --button-ink:var(--white);
+  --button-hover-fill:var(--teal);
+  --button-hover-ink:var(--white);
+  --button-transition:300ms ease-out;
+  --button-colour-transition:background-color var(--button-transition),color var(--button-transition);
+  --button-radius:999px;
+  --button-inverse-fill:var(--white);
+  --button-inverse-ink:#111312;
+  --button-inverse-hover-fill:var(--teal);
+  --button-inverse-hover-ink:var(--white);
+  /* button sizes: height / inset / left padding / gap / font size */
+  --btn-h:50px; --btn-inset:6px; --btn-pad:22px; --btn-gap:22px; --btn-fs:15px;
+  --btn-sm-h:44px; --btn-sm-inset:5px; --btn-sm-pad:16px; --btn-sm-gap:12px; --btn-sm-fs:14px;
+  --btn-xs-h:40px; --btn-xs-inset:4px; --btn-xs-pad:14px; --btn-xs-gap:10px; --btn-xs-fs:13px;
+  --btn-text-pad:16px; --btn-round:40px;
+}
+
+.btn{
+  --button-height:var(--btn-h);
+  --button-inset:var(--btn-inset);
+  --button-pad-start:var(--btn-pad);
+  --button-gap:var(--btn-gap);
+  --button-size:var(--btn-fs);
+  display:inline-flex;align-items:center;justify-content:space-between;gap:var(--button-gap);
+  min-height:var(--button-height);max-width:100%;
+  padding:var(--button-inset) var(--button-inset) var(--button-inset) var(--button-pad-start);
+  border-radius:var(--button-radius);background:var(--button-fill);color:var(--button-ink);
+  font-size:var(--button-size);font-weight:500;line-height:1.25;text-align:left;
+  transition:var(--button-colour-transition),transform .2s var(--ease);
+}
+
+/* Variants: only the colours change. */
+.btn--inverse{
+  --button-fill:var(--button-inverse-fill);
+  --button-ink:var(--button-inverse-ink);
+  --button-hover-fill:var(--button-inverse-hover-fill);
+  --button-hover-ink:var(--button-inverse-hover-ink);
+}
+
+/* Sizes: only the dimensions change. */
+.btn--small{
+  --button-height:var(--btn-sm-h);--button-inset:var(--btn-sm-inset);--button-pad-start:var(--btn-sm-pad);
+  --button-gap:var(--btn-sm-gap);--button-size:var(--btn-sm-fs);
+}
+.btn--compact{
+  --button-height:var(--btn-xs-h);--button-inset:var(--btn-xs-inset);--button-pad-start:var(--btn-xs-pad);
+  --button-gap:var(--btn-xs-gap);--button-size:var(--btn-xs-fs);
+}
+.btn--text{justify-content:center;padding-inline:var(--btn-text-pad)}
+
+.btn-icon{
+  flex:none;width:calc(var(--button-height) - 2 * var(--button-inset));height:auto;aspect-ratio:1;
+  padding:9px;border-radius:50%;background:var(--button-ink);color:var(--button-fill);
+  transition:background-color var(--button-transition),color var(--button-transition);
+}
+@media (prefers-reduced-motion:no-preference){
+  .btn-icon use[href="#button-arrow"]{transition:transform var(--button-transition)}
+  .btn:is(:hover,:focus-visible) .btn-icon use[href="#button-arrow"]{transform:translateX(2px)}
+}
+.btn:is(:hover,:focus-visible,.done){
+  --button-fill:var(--button-hover-fill);
+  --button-ink:var(--button-hover-ink);
+}
+.btn:is(:hover,:focus-visible) .btn-icon{color:#000}
+.btn:focus-visible{outline:2px solid var(--button-ink);outline-offset:2px;box-shadow:0 0 0 5px var(--button-fill)}
+.btn:active{transform:scale(.98)}
+
+/* The second line rolls into the same space as the first. */
+.roll-label{position:relative;display:inline-block;max-width:100%;min-width:0;overflow:hidden;vertical-align:middle}
+.roll-label>span{display:block}
+.roll-label>[aria-hidden]{position:absolute;inset:100% 0 auto;pointer-events:none;visibility:hidden}
+@media (prefers-reduced-motion:no-preference){
+  .roll-label>span{transition:transform var(--button-transition)}
+  .roll-label>[aria-hidden]{visibility:visible}
+  :is(a,button):focus-visible .roll-label>span{transform:translateY(-100%)}
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  :is(a,button):hover .roll-label>span{transform:translateY(-100%)}
+}
+
+/* Round outline arrow controls (carousel previous / next). */
+.arr,.arrow{
+  width:var(--btn-round);height:var(--btn-round);border-radius:50%;display:grid;place-items:center;
+  background:transparent;box-shadow:inset 0 0 0 1px currentColor;
+  transition:transform .2s var(--ease);
+}
+.arr svg,.arrow svg{width:16px;height:16px}
+.arr:hover,.arrow:hover{transform:scale(1.06)}

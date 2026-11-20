@@ -1,0 +1,65 @@
+/* "The thinking inside" restyled after the Avix Projects block:
+   left-aligned giant heading, full-bleed image cards stacking over each other on scroll. */
+.values{padding-block:clamp(64px,9vw,140px)}
+.values .values-intro{text-align:center;margin:0 0 clamp(36px,5vw,72px);max-width:none}
+.values .values-label{display:block;font:500 13px/1 var(--body,inherit);letter-spacing:.04em;text-transform:uppercase;color:#000;margin-bottom:clamp(20px,3vw,40px)}
+.values .values-title{font-family:var(--display);font-weight:600;font-size:clamp(52px,7.4vw,112px);line-height:1.04;letter-spacing:-.04em;color:#000;margin:0;max-width:none}
+.values .values-title em{font-style:normal}
+.values .values-intro p.values-sub{margin:clamp(20px,2.4vw,32px) auto 0;max-width:30ch;font-size:clamp(18px,1.6vw,22px) !important;font-weight:400 !important;line-height:1.3;color:#6b6b6b;margin-inline:auto}
+
+/* cards */
+.values .value-stack{--sticky-offset:90px;gap:clamp(24px,4vw,56px);width:min(100%,980px);margin-inline:auto}
+.values .value-stack .value{position:relative;display:block;padding:0;background:#0b0b0b;border-radius:6px;overflow:hidden;height:clamp(340px,min(36vw,62svh),500px);isolation:isolate}
+.values .value-stack .value-photo{position:absolute;inset:0;z-index:0;aspect-ratio:auto;min-height:0;border-radius:0;background:#0b0b0b}
+.values .value-stack .value-photo img{transform:scale(1.14);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.values .value-stack .value-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 56%,rgba(0,0,0,.62) 100%);pointer-events:none}
+.values .value-stack .value:hover .value-photo img{transform:scale(1.04)}
+.values .value-stack .value.in .value-photo img{transform:scale(1)}
+.values .value-stack .value.in:hover .value-photo img{transform:scale(1.04)}
+.values .value-stack .value-copy{position:absolute;inset:0;z-index:1;display:block;padding:0;color:#fff;pointer-events:none}
+.values .value-stack .value-copy h3{position:absolute;left:clamp(16px,1.7vw,24px);top:clamp(16px,1.7vw,24px);margin:0;font-family:var(--display);font-weight:600;font-size:clamp(24px,2.2vw,32px);line-height:1.05;letter-spacing:-.05em;color:#fff}
+.values .value-stack .value-copy p.value-text{position:absolute;left:clamp(16px,1.7vw,24px);bottom:clamp(16px,1.7vw,24px);margin:0;padding:0;max-width:min(52ch,56%);font-size:clamp(15px,1.25vw,18px) !important;font-weight:400 !important;line-height:1.35;color:#fff}
+.values .value-stack .value-detail{position:absolute;right:clamp(16px,1.7vw,24px);bottom:clamp(16px,1.7vw,24px);display:grid;gap:4px;justify-items:end;text-align:right;margin:0;padding:0;border:0;align-self:auto;font-size:clamp(14px,1.25vw,18px);line-height:1.3;color:#fff;max-width:min(34ch,36%)}
+.values .value-stack .value-detail strong{font-weight:500}
+.values .value-stack .value-detail a{color:#fff;pointer-events:auto}
+
+/* scroll reveal */
+.values [data-vr]{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 110ms)}
+.values [data-vr="title"]{filter:blur(10px);transform:translateY(56px)}
+.values [data-vr].in{opacity:1;transform:none;filter:none}
+.values .value-stack .value .value-copy{opacity:0;transform:translateY(24px);transition:opacity .9s ease .35s,transform .9s cubic-bezier(.2,.7,.2,1) .35s}
+.values .value-stack .value.in .value-copy{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.values [data-vr],.values .value-stack .value .value-copy{opacity:1;transform:none;filter:none;transition:none}.values .value-stack .value-photo img{transform:none;transition:none}}
+
+@media (max-width:760px){
+  .values .value-stack .value{height:clamp(420px,120vw,560px)}
+  .values .value-stack .value-copy p.value-text{max-width:calc(100% - 32px);bottom:92px}
+  .values .value-stack .value-detail{left:16px;right:auto;bottom:16px;justify-items:start;text-align:left;max-width:calc(100% - 32px)}
+}
+
+/* The shared sticky inset keeps the finished stack together as it leaves the fold. */
+@media (min-width: 800px) and (min-height: 600px) and (prefers-reduced-motion: no-preference) {
+  .values .value-stack {
+    --strip: clamp(72px, 9svh, 88px);
+    --stack-top: calc(64px + var(--stack-steps, 3) * var(--strip));
+    padding-top: calc(var(--stack-steps, 3) * var(--strip));
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 12px;
+  }
+  .values .value-stack .value {
+    --layers-above: 0;
+    position: sticky;
+    top: var(--stack-top);
+    justify-self: center;
+    width: min(calc(120% - var(--layers-above) * 4.8%), calc((100vw - 2 * var(--page-gutter, 32px)) * (1 - var(--layers-above) * .04)));
+    height: min(500px, calc(100svh - var(--stack-top) - 20px));
+    transform: translateY(calc(-1 * var(--layers-above) * var(--strip)));
+  }
+  .values .value-stack .value:nth-last-child(4) { --layers-above: 3; }
+  .values .value-stack .value:nth-last-child(3) { --layers-above: 2; }
+  .values .value-stack .value:nth-last-child(2) { --layers-above: 1; }
+}
+@media (max-width: 799px) {
+  .values .value-stack { padding-top: 0; row-gap: 24px; }
+  .values .value-stack .value { height: 420px; }
+}

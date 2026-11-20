@@ -1,0 +1,32 @@
+/* "Our promise" - modelled on the Forma "Why Choose Us" block:
+   dark pinned stage, four overlapping tilted gradient cards that rise in one by one as you scroll. */
+.op{position:relative;background:#0a0a0b;color:#fff;--op-card:min(21%,320px,38svh);--op-tilt:6deg}
+.op-pin{position:relative;height:320svh}
+.op-stage{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-block:64px 32px;
+  background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1.2px);background-size:6px 6px}
+.op-head{text-align:center;padding-inline:20px;position:relative;z-index:3}
+.op-label{display:block;font:500 clamp(13px,1.1vw,16px)/1 var(--body,inherit);color:#fff;margin-bottom:clamp(14px,1.8vw,24px)}
+.op-title{margin:0;font-family:var(--display);font-weight:500;font-size:clamp(40px,4.5vw,66px);line-height:1.1;letter-spacing:-.045em;color:#fff}
+.op-title em{font:inherit;letter-spacing:inherit}
+.op .op-head p.op-sub.op-sub{margin:clamp(12px,1.4vw,20px) auto 0;max-width:46ch;font-size:clamp(16px,1.4vw,20px) !important;font-weight:400 !important;line-height:1.4;color:rgba(255,255,255,.64)}
+
+.op-row{position:relative;flex:none;margin-top:clamp(48px,7svh,64px);left:0;right:0;margin-inline:auto;width:min(calc(100% - 2 * var(--page-gutter,32px)),1704px);bottom:auto;aspect-ratio:100 / 21;max-height:320px;height:auto;pointer-events:none}
+.op-card{position:absolute;bottom:0;width:var(--op-card);height:auto;aspect-ratio:1;border-radius:clamp(18px,1.8vw,26px);padding:clamp(16px,1.6vw,24px);display:flex;flex-direction:column;justify-content:space-between;color:var(--ink);overflow:hidden;
+  transform-origin:50% 85%;transform:translate3d(0,calc(var(--y,0) * 1px),0) rotate(calc(var(--tilt) + var(--spin,0deg)));opacity:var(--o,1);will-change:transform;pointer-events:auto}
+
+.op-card:nth-child(1){left:5%;--tilt:calc(var(--op-tilt) * -1);background:var(--promise-cream)}
+.op-card:nth-child(2){left:28%;--tilt:var(--op-tilt);background:var(--pink)}
+.op-card:nth-child(3){left:51%;--tilt:calc(var(--op-tilt) * -1);background:var(--gold)}
+.op-card:nth-child(4){left:74%;--tilt:var(--op-tilt);background:var(--teal)}
+.op-top{display:flex;align-items:center;gap:clamp(8px,.9vw,12px);position:relative}
+.op-ico{display:grid;place-items:center;flex:none;width:clamp(30px,2.6vw,38px);height:clamp(30px,2.6vw,38px);border-radius:10px;background:rgba(255,255,255,.92);color:#222}
+.op-ico svg{width:58%;height:58%}
+.op .op-card .op-name{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(16px,1.3vw,24px);letter-spacing:-.02em;color:inherit}
+.op .op-card p.op-text{position:relative;margin:0;max-width:22ch;font-size:clamp(14px,1.05vw,17px) !important;font-weight:500 !important;line-height:1.35;color:inherit}
+
+/* no pinning on small screens / reduced motion: simple 2-up grid, revealed on scroll */
+.op.op-static .op-pin{height:auto}
+.op.op-static .op-stage{position:relative;height:auto;overflow:visible;padding-bottom:clamp(48px,8vw,90px)}
+.op.op-static .op-row{position:relative;bottom:auto;height:auto;max-height:none;aspect-ratio:auto;margin-top:clamp(36px,6vw,64px);width:min(calc(100% - 2 * var(--page-gutter,32px)),900px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,3vw,28px);padding-inline:12px}
+.op.op-static .op-card{position:relative;left:auto !important;width:auto;height:auto;aspect-ratio:1/.95;--op-tilt:3deg;transform:rotate(var(--tilt));opacity:1}
+@media (max-width:560px){.op.op-static .op-row{grid-template-columns:1fr}.op.op-static .op-card{aspect-ratio:1/.8}}

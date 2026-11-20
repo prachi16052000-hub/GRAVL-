@@ -1,0 +1,53 @@
+/* "What we believe in" - modelled on the Avix Services block:
+   four columns at rest (title over a thin image strip), the hovered card unfolds to a tall image with a list. */
+.believe{--bl-h:min(67.2svh,43.2vw,588px);--bl-rest:clamp(88px,12svh,112px);--bl-duration:1.1s;--bl-ease:cubic-bezier(.35,0,.2,1);padding-block:clamp(32px,4vw,64px)}
+.believe-label{display:block;font:500 13px/1 var(--body,inherit);letter-spacing:.04em;text-transform:uppercase;color:#000;margin-bottom:clamp(20px,3vw,40px)}
+.believe-title{font-family:var(--display);font-weight:600;font-size:clamp(52px,7.4vw,112px);line-height:1.04;letter-spacing:-.04em;color:#000;margin:0}
+.believe-title em{font-style:normal}
+.believe p.believe-sub.believe-sub.believe-sub{margin:clamp(20px,2.4vw,32px) 0 clamp(18px,3vh,32px);max-width:30ch;font-size:clamp(18px,1.6vw,22px) !important;font-weight:400 !important;line-height:1.3;color:#6b6b6b}
+
+/* pinned: the grid sticks while the cards open one after another */
+.bl-track{position:relative;height:calc(var(--bl-h) + 240svh)}
+.bl-sticky{position:sticky;top:calc((100svh - var(--bl-h)) / 2)}
+.believe.bl-static .bl-track{height:auto}
+.believe.bl-static .bl-sticky{position:static}
+/* hover opens a card only while it is hovered; the scroll sequence owns the resting state */
+.bl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;align-items:center;min-height:var(--bl-h)}
+.bl-card{position:relative;display:block;height:var(--bl-rest);outline:none;cursor:pointer;transition:height var(--bl-duration) var(--bl-ease)}
+.bl-media{position:absolute;inset:44px 0 0;border-radius:6px;overflow:hidden;background:#dfe5ea;transition:top var(--bl-duration) var(--bl-ease)}
+.bl-media img{position:absolute;left:0;top:50%;width:100%;height:var(--bl-h);object-fit:cover;transform:translateY(-50%) scale(1.04);transition:transform var(--bl-duration) var(--bl-ease)}
+.bl-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.28) 0%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 48%,rgba(0,0,0,.72) 100%);opacity:0;transition:opacity .6s ease}
+.bl-name{position:absolute;z-index:2;left:0;top:0;margin:0;font-family:var(--display);font-weight:600;font-size:clamp(22px,2vw,30px);line-height:1.1;letter-spacing:-.03em;color:#000;transition:transform var(--bl-duration) var(--bl-ease),color .5s ease}
+.bl-list{position:absolute;z-index:2;left:20px;right:20px;bottom:18px;display:grid;opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform var(--bl-duration) var(--bl-ease)}
+.bl-list span{display:block;padding:9px 0;border-top:1px solid rgba(255,255,255,.28);font:400 14px/1.3 var(--body,inherit);color:#fff}
+.bl-list span:first-child{border-top:0}
+
+.bl-static .bl-card:hover,.bl-card:focus-visible,.bl-card.is-open{height:var(--bl-h)}
+.bl-static .bl-card:hover .bl-media,.bl-card:focus-visible .bl-media,.bl-card.is-open .bl-media{top:0}
+.bl-static .bl-card:hover .bl-media img,.bl-card:focus-visible .bl-media img,.bl-card.is-open .bl-media img{transform:translateY(-50%) scale(1)}
+.bl-static .bl-card:hover .bl-media::after,.bl-card:focus-visible .bl-media::after,.bl-card.is-open .bl-media::after{opacity:1}
+.bl-static .bl-card:hover .bl-name,.bl-card:focus-visible .bl-name,.bl-card.is-open .bl-name{transform:translate(20px,20px);color:#fff}
+.bl-static .bl-card:hover .bl-list,.bl-card:focus-visible .bl-list,.bl-card.is-open .bl-list{opacity:1;transform:none;transition-delay:.18s}
+.bl-card:focus-visible .bl-media{outline:2px solid #000;outline-offset:2px}
+
+/* scroll reveal */
+.believe [data-bl]{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 110ms)}
+.believe [data-bl="title"]{filter:blur(10px);transform:translateY(56px)}
+.believe [data-bl].in{opacity:1;transform:none;filter:none}
+/* the card's own hover transitions must not inherit the reveal delay once revealed */
+.believe .bl-card[data-bl].in{transition:height var(--bl-duration) var(--bl-ease),opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:0s}
+@media (prefers-reduced-motion:reduce){.believe [data-bl]{opacity:1;transform:none;filter:none;transition:none}.believe .bl-card[data-bl].in,.bl-card,.bl-media,.bl-media img,.bl-media::after,.bl-name,.bl-list{transition:none}}
+
+/* touch / small screens: no hover, so every card is shown open */
+@media (hover:none),(max-width:900px){
+  .bl-track{height:auto}
+  .bl-sticky{position:static}
+  .bl-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-height:0}
+  .bl-card,.bl-card:hover{height:clamp(240px,45vw,340px)}
+  .bl-media{top:0}
+  .bl-media img,.bl-static .bl-card:hover .bl-media img,.bl-card:focus-visible .bl-media img{top:0;height:100%;transform:none}
+  .bl-media::after{opacity:1}
+  .bl-name{transform:translate(16px,16px);color:#fff}
+  .bl-list{opacity:1;transform:none;left:16px;right:16px}
+}
+@media (max-width:560px){.bl-grid{grid-template-columns:1fr}.bl-card,.bl-card:hover{height:clamp(240px,70vw,320px)}}
