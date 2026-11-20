@@ -1,0 +1,146 @@
+{
+  "method": "Built-in image generation",
+  "direction": "Original nature, tactile and faceless editorial imagery inspired by the approved mood references.",
+  "images": [
+    {
+      "file": "hands-paper.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Overhead close-up of two natural hands folding a single sheet of thick cream paper at a dark wooden creative worktable, subtle teal paper offcut beside it. Beautiful folds, attention to one purposeful shape."
+    },
+    {
+      "file": "hands-materials.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Close crop of natural hands sorting and feeling overlapping textile swatches, cream linen, charcoal cotton, teal woven fabric, brushed aluminium sample. Evidence of considered material selection, no heads."
+    },
+    {
+      "file": "hands-sketch.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Overhead view of hands comparing four small pencil studies of a rounded everyday form on separate cream paper sheets. Quiet creative process, no lettering, just simple charcoal sketches, pencil held naturally."
+    },
+    {
+      "file": "hands-day.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Overhead candid hands placing a plain notebook and folded scarf inside a canvas tote on a chair, preparing for the day. No gadgets, no text."
+    },
+    {
+      "file": "hands-junction.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Macro close-up of two hands carefully aligning the stitched edge of a charcoal textile sample with a brushed metal clasp, considered craft detail, simple hand tools."
+    },
+    {
+      "file": "hands-hierarchy.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Overhead hands arranging cream paper rectangles at different sizes on a charcoal work surface, one teal card set forward, a clear tactile hierarchy, no lettering."
+    },
+    {
+      "file": "hands-refine.webp",
+      "prompt": "Photorealistic editorial photograph for a thoughtful modern lifestyle brand. Landscape 1536x1024. Human and tactile, natural soft daylight, rich cotton and paper textures, cream charcoal and subtle teal #2DBAA4 accents. Strictly no faces, no facial features, no heads, no eyes, no reflection of faces anywhere. Crop humans below shoulders or show hands only. No buildings as subject, architecture, stone sculpture, electronics, power banks, logos, readable text or watermark. Grounded candid editorial aesthetic. Close-up of hands smoothing the edge of a small clay study with a damp sponge, three earlier clay studies softly out of focus behind, patient iterative creative process."
+    },
+    {
+      "file": "shoreline.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Aerial-oblique photograph of a gentle translucent teal wave washing onto warm fine sand, one smooth dark coastal rock, delicate foam, quiet movement, broad useful composition."
+    },
+    {
+      "file": "ripples.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Close photographic study of a smooth rounded pebble half-submerged in clear water, fine concentric ripples and soft reflected daylight, shallow focus cream and teal tones."
+    },
+    {
+      "file": "foliage.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Delicate translucent leaves backlit by morning sun, soft natural teal hue, stem and leaf veins sharply rendered against a creamy blurred background. Restrained botanical macro."
+    },
+    {
+      "file": "light-shadow.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. An abstract study of soft leafy shadows falling across folded cream linen, subtle fabric texture and one teal fabric edge, afternoon sunlight, peaceful minimal composition."
+    },
+    {
+      "file": "flow.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Fine-art macro abstraction of flowing cream and teal pigments forming one continuous organic ribbon, subtle charcoal seam, painterly tactile texture, fluid folds, elegant rather than glossy."
+    },
+    {
+      "file": "open-sky.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Wide calm coastal horizon, pale warm sky with soft clouds above a deep muted teal sea, subtle sunrise light and spacious composition, gentle hopeful mood."
+    },
+    {
+      "file": "beach-moment.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Faceless coastal lifestyle photograph cropped below waist: one person's relaxed hand holding a woven rust-colored sunhat beside a cream linen trouser leg, feet on fine sand near soft teal surf. Absolutely no head or face visible."
+    },
+    {
+      "file": "shared-space.webp",
+      "prompt": "Create one full-bleed editorial image for GRAVL brand website, landscape 1536x1024. Art direction inspired by soft teal and beige abstract art, calm coastal photography, botanical textures and natural light. Rich tactile detail, understated premium mood. Warm cream #F3EFE9, sand, charcoal and soft teal derived from #2DBAA4. Absolutely no visible faces, no architecture/buildings/sculptural monuments, no electronics/products, no words/logos/watermarks, no collage or color swatches. Overhead close photograph of varied smooth pebbles, each different in tone and size, resting in shallow clear water with natural generous spacing and intersecting delicate ripples. Teal and beige natural palette."
+    },
+    {
+      "file": "meadow.webp",
+      "prompt": "Landscape 1536x1024, original natural editorial photograph for GRAVL brand, subtle film texture, not a collage. Quiet fine-art landscape photograph of an expansive rolling meadow in soft morning sun, large leafy tree and gentle distant hills. One very small figure seated beneath tree seen strictly from behind, head turned fully away, no visible face or facial features. Peaceful contemplative mood, natural color. No architecture or text."
+    },
+    {
+      "file": "reading.webp",
+      "prompt": "Landscape 1536x1024, original natural editorial photograph for GRAVL brand, subtle film texture, not a collage. Faceless editorial photograph of hands turning a page of an open book resting on a linen-clad lap, warm soft window light. Frame below shoulders, no head or face or reflection. Book text too shallow focus to be readable. Cream, charcoal and a small teal textile detail."
+    },
+    {
+      "file": "tea.webp",
+      "prompt": "Landscape 1536x1024, original natural editorial photograph for GRAVL brand, subtle film texture, not a collage. Faceless editorial photograph of a hand pouring tea from a ceramic teapot into a cup on cream linen, steam in morning sunlight, gentle leafy shadows. Frame shows hand only and no head or face or reflections, small teal napkin, quiet everyday ritual.\nEdit: Remove only the GRAVL lettering on the right side of this photograph, replacing it seamlessly with the existing plain softly lit background. Preserve all photography, hand, teapot, cup, lighting, textures and composition. No text or logo anywhere."
+    },
+    {
+      "file": "making.webp",
+      "prompt": "Photorealistic editorial close-up of hands shaping clay on a pottery wheel, natural light, cream and teal textiles, no visible faces."
+    },
+    {
+      "file": "belief-purpose.webp",
+      "prompt": "Use case: photorealistic-natural. Original fine-art editorial photograph, dreamy intentional camera motion blur and long exposure, muted teal, ivory and golden sunlight, delicate film grain, calm freedom and everyday progress. NO visible faces, facial features, eyes, profile, reflection of face, text, logos, architecture or products. Portrait 2:3. A person's relaxed hand gently brushing the tops of a few sunlit meadow grasses, only forearm and hand visible entering from the side, large quiet deep teal blurred background. Sparse intentional composition."
+    },
+    {
+      "file": "belief-resources.webp",
+      "prompt": "Fine-art editorial aerial photograph, portrait 2:3. Vast simple rippled ivory sand dune with one sweeping diagonal ridge separating warm sunlight from a cool teal-blue shadow. One very small distant person in warm ochre walking along the ridge, viewed vertically from high above, no face or facial details visible. Restrained geometric natural composition, large negative space, beautiful tactile sand. Subtle atmospheric softness and film grain. No buildings, text, logos or watermark. Original scene inspired by calm progress and scale."
+    },
+    {
+      "file": "belief-curiosity.webp",
+      "prompt": "Photorealistic fine art editorial photograph. Portrait 2:3. A single relaxed human hand reaching into a soft warm sunbeam against expansive muted teal-blue sky, cropped at wrist, no person or face in frame. Natural anatomically correct fingers, subtle intentional camera motion blur, dreamy light trails, delicate film grain, quiet minimal composition with hand in middle third and negative space above and below. Ivory sleeve edge, warm sunlight, subtle teal palette. No lettering, logos, architecture or products."
+    },
+    {
+      "file": "belief-difference.webp",
+      "prompt": "Use case: photorealistic-natural. Original fine-art editorial photograph, dreamy intentional camera motion blur and long exposure, muted teal, ivory and golden sunlight, delicate film grain, calm freedom and everyday progress. NO visible faces, facial features, eyes, profile, reflection of face, text, logos, architecture or products. Portrait 2:3. Two people walking side by side through a sunlit meadow, photographed strictly from behind, heads turned away and entirely hidden by rear angle. Cream and muted teal casual clothes, softly blurred figures, expansive soft blue sky."
+    },
+    {
+      "file": "thinking-day.webp",
+      "prompt": "Photorealistic fine-art editorial photograph for GRAVL. Landscape 3:2. Minimal warm ivory interior, one small seated person in relaxed cream linen on a simple floor cushion on right third, photographed strictly from behind so absolutely no face or profile is visible. Broad soft golden sunlight and gentle shadow fall across a plain wall and sheer linen curtain, restful spacious atmosphere. Subtle film grain and softly diffused focus. Lots of quiet empty space left and above. Human calm is the subject, not architecture. No columns, arches, elaborate buildings, logos, text, products or facial features."
+    },
+    {
+      "file": "thinking-meets.webp",
+      "prompt": "Photorealistic fine art editorial photograph. Landscape 3:2. Close-up of one human hand gently trailing fingertips across a calm pale teal water surface, soft concentric ripples and golden sunlight. Only forearm and hand enter from right edge, no head or face or body. Natural anatomy. Dreamy subtle motion blur in water highlights, tactile natural light, delicate film grain. Minimal quiet composition, subject in right half and plenty of softly blurred water on left for white overlay text. No lettering, logos, architecture or products."
+    },
+    {
+      "file": "thinking-hierarchy.webp",
+      "prompt": "Fine-art editorial drone photograph, landscape 3:2. Vast calm clear teal water with subtle flowing sandbar patterns beneath it. One tiny warm ochre kayak and lone paddler on right third, viewed straight down from high above so no facial features visible. Minimal composition, big quiet water area on left, natural gently rippling surface, subtle softness and film grain. No buildings, text, logos or watermark. Original scene about one clear focal point within a generous open field."
+    },
+    {
+      "file": "thinking-world.webp",
+      "prompt": "Use case: photorealistic-natural. Original fine-art editorial photograph, dreamy intentional camera motion blur and long exposure, muted teal, ivory and golden sunlight, delicate film grain, calm freedom and everyday progress. NO visible faces, facial features, eyes, profile, reflection of face, text, logos, architecture or products. Landscape 3:2. One person moving freely through a sunlit field of tall golden grasses, photographed strictly from behind with long hair covering all head and neck, arms slightly open, cream shirt and trousers. Distant softly blurred hills and teal-blue sky. Person on right third; left is quiet wind-swept grass."
+    },
+    {
+      "file": "office-workshop.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Top down team workshop: four colleagues' hands arranging blank cream and teal paper squares on a wooden table, pencils nearby. Clean uncluttered."
+    },
+    {
+      "file": "office-celebration.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Close top-down shot of colleagues' hands sharing slices of a simple cake at an office celebration, cream plates, subtle teal napkins, no candles or writing."
+    },
+    {
+      "file": "office-coffee.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Three coworkers holding ceramic coffee cups together around a small table during an office event break. Hands only, cream sleeves and charcoal sleeves, cropped close."
+    },
+    {
+      "file": "office-activity.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Overhead view of two colleagues painting small abstract shapes in teal and warm ochre on plain paper during a creative office workshop. Hands and materials only."
+    },
+    {
+      "file": "office-game.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Overhead close view of coworkers' hands playing a simple wooden block stacking game on an office event table. No faces or heads, only hands and table."
+    },
+    {
+      "file": "office-welcome.webp",
+      "prompt": "Use case: photorealistic-natural. Original illustrative office team-event photograph, not documentary evidence. Portrait 2:3. Contemporary creative workplace, warm natural daylight, subtle teal #2DBAA4 accents, candid tactile editorial photography. Strictly no heads, faces or facial features: camera points down at hands/table only, crop every person at shoulders or below. No visible text, logos, watermark, architecture as subject. Top down view of hands passing a plain cream welcome notebook with teal ribbon to a colleague across a table at an office gathering, one coffee cup nearby."
+    },
+    {
+      "file": "vision-open-landscape.webp",
+      "prompt": "Photorealistic fine art editorial brand photograph, portrait 3:4. Expansive gently rolling pale sand dunes under a large misty teal-blue sky, one very small lone person in cream linen viewed strictly from behind near the right third, looking toward an open horizon. No face or profile visible. Subtle dreamy atmospheric softness and delicate film grain, calm sense of possibility, warm morning sunlight, minimal uncluttered composition. Not architecture. No buildings, text, logos, products or watermark. Leave lower quarter visually quiet for website word overlay."
+    },
+    {
+      "file": "mission-water-touch.webp",
+      "prompt": "Photorealistic fine art editorial brand photograph, portrait 3:4. One natural human hand entering from upper right, index fingertip gently touching shallow clear pale teal water over warm ivory sand, creating elegant concentric ripples and delicate sunlight caustics. Only hand and wrist, no people or faces in frame. Refined minimal composition, tactile realistic skin, anatomically correct hand, soft warm sunlight, subtle film grain, dreamy but believable photograph. No lettering, logos, products, architecture or watermark. Keep lower quarter quiet for website word overlay."
+    }
+  ]
+}
