@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F9F9F7">
+  <meta name="description" content="Meet GRAVL, the brand behind portable power and everyday tech for work and travel. Explore our story, design principles, history and four-year power bank warranty.">
+  <title>About GRAVL | What we carry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/storefront.css">
+  <link rel="stylesheet" href="assets/buttons.css?v=2">
+  <link rel="stylesheet" href="assets/heading-switch.css">
+  <script defer src="assets/hero-particles.js"></script>
+  <link rel="stylesheet" href="assets/about.css?v=4">
+  <link rel="stylesheet" href="assets/about-studio.css">
+  <link rel="stylesheet" href="assets/about-believe.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="assets/about-values.css">
+  <link rel="stylesheet" href="assets/about-promise.css">
+  <link rel="stylesheet" href="assets/about-mission.css">
+  <link rel="stylesheet" href="assets/about-life.css">
+  <script defer src="assets/about-life.js"></script>
+  <script defer src="assets/about-mission.js?v=2"></script>
+  <script defer src="assets/about-promise.js"></script>
+  <script defer src="assets/about-values.js"></script>
+  <script defer src="assets/about-believe.js"></script>
+  <script defer src="assets/about-studio.js"></script>
+  <style>
+  /* Mondragon-style hero: light rounded card, giant centered title, edge labels, centered subtitle */
+  .hero{padding:8px}
+  .hero .banner{aspect-ratio:auto;height:clamp(420px,62vh,560px);min-height:0;background:#fff;color:#0b0b0b;border-radius:24px}
+  .hero .banner{background:#dde3ea}.hero-bg{object-fit:cover}
+  .hero-bg,.hero-particles{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  .hero-particles{z-index:1}
+  .hero .banner{pointer-events:auto}
+  .hero-bg{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .hero .slide{color:inherit}
+  .hero .slide-bg,.hero .slide::after{display:none}
+  .hero .slide-copy{inset:0;left:0;top:0;translate:none;right:auto;max-width:none;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;text-align:center;padding:0 24px clamp(90px,16vh,130px)}
+  .hero .slide h1{font-family:var(--display);font-weight:500;font-size:clamp(48px,9.5vw,150px);line-height:.95;letter-spacing:-.055em;max-width:14ch;margin:0 auto;color:#0b0b0b}
+  .hero .slide .sub{position:absolute;left:50%;bottom:clamp(40px,8vh,72px);transform:translateX(-50%);width:min(460px,86%);max-width:none;margin:0;opacity:1;font-weight:500 !important;line-height:1.45;color:#0b0b0b;text-align:center !important}
+  .hero .slide.on .slide-copy>.sub{transform:translateX(-50%)}
+  .hero .slide .btn{display:none}
+  .hero-edge{position:absolute;top:50%;translate:0 -50%;z-index:3;font-size:13px;font-weight:600;color:#0b0b0b;pointer-events:none}
+  .hero-edge.l{left:clamp(20px,2.5vw,32px)}
+  .hero-edge.r{right:clamp(20px,2.5vw,32px)}
+  @media(max-width:640px){.hero-edge{top:auto;bottom:20px;translate:none}.hero .slide .sub{bottom:60px}}
+  </style>
+  <script defer src="assets/heading-switch.js?v=2"></script>
+  <script src="assets/about.js?v=3" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="button-arrow" viewBox="0 0 20 20"><path d="M3.5 10h12M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="button-check" viewBox="0 0 20 20"><path d="m4 10 4 4 8-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="gravl-logo" viewBox="0 0 576 135">
+      <path fill="currentColor" d="M136.157 0.641 L119.953 0.146 L9.277 51.755 C4.643 53.916 1.232 58.187 0.484 63.244 C-0.5 69.904 3.025 76.264 8.962 79.033 L126.504 133.844 C131.003 135.941 136.157 132.658 136.157 127.694 L136.157 67.503 L118.565 67.503 L118.565 112.97 L16.695 65.467 L126.674 14.184 Z
+        M284.822 63.413 L311.356 63.413 C316.068 63.413 319.824 62.456 322.518 60.568 C325.522 58.445 327.042 55.424 327.042 51.582 C327.042 47.735 325.6 44.782 322.755 42.806 C320.077 41.033 316.281 40.182 311.112 40.182 L284.822 40.182 Z
+        M322.754 101.104 L303.009 73.872 L284.822 73.872 L284.822 101.104 L270.245 101.104 L270.245 29.83 L313.184 29.83 C322.087 29.899 329.131 31.924 334.106 35.85 C339.085 39.79 341.544 45.014 341.619 51.82 C341.544 57.399 339.848 61.919 336.436 65.588 C333.012 69.269 328.048 71.78 321.683 73.051 L320.046 73.378 L318.254 73.542 L338.86 101.104 Z
+        M453.023 101.104 L416.127 29.831 L432.609 29.831 L459.789 84.187 L462.551 84.187 L489.609 29.831 L506.206 29.831 L469.196 101.104 Z
+        M516.988 101.104 L516.988 29.831 L531.565 29.831 L531.565 90.644 L575.93 90.644 L575.93 101.104 Z
+        M219.543 73.872 L240.293 73.872 L240.136 76.054 C239.763 81.219 237.365 85.292 232.992 88.167 C228.782 90.879 223.128 92.292 216.128 92.366 C207.997 92.215 201.343 89.706 196.352 84.911 C191.332 80.089 188.743 73.555 188.657 65.445 C188.743 57.382 191.332 50.847 196.34 46.036 C201.338 41.157 208.002 38.644 216.193 38.567 C222.182 38.645 227.235 40.069 231.219 42.803 C233.783 44.576 235.863 46.804 237.459 49.444 L252.565 49.444 C250.358 43.442 246.36 38.512 240.638 34.765 C234.179 30.488 225.941 28.284 216.2 28.215 C203.683 28.421 193.465 31.978 185.824 38.793 C178.271 45.462 174.321 54.437 174.081 65.467 C174.323 76.652 178.165 85.378 185.832 92.149 C193.46 98.953 203.669 102.509 216.178 102.719 C228.154 102.646 237.603 99.899 244.267 94.555 C250.894 89.243 254.153 81.976 254.23 72.355 L254.23 63.413 L219.543 63.413 Z
+        M388.222 45.026 L391.03 45.026 L404.844 73.87 L374.408 73.87 Z
+        M397.034 29.83 L382.097 29.83 L345.779 101.104 L361.29 101.104 L366.896 89.479 L369.381 84.329 L409.81 84.329 L412.234 89.479 L417.84 101.104 L433.468 101.104 Z"/>
+    </symbol>
+    <linearGradient id="gInk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a5262"/><stop offset=".5" stop-color="#2A2F3A"/><stop offset="1" stop-color="#10131c"/></linearGradient>
+    <linearGradient id="gSteel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f4f6"/><stop offset="1" stop-color="#b7bdc6"/></linearGradient>
+    <linearGradient id="gSage" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b5d9d1"/><stop offset="1" stop-color="#6fa79c"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="announce" aria-live="off">
+  <span class="on"><b>4-year warranty</b> on every GRAVL power bank</span>
+  <span>Airline compliant. Under 100Wh needs no approval</span>
+  <span>Support, Monday to Friday, 8am to 8:30pm</span>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap bar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+    <nav class="tabs" id="tabs" aria-label="Categories"></nav>
+    <a class="logo" href="index.html" aria-label="GRAVL home"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></a>
+    <div class="tools">
+      <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></button>
+      <a class="icon-btn" href="index.html#account" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.6 4-5.4 7.2-5.4s6 1.8 7.2 5.4"/></svg></a>
+      <button class="icon-btn" data-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6.500a3 3 0 016 0V8"/></svg><span class="count" data-count-badge hidden>0</span></button>
+    </div>
+  </div>
+  <div class="mega" id="mega"><div class="mega-in" id="megaIn"></div></div>
+</header>
+
+  <main id="main" class="about-content">
+  <section class="hero" aria-labelledby="cover-title">
+    <div class="banner on-dark">
+      <img class="hero-bg" src="assets/about-hero-bg.jpg" alt="" width="2000" height="857" fetchpriority="high">
+      <canvas class="hero-particles" aria-hidden="true"></canvas>
+      <article class="slide on">
+        <img class="slide-bg" src="assets/about-cover.webp" alt="A traveller slips a graphite GRAVL power bank into an olive canvas bag." width="1860" height="845" fetchpriority="high">
+        <div class="slide-copy">
+          <h1 id="cover-title" style="--i:1">What we <em class="heading-switch" data-endings="make.|believe.">carry.</em></h1>
+          <p class="sub" style="--i:2">We make portable power and pocket-sized tools for the hours you spend away from your desk.</p>
+          <a class="btn btn--inverse" href="#story" style="--i:3"><span class="roll-label"><span>Read our story</span><span aria-hidden="true">Read our story</span></span><svg class="btn-icon" width="38" height="38" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <span class="hero-edge l" aria-hidden="true">About GRAVL</span>
+      <span class="hero-edge r" aria-hidden="true">4-year warranty</span>
+    </div>
+  </section>
+
+    <section class="studio wrap" id="story" aria-labelledby="story-title">
+      <span class="studio-label" data-st>About GRAVL</span>
+      <h2 class="studio-title" id="story-title" data-st="title" style="--d:1">Who we <em class="heading-switch" data-endings="make.|believe.">are.</em></h2>
+      <div class="studio-intro" data-st style="--d:2"><p class="studio-lead">Your phone holds your ticket. Your laptop holds tomorrow’s presentation. At GRAVL, we make the power banks and pocket-sized tools that earn a place in the bag beside them.</p></div>
+      <div class="studio-grid">
+        <div class="studio-cell" data-st style="--d:1">
+          <div class="studio-stat"><div class="studio-num"><span data-st-count="25000">25,000</span><small class="studio-sfx">+</small></div><p class="studio-cap">Customers served</p></div>
+          <div class="studio-foot"><div class="studio-icons" aria-hidden="true">
+            <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="12" r="5"/><path d="M3 29c1-6 5-9 10-9s9 3 10 9"/><circle cx="24" cy="11" r="3.5"/><path d="M26 19c3 .6 5 3 6 8"/></svg>
+          </div></div>
+        </div>
+        <div class="studio-cell" data-st style="--d:2">
+          <div class="studio-stat"><div class="studio-num"><span data-st-count="1200">1,200</span><small class="studio-sfx">+</small></div><p class="studio-cap">Customer testimonials</p></div>
+          <div class="studio-foot"><div class="studio-icons" aria-hidden="true">
+            <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h24v17H14l-7 6v-6H5z"/><path d="M11 12h12M11 17h8"/></svg>
+          </div></div>
+        </div>
+        <div class="studio-cell" data-st style="--d:3">
+          <div class="studio-stat"><div class="studio-num"><span data-st-count="4.8" data-st-dec="1">4.8</span><small class="studio-sfx">/5</small></div><p class="studio-cap">Trusted customer rating</p></div>
+          <div class="studio-foot"><div class="studio-icons" aria-hidden="true">
+            <svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l11 4v9c0 7-5 12-11 15C11 28 6 23 6 16V7z"/><path d="M12 17l4 4 7-8"/></svg>
+          </div></div>
+        </div>
+      </div>    </section>
+    <section class="believe wrap" id="believe" aria-labelledby="believe-title">
+      <span class="believe-label" data-bl>What we stand for</span>
+      <h2 class="believe-title" id="believe-title" data-bl="title" style="--d:1">What we <em class="heading-switch" data-endings="believe in.|build for.">believe in.</em></h2>
+      <p class="believe-sub" data-bl style="--d:2">Four commitments behind every GRAVL product.</p>
+      <div class="bl-grid">
+        <article class="bl-card" tabindex="0" data-bl style="--d:2" aria-label="Safety">
+          <h3 class="bl-name">Safety</h3>
+          <div class="bl-media"><img src="assets/product-sets/travel.webp" alt="" loading="lazy"></div>
+          <div class="bl-list"><span>Semi-solid cell chemistry</span><span>Built-in thermal protection</span><span>10,000mAh in the Core 30</span></div>
+        </article>
+        <article class="bl-card" tabindex="0" data-bl style="--d:3" aria-label="Reliability">
+          <h3 class="bl-name">Reliability</h3>
+          <div class="bl-media"><img src="assets/category-lifestyle/power.webp" alt="" loading="lazy"></div>
+          <div class="bl-list"><span>A cable that’s already attached</span><span>A display you can read at a glance</span><span>Made for everyday carry</span></div>
+        </article>
+        <article class="bl-card" tabindex="0" data-bl style="--d:4" aria-label="Transparency">
+          <h3 class="bl-name">Transparency</h3>
+          <div class="bl-media"><img src="assets/engine-studio.webp" alt="" loading="lazy"></div>
+          <div class="bl-list"><span>27,000mAh published capacity</span><span>97.2Wh stated plainly</span><span>240W peak output</span></div>
+        </article>
+        <article class="bl-card" tabindex="0" data-bl style="--d:5" aria-label="Peace of mind">
+          <h3 class="bl-name">Peace of mind</h3>
+          <div class="bl-media"><img src="assets/corporate-gifting.webp" alt="" loading="lazy"></div>
+          <div class="bl-list"><span>4-year warranty</span><span>Terms spelled out clearly</span><span>A direct line to support</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="values wrap section-space" id="values" aria-labelledby="values-title">
+      <header class="values-intro">
+        <span class="values-label" data-vr>How we think</span>
+        <h2 class="values-title" id="values-title" data-vr="title" style="--d:1">The thinking <em class="heading-switch" data-endings="behind each cell.|behind each port.">inside.</em></h2>
+        <p class="values-sub" data-vr style="--d:2">Four things we consider when designing the gear you carry.</p>
+      </header>      <div class="value-stack">
+        <article class="value">
+          <div class="value-photo"><img src="assets/product-sets/travel.webp" alt="GRAVL power banks arranged on a leather travel bag." loading="lazy"></div>
+          <div class="value-copy">
+            <h3>Safety</h3>
+            <p class="value-text">Part of choosing a power bank is choosing the battery you’ll carry close to you. That’s why we pay attention to cell chemistry and build thermal protection into our power banks.</p>
+            <div class="value-detail"><strong>Inside the Core 30</strong><span>A 10,000mAh semi-solid cell.</span></div>
+          </div>
+        </article>
+        <article class="value">
+          <div class="value-photo"><img src="assets/category-lifestyle/power.webp" alt="A hand reaches for a power bank with a built-in cable and charge display." loading="lazy"></div>
+          <div class="value-copy">
+            <h3>Reliability</h3>
+            <p class="value-text">We design for the hundredth time you reach into your bag. A cable that’s easy to find and a display you can read at a glance matter on an ordinary Tuesday.</p>
+            <div class="value-detail"><strong>At a glance</strong><span>Check the charge before you pack.</span></div>
+          </div>
+        </article>
+        <article class="value">
+          <div class="value-photo"><img src="assets/engine-studio.webp" alt="The Engine 240 standing on a studio desk with its display visible." loading="lazy"></div>
+          <div class="value-copy">
+            <h3>Transparency</h3>
+            <p class="value-text">We publish battery capacity, watt-hours and output. You can check how much energy a power bank stores and whether its ports can keep up with your laptop.</p>
+            <div class="value-detail"><strong>Engine 240</strong><span>27,000mAh capacity · 97.2Wh · 240W peak output</span></div>
+          </div>
+        </article>
+        <article class="value">
+          <div class="value-photo"><img src="assets/corporate-gifting.webp" alt="A GRAVL power bank in its presentation box." loading="lazy"></div>
+          <div class="value-copy">
+            <h3>Peace of mind</h3>
+            <p class="value-text">You should know who to turn to after you open the box. We spell out the warranty and give you a direct line to the people who can help.</p>
+            <div class="value-detail"><strong>Talk to GRAVL</strong><a href="mailto:care@gravlspace.com">care@gravlspace.com</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="op" id="our-promise" aria-labelledby="op-title">
+      <div class="op-pin">
+        <div class="op-stage">
+          <header class="op-head">
+            <span class="op-label">(Our Promise)</span>
+            <h2 class="op-title" id="op-title">The GRAVL <em>Promise.</em></h2>
+            <p class="op-sub">Four commitments that stay with you long after you open the box.</p>
+          </header>
+          <div class="op-row">
+            <article class="op-card">
+              <div class="op-top"><span class="op-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 class="op-name">Warranty</h3></div>
+              <p class="op-text">Four years of coverage on every GRAVL power bank sold in India.</p>
+            </article>
+            <article class="op-card">
+              <div class="op-top"><span class="op-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg></span><h3 class="op-name">Safety</h3></div>
+              <p class="op-text">Careful cell chemistry and built-in thermal protection, in every power bank.</p>
+            </article>
+            <article class="op-card">
+              <div class="op-top"><span class="op-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg></span><h3 class="op-name">Transparency</h3></div>
+              <p class="op-text">Capacity, watt-hours and output published, so you can check before you buy.</p>
+            </article>
+            <article class="op-card">
+              <div class="op-top"><span class="op-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></span><h3 class="op-name">Support</h3></div>
+              <p class="op-text">A direct line to people who can help, Monday to Friday, 8am to 8:30pm.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mission wrap" id="mission" aria-labelledby="mission-title">
+      <div class="mission-grid">
+        <div class="mission-copy">
+          <span class="mission-label" data-ms>Words from our team</span>
+          <h2 class="mission-title" id="mission-title" data-ms="title" style="--d:1">Mission.</h2>
+          <p class="mission-text" data-ms style="--d:2">We make portable power you can count on, with the details made easy to live with, so you can leave the house with confidence.</p>
+          <div class="mission-cta" data-ms style="--d:3"><a class="mission-btn" href="mailto:care@gravlspace.com">Get in touch <i aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M3.5 10h12M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a></div>
+        </div>
+        <div class="mission-media" data-ms><img src="assets/testimonials/city-call.jpg" alt="A professional takes a call on the steps of a city building, briefcase in hand." loading="lazy"></div>
+      </div>
+    </section>
+    <section class="life" id="life" aria-labelledby="life-title">
+      <header class="life-head">
+        <span class="life-label" data-lf>(Life at GRAVL)</span>
+        <h2 class="life-title" id="life-title" data-lf="title" style="--d:1">Life at <em>GRAVL.</em></h2>
+        <p class="life-sub" data-lf style="--d:2">The desks, cafes, studios and journeys where GRAVL gear earns its place every day.</p>
+      </header>
+      <div class="life-view" data-lf style="--d:3" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Life at GRAVL photo gallery">
+        <div class="life-track">
+          <figure class="life-item"><img src="assets/testimonials/cafe-work.jpg" alt="Working with a laptop in a cafe" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/office-call.jpg" alt="Taking a call at the office" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/sound-studio.jpg" alt="In a sound studio" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/mobile-work.jpg" alt="Working on the move" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/photo-session.jpg" alt="During a photo session" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/daily-desk.jpg" alt="At the daily desk" loading="lazy" draggable="false"></figure>
+          <figure class="life-item"><img src="assets/testimonials/city-call.jpg" alt="Taking a call in the city" loading="lazy" draggable="false"></figure>
+        </div>
+      </div>
+      <div class="life-ctrl">
+        <button type="button" class="life-btn prev" aria-label="Previous photos"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" class="life-btn next" aria-label="Next photos"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </section>
+    <section class="journey section-space" id="journey" aria-labelledby="journey-title">
+      <div class="wrap">
+        <header class="journey-intro">
+          <h2 class="h2" id="journey-title">From one question to<br> <em class="heading-switch" data-endings="your travel kit.|your everyday carry.">your work bag.</em></h2>
+          <p>Our journey started with portable power. Along the way, we wrote guides to the questions customers ask and brought our gear together into work and travel sets.</p>
+        </header>
+        <ol class="timeline">
+          <li>
+            <span class="milestone-date">The beginning</span>
+            <div class="milestone-note"><h3>A question of trust</h3><p>What would it take to depend on a power bank as much as the phone it charges?</p></div>
+          </li>
+          <li>
+            <time class="milestone-date" datetime="2026-07">July 2026</time>
+            <div class="milestone-note"><h3>Laptop power, explained</h3><p>Our <a href="https://www.gravlspace.com/blogs/news/how-many-mah-to-charge-laptop-india">laptop guide</a> matched the Axis, Forge and Engine to MacBook and Windows models.</p></div>
+          </li>
+          <li>
+            <time class="milestone-date" datetime="2026-08">August 2026</time>
+            <div class="milestone-note"><h3>Inside the cell</h3><p>Our <a href="https://www.gravlspace.com/blogs/news/semi-solid-state-vs-lithium-ion-battery">battery guide</a> explored what makes the Core 30’s semi-solid cell different.</p></div>
+          </li>
+          <li>
+            <span class="milestone-date">Today</span>
+            <div class="milestone-note"><h3>A complete kit</h3><p>Portable power and pocket tools now sit side by side in our <a href="index.html#setup">work and travel sets</a>.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="about-stats" id="numbers" aria-labelledby="numbers-title">
+      <div class="stats-banner">
+        <img class="stats-photo" src="assets/sigma-cafe.webp" alt="" loading="lazy">
+        <div class="stats-content">
+          <h2 id="numbers-title" class="h2">The numbers behind<br> <em class="heading-switch" data-endings="your workday.|your next trip.">your daily carry.</em></h2>
+          <dl class="stats-list">
+            <div><dt>Power bank warranty</dt><dd><span class="stat-value" aria-hidden="true" data-count="4">4</span><span class="stat-unit" aria-hidden="true">years</span><span class="stat-readable">4 years</span></dd></div>
+            <div><dt>Engine 240 peak output</dt><dd><span class="stat-value" aria-hidden="true" data-count="240">240</span><span class="stat-unit" aria-hidden="true">W</span><span class="stat-readable">240 watts</span></dd></div>
+            <div><dt>Engine 240 capacity</dt><dd><span class="stat-value" aria-hidden="true" data-count="27000">27,000</span><span class="stat-unit" aria-hidden="true">mAh</span><span class="stat-readable">27,000 milliamp-hours</span></dd></div>
+            <div><dt>Support each weekday</dt><dd><span class="stat-value" aria-hidden="true" data-count="12.5">12.5</span><span class="stat-unit" aria-hidden="true">hours</span><span class="stat-readable">12.5 hours</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section class="about-shop wrap" aria-label="Explore GRAVL">
+    <div class="footer-invite"><h2 class="h2">What’s in <em class="heading-switch" data-endings="your work bag?|your carry-on?">your bag?</em></h2>
+      <a class="btn btn--small" href="index.html#bestsellers"><span class="roll-label"><span>Shop the collection</span><span aria-hidden="true">Shop the collection</span></span><svg class="btn-icon" width="34" height="34" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-arrow"/></svg></a></div>
+    </section>
+  </main>
+
+<footer class="foot on-dark">
+  <div class="wrap">
+    <ul class="footer-benefits" aria-label="The GRAVL standard">
+      <li><b>4-year power bank warranty</b><small>Register within 30 days. Terms apply.</small></li>
+      <li><b>Built-in battery protection</b><small>Power banks with thermal protection.</small></li>
+      <li><b>Power that travels with you</b><small>Check your model and airline’s rules.</small></li>
+      <li><b>Support that answers</b><small>Mon–Fri, 8am to 8:30pm.</small></li>
+    </ul>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="GRAVL home"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></a>
+        <p>Essentials built to be depended on. Protected progress.</p>
+        <address class="footer-contact"><a href="mailto:care@gravlspace.com">care@gravlspace.com</a><span class="footer-hours">Monday to Friday, 8am to 8:30pm.</span></address>
+      </div>
+      <nav class="footer-nav footer-nav--shop" aria-labelledby="footer-shop-title"><h3 id="footer-shop-title">Shop</h3><ul id="footShop"></ul></nav>
+      <nav class="footer-nav footer-nav--help" aria-labelledby="footer-help-title"><h3 id="footer-help-title">Help</h3><ul><li><a href="https://www.gravlspace.com/pages/register-warranty"><span class="roll-label"><span>Register warranty</span><span aria-hidden="true">Register warranty</span></span></a></li><li><a href="https://www.gravlspace.com/policies/shipping-policy"><span class="roll-label"><span>Shipping</span><span aria-hidden="true">Shipping</span></span></a></li><li><a href="index.html#faq"><span class="roll-label"><span>Returns and refunds</span><span aria-hidden="true">Returns and refunds</span></span></a></li><li><a href="index.html#faq"><span class="roll-label"><span>User manuals</span><span aria-hidden="true">User manuals</span></span></a></li></ul></nav>
+      <nav class="footer-nav footer-nav--company" aria-labelledby="footer-company-title"><h3 id="footer-company-title">Company</h3><ul><li><a href="about.html" aria-current="page"><span class="roll-label"><span>About GRAVL</span><span aria-hidden="true">About GRAVL</span></span></a></li><li><a href="index.html"><span class="roll-label"><span>Buying guide</span><span aria-hidden="true">Buying guide</span></span></a></li><li><a href="mailto:care@gravlspace.com"><span class="roll-label"><span>Contact</span><span aria-hidden="true">Contact</span></span></a></li></ul></nav>
+      <div class="footer-newsletter">
+        <h2>BE THE FIRST TO KNOW</h2>
+        <p>New products, useful updates, and offers from GRAVL.</p>
+        <form class="footer-form" id="newsForm"><label class="footer-label" for="newsEmail">Email address</label><input id="newsEmail" type="email" name="email" autocomplete="email" placeholder="Email address" required><button class="btn btn--compact btn--text footer-signup" type="submit"><span class="roll-label"><span>Sign up</span><span aria-hidden="true">Sign up</span></span></button></form>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="footer-legal-copy"><p class="footer-copyright">© 2026 GRAVL. All rights reserved.</p><div class="footer-legal-links"><a href="https://www.gravlspace.com/policies/privacy-policy">Privacy</a><a href="https://www.gravlspace.com/policies/terms-of-service">Terms</a></div></div>
+      <div class="footer-region"><span>India (INR ₹)</span><a class="footer-back-top" href="#top">Back to top <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg></a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="closeCart" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="lines" id="lines"></div>
+  <div class="assure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.500-3 7.500-7 9-4-1.500-7-4.500-7-9V6l7-3z"/></svg>4-year warranty included on power banks.</div>
+  <div class="sub"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+  <button class="btn" id="checkout"><span class="roll-label"><span>Checkout</span><span aria-hidden="true">Checkout</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></button>
+  <p class="fine">Checkout runs on Shopify's standard pages and is not part of this preview.</p>
+</aside>
+
+<aside class="mmenu" id="mmenu" aria-label="Menu" aria-hidden="true">
+  <div class="mmenu-head"><span class="logo" role="img" aria-label="GRAVL"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></span><button class="icon-btn" id="closeMenu" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <nav id="mrows" aria-label="Shop navigation"></nav>
+  <nav class="menu-links" aria-label="More links">
+    <a href="index.html#shop/power/new"><span class="roll-label"><span>New</span><span aria-hidden="true">New</span></span></a>
+    <a href="index.html#shop/power/offers"><span class="roll-label"><span>Offers</span><span aria-hidden="true">Offers</span></span></a>
+    <a href="about.html" aria-current="page"><span class="roll-label"><span>About Us</span><span aria-hidden="true">About Us</span></span></a>
+    <a href="index.html#faq"><span class="roll-label"><span>Help</span><span aria-hidden="true">Help</span></span></a>
+  </nav>
+</aside>
+
+<nav class="bbar" aria-label="Quick navigation">
+  <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4v-9z"/></svg><span class="roll-label"><span>Home</span><span aria-hidden="true">Home</span></span></a>
+  <button id="bbCats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span class="roll-label"><span>Categories</span><span aria-hidden="true">Categories</span></span></button>
+  <button aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.500"/><path d="M16 16l4 4"/></svg><span class="roll-label"><span>Search</span><span aria-hidden="true">Search</span></span></button>
+  <button data-cart><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6.500a3 3 0 016 0V8"/></svg><span class="roll-label"><span>Cart</span><span aria-hidden="true">Cart</span></span><span class="count" data-count-badge hidden>0</span></button>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/storefront.js"></script>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="GRAVL. Power banks and tech essentials built for long-term reliability, backed by a 4-year warranty.">
+<title>GRAVL | Power banks and tech essentials</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="assets/storefront.css">
+
+<link rel="stylesheet" href="assets/buttons.css?v=2">
+<link rel="stylesheet" href="assets/trust-section.css?v=3">
+<link rel="stylesheet" href="assets/product-sets.css">
+<link rel="stylesheet" href="assets/signup.css">
+<link rel="stylesheet" href="assets/trending.css">
+<link rel="stylesheet" href="assets/heading-switch.css">
+<script defer src="assets/heading-switch.js"></script>
+<script defer src="assets/signup.js"></script>
+<script defer src="assets/trust-section.js"></script>
+<link rel="stylesheet" href="assets/section-system.css?v=1">
+<script defer src="assets/section-system.js?v=1"></script>
+<link rel="icon" type="image/svg+xml" href="assets/gravl-wordmark.svg">
+</head>
+<body>
+<script src="assets/storefront-shell.js"></script>
+<script>mountStorefrontShell("header")</script>
+
+<main id="top">
+  <!-- 2 hero banner -->
+  <section class="hero" aria-label="Featured">
+    <div class="banner on-dark" id="banner">
+      <article class="slide s1 on">
+        <img class="slide-bg" src="assets/engine-studio.webp" alt="" width="1914" height="822" fetchpriority="high">
+        <div class="slide-copy">
+          <h1 style="--i:1">Power, built for years.</h1>
+          <p class="sub" style="--i:2">240W output. 27,000mAh. Backed by a 4-year warranty.</p>
+          <a class="btn btn--inverse" href="engine-240.html" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s2">
+        <img class="slide-bg" src="assets/core-summer.webp" alt="" width="1914" height="822" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Built for the Indian summer.</p>
+          <p class="sub" style="--i:2">Semi-solid cells in a 10,000mAh body. Engineered for heat, designed to last.</p>
+          <a class="btn btn--inverse" href="engine-240.html" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s3">
+        <img class="slide-bg" src="assets/sigma-courtyard.webp" alt="" width="1911" height="823" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Power after hours.</p>
+          <p class="sub" style="--i:2">Carry 10,000mAh in your pocket with the compact Sigma 35.</p>
+          <a class="btn btn--inverse" href="engine-240.html" style="--i:3"><span class="roll-label"><span>Shop Sigma 35</span><span aria-hidden="true">Shop Sigma 35</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s4">
+        <img class="slide-bg" src="assets/travel-warranty.webp" alt="" width="1914" height="822" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Backed for four years.</p>
+          <p class="sub" style="--i:2">One warranty across the range. Register in two minutes.</p>
+          <a class="btn btn--inverse" href="#why" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <div class="hero-ui">
+        <div class="segs" id="segs"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 switcher -->
+  <section class="sec wrap" id="switcher" aria-label="Shop by category">
+    <div class="thumbs-scroll"><div class="thumbs" id="thumbs" role="tablist" aria-label="Product categories"></div></div>
+    <div class="panel" id="panel" role="tabpanel"></div>
+  </section>
+
+  <!-- 4 categories -->
+  <section class="sec wrap" id="categories" style="padding-top:0">
+    <div class="sec-head">
+      <div><h2 class="h2">Explore <em class="heading-switch" data-endings="cables and docks.|desk essentials.">power banks.</em></h2></div>
+      <div class="category-controls">
+        <button type="button" class="arrow prev" data-category-step="-1" aria-label="Previous categories" aria-controls="cats" disabled><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <button type="button" class="arrow" data-category-step="1" aria-label="Next categories" aria-controls="cats"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </div>
+    <div class="cats" id="cats" role="region" aria-label="Category gallery"></div>
+  </section>
+
+  <!-- 5 bestsellers -->
+  <section class="sec wrap" id="bestsellers" aria-labelledby="bestsellers-title" style="padding-top:0">
+    <div class="sec-head">
+      <div><h2 class="h2" id="bestsellers-title">Bestsellers for <em class="heading-switch" data-endings="your next meeting.|business trips.">the workday.</em></h2></div>
+      <div class="rail-ctl">
+        <div class="seg-tabs" id="railChips" role="group" aria-label="Filter by category">
+          <span class="pill" aria-hidden="true"></span>
+          <button type="button" data-f="all" aria-controls="rail" aria-pressed="true">All</button>
+          <button type="button" data-f="power" aria-controls="rail" aria-pressed="false">Power banks</button>
+          <button type="button" data-f="gear" aria-controls="rail" aria-pressed="false">Productivity gear</button>
+        </div>
+        <button class="arrow prev" data-rail="-1" aria-label="Scroll bestsellers back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <button class="arrow" data-rail="1" aria-label="Scroll bestsellers forward"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Bestselling products"></div>
+  </section>
+
+  <section class="sec wrap" id="trending" aria-labelledby="trending-title" style="padding-top:0">
+    <div class="sec-head">
+      <h2 class="h2" id="trending-title">Trending tech for <em class="heading-switch" data-endings="your pocket.|your carry-on.">your desk.</em></h2>
+    </div>
+    <div class="trend-collections">
+      <a class="trend-card on-dark" href="shop.html?category=power&amp;filter=laptops" aria-label="Shop collection: Laptop power">
+        <img src="assets/trending/laptop-power.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Laptop power</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="shop.html?category=power&amp;filter=travel" aria-label="Shop collection: Travel essentials">
+        <img src="assets/trending/travel-essentials.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Travel essentials</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="shop.html?category=power&amp;filter=10k" aria-label="Shop collection: Pocket power">
+        <img src="assets/trending/pocket-power.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Pocket power</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="shop.html?category=gear" aria-label="Shop collection: Productivity gear">
+        <img src="assets/trending/productivity-gear.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Productivity gear</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="setup-pin">
+    <div class="wrap setup-frame">
+    <section class="sec" id="setup" aria-labelledby="setup-title">
+      <div class="sets-heading">
+        <h2 class="h2" id="setup-title">Pack a set for <em class="heading-switch" data-endings="a flight.|the week ahead.">the office.</em></h2>
+        <fieldset class="set-switch seg-tabs" id="setChoices">
+          <legend>Choose a product set</legend>
+          <span class="pill" aria-hidden="true"></span>
+          <label><input type="radio" name="product-set" value="work" checked aria-controls="setDetails"><span>Work</span></label>
+          <label><input type="radio" name="product-set" value="travel" aria-controls="setDetails"><span>Travel</span></label>
+        </fieldset>
+      </div>
+      <div class="sets-layout">
+        <div class="set-scene">
+          <div class="set-photo-plane">
+            <img id="setPhoto" src="assets/product-sets/work.webp" alt="Four GRAVL accessories on a walnut desk" loading="lazy">
+            <div id="setMarkers"></div>
+          </div>
+        </div>
+        <div class="set-details" id="setDetails" role="region" aria-labelledby="setTitle">
+          <h3 id="setTitle">The work set</h3>
+          <ul class="set-items" id="setItems" aria-label="Products in the set"></ul>
+          <div class="set-checkout">
+            <div class="set-total"><span>Set total</span><strong id="setTotal"></strong></div>
+            <button class="btn btn--small add" id="addSet"><span class="a"><span class="roll-label"><span>Add to cart</span><span aria-hidden="true">Add to cart</span></span></span><span class="b"><span class="roll-label"><span>Added</span><span aria-hidden="true">Added</span></span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use class="icon-arrow" href="#button-arrow"/><use class="icon-check" href="#button-check"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <section class="trust" id="why" aria-labelledby="trust-title">
+    <div class="trust-stage">
+      <button class="trust-skip" type="button">Skip to all four features</button>
+      <h2 class="trust-title" id="trust-title"><span>Why put your trust</span> <span>in GRAVL?</span></h2>
+      <div class="wrap trust-content">
+        <div class="trust-grid">
+          <article class="trust-card trust-card--warranty">
+            <span class="trust-four" aria-hidden="true">4</span>
+            <h3>Four-year warranty</h3>
+            <ul class="trust-points" role="list">
+              <li>Full product coverage in year one</li>
+              <li>Battery coverage in years two to four</li>
+              <li>Register within 30 days of purchase</li>
+            </ul>
+          </article>
+          <article class="trust-card trust-card--battery">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="12" width="35" height="24" rx="5"/><path d="M44 20v8m-20-12-7 10h8l-5 7"/>
+            </svg>
+            <h3>Battery protection</h3>
+            <ul class="trust-points" role="list">
+              <li>BIS-certified power banks</li>
+              <li>Built-in thermal protection</li>
+              <li>Semi-solid cells in the Core 30</li>
+            </ul>
+          </article>
+          <article class="trust-card trust-card--travel">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 27 35-16-14 30-6-13Zm15 1 20-17"/>
+            </svg>
+            <h3>Carry-on ready</h3>
+            <ul class="trust-points" role="list">
+              <li>Check your model’s watt-hour rating</li>
+              <li>Pack it in your cabin bag</li>
+              <li>Check your airline’s battery policy</li>
+            </ul>
+          </article>
+          <article class="trust-card trust-card--support">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 26v-4a17 17 0 0 1 34 0v4m-1 7c0 6-5 9-14 9"/><rect x="4" y="23" width="8" height="13" rx="3"/><rect x="36" y="23" width="8" height="13" rx="3"/>
+            </svg>
+            <h3>Talk to our team</h3>
+            <ul class="trust-points" role="list">
+              <li>Reach us Monday to Friday</li>
+              <li>Open from 8am to 8:30pm</li>
+              <li>Email care@gravlspace.com</li>
+            </ul>
+          </article>
+        </div>
+        <div class="trust-actions">
+          <a class="btn" href="#shop/power"><span class="roll-label"><span>Shop power banks</span><span aria-hidden="true">Shop power banks</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-arrow"/></svg></a>
+          <a class="link" href="https://www.gravlspace.com/pages/register-warranty">Register your warranty</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="after-trust">
+  <section class="sec wrap" id="video-testimonials" aria-labelledby="video-reviews-title">
+    <div class="video-review-heading">
+      <h2 class="h2" id="video-reviews-title">Gear for a day <em class="heading-switch" data-endings="at the café.|in the studio.">at the office.</em></h2>
+      <div class="review-controls" data-track="video-reviews" data-item="testimonial"></div>
+    </div>
+    <div class="review-track" id="video-reviews" role="region" aria-roledescription="carousel" aria-labelledby="video-reviews-title" tabindex="0">
+      <!-- Pexels stock footage: Tima Miroshnichenko, 5992596; Kampus Production, 8347244. -->
+      <div class="video-review" data-video-product="engine">
+        <video controls playsinline preload="none" poster="assets/testimonials/mobile-work.jpg" src="assets/testimonials/mobile-work.mp4" aria-label="Working remotely, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: Working remotely" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="arc">
+        <video controls playsinline preload="none" poster="assets/testimonials/office-call.jpg" src="assets/testimonials/office-call.mp4" aria-label="At the office, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the office" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <!-- Pexels: Mikhail Nilov (7681584), Sora Shimazaki (5636789), Pavel Danilyuk (8639832). -->
+      <div class="video-review" data-video-product="forge">
+        <video controls playsinline preload="none" poster="assets/testimonials/cafe-work.jpg" src="assets/testimonials/cafe-work.mp4" aria-label="At the café, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the café" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="sigma">
+        <video controls playsinline preload="none" poster="assets/testimonials/city-call.jpg" src="assets/testimonials/city-call.mp4" aria-label="Around the city, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: Around the city" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="qi">
+        <video controls playsinline preload="none" poster="assets/testimonials/daily-desk.jpg" src="assets/testimonials/daily-desk.mp4" aria-label="At the desk, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the desk" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <!-- Pexels stock footage: Anna Pou (8114937) and George Milton (7011572). -->
+      <div class="video-review" data-video-product="vault">
+        <video controls playsinline preload="none" poster="assets/testimonials/sound-studio.jpg" src="assets/testimonials/sound-studio.mp4" aria-label="In the studio, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: In the studio" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="axis">
+        <video controls playsinline preload="none" poster="assets/testimonials/photo-session.jpg" src="assets/testimonials/photo-session.mp4" aria-label="On a shoot, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: On a shoot" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Written testimonials -->
+  <section class="sec wrap" id="reviews" aria-labelledby="review-title">
+    <div class="video-review-heading">
+      <h2 class="h2" id="review-title">Customer notes on <em class="heading-switch" data-endings="work trips.|packing light.">charging.</em></h2>
+      <div class="review-controls" data-track="written-reviews" data-item="review"></div>
+    </div>
+    <div class="review-track" id="written-reviews" role="region" aria-roledescription="carousel" aria-labelledby="review-title" tabindex="0">
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-engine-240">Took it on a work trip. Laptop and phone, <em>full by dinner.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/portrait-2379004.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Varun</strong><a href="engine-240.html">Engine 240</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-forge-130">Flying every week, <em>carry-on only.</em> Fits my backpack.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/office-call.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Sameer</strong><a href="engine-240.html">Forge 130</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">A <em>4 year warranty</em> made the decision easy.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/cafe-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Shruti</strong><a href="engine-240.html">Axis 67</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-forge-130">One charger, laptop and phone, <em>both at full speed.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/mobile-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Karthik</strong><a href="engine-240.html">Forge 130</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">Bought it for my husband, <em>his travel bag is sorted.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/daily-desk.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Neha</strong><a href="engine-240.html">Axis 67</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-sigma-35">Fits in the front pocket, <em>no bulky cables</em> in my bag.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/portrait-2379004.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Ritu</strong><a href="engine-240.html">Sigma 35</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-engine-240">Ran my whole <em>client day on one charge,</em> phone at 100 by 6pm.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/daily-desk.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Arjun</strong><a href="engine-240.html">Engine 240</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">Works with my <em>desk, couch and café</em> setup. Same bag, every day.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/cafe-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Meera</strong><a href="engine-240.html">Axis 67</a></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 12 faq -->
+  <section class="sec wrap" id="faq" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="faq-intro">
+        <h2 class="faq-title" id="faq-title">Good questions. <em>Powerful answers.</em></h2>
+        <div class="support" data-reveal>
+          <div class="support-avatars" aria-hidden="true">
+            <span class="support-avatar"><img src="assets/testimonials/office-call.jpg" width="56" height="56" alt="" loading="lazy"></span>
+            <span class="support-avatar"><img src="assets/testimonials/cafe-work.jpg" width="64" height="64" alt="" loading="lazy"></span>
+            <span class="support-avatar"><img src="assets/testimonials/mobile-work.jpg" width="56" height="56" alt="" loading="lazy"></span>
+          </div>
+          <div class="support-copy">
+            <p>More questions? Reach out anytime.</p>
+            <a class="support-contact" href="mailto:care@gravlspace.com"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="m3 5 7 5 7-5"/></svg><span>care@gravlspace.com</span></a>
+            <p class="support-hours">Monday to Friday, 8am to 8:30pm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-panel" data-reveal>
+        <div class="faq-tabs seg-tabs" id="faqTabs" role="tablist" aria-label="FAQ categories">
+          <span class="pill" aria-hidden="true"></span>
+          <button type="button" id="faq-tab-general" role="tab" aria-selected="true" aria-controls="qas" data-faq-category="general">General</button>
+          <button type="button" id="faq-tab-products" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="products">Products</button>
+          <button type="button" id="faq-tab-warranty" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="warranty">Warranty</button>
+          <button type="button" id="faq-tab-support" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="support">Support</button>
+        </div>
+        <div class="faq-questions" id="qas" role="tabpanel" aria-labelledby="faq-tab-general" tabindex="0"></div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap gift-section" id="corporate-gifting" aria-labelledby="gifting-title">
+    <div class="gift-banner">
+      <img class="gift-photo" src="assets/corporate-gifting.webp" width="2060" height="763" loading="lazy" decoding="async" alt="A GRAVL power bank being unboxed on a walnut desk.">
+      <div class="gift-panel">
+        <span class="gift-label">
+          <svg class="gift-label-mark" viewBox="0 0 138 136" width="17" height="17" overflow="hidden" aria-hidden="true" focusable="false"><use href="#gravl-logo" width="576" height="135"/></svg>
+          Corporate gifting
+        </span>
+        <div>
+          <h2 class="h2" id="gifting-title">A gift for <em class="heading-switch" data-endings="a trusted client.|the whole team.">a new teammate.</em></h2>
+          <p class="gift-description">Welcome a new teammate or thank a longtime client. Tell us how many gifts you need and when you need them.</p>
+          <a class="btn" href="mailto:care@gravlspace.com?subject=Corporate%20gifting%20enquiry"><span class="roll-label"><span>Contact us</span><span aria-hidden="true">Contact us</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</main>
+
+<script>mountStorefrontShell("footer")</script>
+
+<script src="assets/storefront.js"></script>
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const { card, P, CATS, art, rollLabel, ARROW, inr, shopFilters, add, done, openCart } = gravlStorefront;
+
+gravlStorefront.setupVideoPlayers(document.querySelectorAll('.video-review video'));
+function setupReviewMarquee(track, controls) {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const cards = [...track.children];
+  const copies = cards.map(card => {
+    const copy = card.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    copy.querySelectorAll('a').forEach(link => { link.tabIndex = -1; });
+    return copy;
+  });
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'arrow';
+  toggle.setAttribute('aria-controls', track.id);
+  controls.prepend(toggle);
+
+  const pixelsPerSecond = 30;
+  let cycle = 0, position = 0, lastFrame = 0, frame = 0, manualTimer = 0;
+  let paused = false, hovered = false, touching = false, onScreen = false;
+
+  function tick(time) {
+    position = (position + pixelsPerSecond * Math.min(time - lastFrame, 64) / 1000) % cycle;
+    track.scrollLeft = position;
+    lastFrame = time;
+    frame = requestAnimationFrame(tick);
+  }
+  function syncPlayback() {
+    cancelAnimationFrame(frame);
+    if (!cycle || paused || hovered || touching || manualTimer || !onScreen || document.hidden || track.contains(document.activeElement)) return;
+    position = track.scrollLeft;
+    lastFrame = performance.now();
+    frame = requestAnimationFrame(tick);
+  }
+  function allowManualScroll() {
+    clearTimeout(manualTimer);
+    manualTimer = setTimeout(() => { manualTimer = 0; syncPlayback(); }, 1000);
+    syncPlayback();
+  }
+  function measure() {
+    cycle = copies[0].isConnected
+      ? copies[0].getBoundingClientRect().left - cards[0].getBoundingClientRect().left
+      : 0;
+    syncPlayback();
+  }
+  function setMode() {
+    const looping = !reducedMotion.matches;
+    const offset = cycle ? track.scrollLeft % cycle : track.scrollLeft;
+    if (looping) track.append(...copies);
+    else copies.forEach(copy => copy.remove());
+    track.classList.toggle('is-looping', looping);
+    toggle.hidden = !looping;
+    track.scrollLeft = offset;
+    measure();
+  }
+  function updateToggle() {
+    toggle.setAttribute('aria-label', paused ? 'Play review animation' : 'Pause review animation');
+    const path = paused ? 'M5 3l8 5-8 5z' : 'M4 3h3v10H4zM10 3h3v10h-3z';
+    toggle.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="' + path + '"/></svg>';
+  }
+  toggle.addEventListener('click', () => { paused = !paused; updateToggle(); syncPlayback(); });
+  track.addEventListener('pointerenter', event => { hovered = event.pointerType === 'mouse'; syncPlayback(); });
+  track.addEventListener('pointerleave', () => { hovered = false; syncPlayback(); });
+  track.addEventListener('touchstart', () => { touching = true; syncPlayback(); }, {passive:true});
+  function endTouch() { touching = false; allowManualScroll(); }
+  track.addEventListener('touchend', endTouch, {passive:true});
+  track.addEventListener('touchcancel', endTouch, {passive:true});
+  track.addEventListener('wheel', allowManualScroll, {passive:true});
+  track.addEventListener('focusin', syncPlayback);
+  track.addEventListener('focusout', () => queueMicrotask(syncPlayback));
+  document.addEventListener('visibilitychange', syncPlayback);
+  reducedMotion.addEventListener('change', setMode);
+  new ResizeObserver(measure).observe(track);
+  new IntersectionObserver(([entry]) => { onScreen = entry.isIntersecting; syncPlayback(); }).observe(track);
+  updateToggle();
+  setMode();
+
+  return function stepLoop(direction) {
+    if (!cycle) return false;
+    allowManualScroll();
+    const stride = cycle / cards.length;
+    let start = track.scrollLeft % cycle;
+    if (direction < 0 && start < 1) start += cycle;
+    track.scrollLeft = start;
+    const target = direction > 0 ? Math.floor((start + 1) / stride) + 1 : Math.ceil((start - 1) / stride) - 1;
+    track.scrollTo({left: target * stride, behavior:'smooth'});
+    return true;
+  };
+}
+
+for (const controls of document.querySelectorAll('.review-controls')) {
+  const track = document.getElementById(controls.dataset.track);
+  const stepLoop = track.id === 'written-reviews' ? setupReviewMarquee(track, controls) : null;
+  const name = controls.dataset.item;
+  const buttons = [-1, 1].map(direction => {
+    const back = direction < 0;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = back ? 'arrow prev' : 'arrow';
+    button.setAttribute('aria-label', (back ? 'Previous ' : 'Next ') + name);
+    button.setAttribute('aria-controls', track.id);
+    button.innerHTML = ARROW;
+    button.addEventListener('click', () => step(direction));
+    controls.append(button);
+    return button;
+  });
+
+  function step(direction) {
+    if (stepLoop?.(direction)) return;
+    const stride = track.children[1].offsetLeft - track.children[0].offsetLeft;
+    const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    track.scrollBy({left: direction * stride, behavior});
+  }
+  function syncControls() {
+    if (track.classList.contains('is-looping')) {
+      buttons.forEach(button => { if (button.disabled) button.disabled = false; });
+      return;
+    }
+    const end = track.scrollWidth - track.clientWidth;
+    buttons[0].disabled = track.scrollLeft <= 1;
+    buttons[1].disabled = track.scrollLeft >= end - 1;
+  }
+  track.addEventListener('keydown', event => {
+    if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    step(event.key === 'ArrowLeft' ? -1 : 1);
+  });
+  track.addEventListener('scroll', syncControls, {passive:true});
+  new ResizeObserver(syncControls).observe(track);
+  if (stepLoop) new MutationObserver(syncControls).observe(track, {attributeFilter:['class']});
+  syncControls();
+}
+
+
+
+for (const clip of document.querySelectorAll('[data-video-product]')) {
+  const id = clip.dataset.videoProduct;
+  const product = P[id];
+  const shop = document.createElement('a');
+  shop.className = 'video-product';
+  shop.href = 'engine-240.html';
+  shop.setAttribute('aria-label', 'Shop ' + product.n + ', ' + inr(product.price));
+  shop.innerHTML = `
+    <img src="assets/products/${id}.webp" alt="" loading="lazy" width="60" height="60">
+    <span class="video-product-copy"><span>${product.n}</span><strong>${inr(product.price)}</strong></span>
+    <span class="video-product-arrow" aria-hidden="true">${ARROW}</span>`;
+  clip.append(shop);
+}
+const bestsellerIds = ['engine','forge','axis','core','qi','sigma','arc'];
+const darkStudioPhotos = new Set(['vault','forge','core','sigma']);
+function launchCard(product) {
+  const isDark = darkStudioPhotos.has(product.id);
+  const status = product.tag === 'New' ? 'New arrival' : 'Best seller';
+  return `<article class="launch-card${isDark ? ' is-dark' : ''}" data-product="${product.id}">
+    <img class="launch-image" src="assets/launch-studio/${product.id}.webp" srcset="assets/launch-studio/${product.id}.webp 960w, assets/launch-studio/${product.id}-2k.webp 2048w" sizes="(max-width:650px) 82vw, clamp(280px,23vw,410px)" width="2048" height="2560" alt="" loading="lazy" decoding="async">
+    <span class="launch-status">${status}</span>
+    <h3 class="launch-name"><a href="engine-240.html">${product.n}</a></h3>
+    <span class="launch-spec">${product.spec}</span>
+    <span class="launch-price">${inr(product.price)}</span>
+    <button class="launch-buy circle-arrow" type="button" data-add="${product.id}" aria-label="Add ${product.n} to cart" title="Add to cart">
+      ${ARROW}
+      <svg class="icon-check" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-check"/></svg>
+    </button>
+  </article>`;
+}
+/* reveal */
+document.documentElement.classList.add('anim');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);count(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+const watch=r=>$$('[data-reveal]',r).forEach(e=>io.observe(e));
+/* count up */
+function count(root){
+ const els=[...(root.matches&&root.matches('[data-num]')?[root]:[]),...$$('[data-num]',root)];
+ els.forEach(el=>{ if(el.dataset.done) return; el.dataset.done=1;
+  const to=parseFloat(el.dataset.num),pre=el.dataset.pre||'',dec=+(el.dataset.dec||0);
+  const fmt=v=>pre+(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-IN'));
+  if(reduce){el.textContent=fmt(to);return}
+  const t0=performance.now(),d=900;
+  const step=t=>{const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=fmt(to*e);if(k<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step)});
+}
+const numIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){count(e.target);numIO.unobserve(e.target)}}),{threshold:.4});
+$$('[data-num]').forEach(e=>numIO.observe(e));
+
+/* hero banner */
+const banner=$('#banner'),slides=$$('.slide',banner),segs=$('#segs');
+segs.innerHTML=slides.map((_,i)=>`<button class="seg" aria-label="Go to banner ${i+1}"><b></b></button>`).join('');
+const segEls=$$('.seg',segs);let hi=0,hT;
+function go(n){hi=(n+slides.length)%slides.length;
+ slides.forEach((s,i)=>s.classList.toggle('on',i===hi));
+ segEls.forEach((s,i)=>{s.classList.remove('on','done');if(i<hi)s.classList.add('done')});
+ void segEls[hi].offsetWidth; segEls[hi].classList.add('on');
+ clearTimeout(hT); if(!reduce&&!banner.classList.contains('paused')) hT=setTimeout(()=>go(hi+1),6000);}
+segEls.forEach((s,i)=>s.addEventListener('click',()=>go(i)));
+const pause=p=>{banner.classList.toggle('paused',p);clearTimeout(hT);if(!p&&!reduce)hT=setTimeout(()=>go(hi+1),3000)};
+banner.addEventListener('mouseenter',()=>pause(true));banner.addEventListener('mouseleave',()=>pause(false));
+banner.addEventListener('focusin',()=>pause(true));banner.addEventListener('focusout',()=>pause(false));
+let sx=null;banner.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+banner.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(hi+(dx<0?1:-1));sx=null});
+go(0);
+
+/* switcher */
+const thumbs=$('#thumbs'),panel=$('#panel');
+thumbs.innerHTML=CATS.map(c=>`<button type="button" class="thumb" role="tab" id="cat-tab-${c.id}" aria-controls="panel" aria-selected="false" tabindex="-1" data-cat="${c.id}"><img src="assets/categories/${c.id}.webp" width="150" height="98" alt="" decoding="async" draggable="false">${rollLabel(c.n)}</button>`).join('');
+const thumbEls=$$('.thumb',thumbs);let cur=null, currentFilter='', panelSwap, panelResize;
+function updateLaunchControls() {
+  const row = panel.querySelector('.launch-rail');
+  const next = panel.querySelector('[data-dir="1"]');
+  if (!next) return;
+  panel.querySelector('[data-dir="-1"]').disabled = row.scrollLeft <= 1;
+  next.disabled = row.scrollLeft >= row.scrollWidth - row.clientWidth - 1;
+}
+panel.addEventListener('scroll', updateLaunchControls, true);
+new ResizeObserver(updateLaunchControls).observe(panel);
+panel.addEventListener('click', event => {
+  const button = event.target.closest('.panel-nav [data-dir]');
+  if (!button) return;
+  const row = panel.querySelector('.launch-rail');
+  const [first, second] = row.children;
+  const step = second.offsetLeft - first.offsetLeft;
+  row.scrollBy({left:step * Number(button.dataset.dir), behavior:reduce ? 'instant' : 'smooth'});
+});
+function panelHTML(c, filterKey){
+ if(!c.items) return `<div class="panel-in"><div class="soon-box" style="--i:0">${art(c.lead)}<div><span class="eyebrow"><i></i>Coming soon</span><h3>${c.n}</h3><p>${c.line} This category is in development. Leave an email to hear when it is ready.</p><form class="notify" data-notify="${c.n}"><input id="notify-${c.id}" type="email" required placeholder="Email address" aria-label="Email address"><button class="btn" type="submit">${rollLabel('Notify me')}<svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></button></form></div></div></div>`;
+ const arrivals = c.items.filter(id => P[id].tag === 'New');
+ const bestsellers = bestsellerIds.filter(id => c.items.includes(id) && !arrivals.includes(id));
+ const filter = shopFilters[filterKey];
+ const highlights = [...arrivals, ...bestsellers];
+ const featured = filter ? highlights.filter(id => filter[1].includes(id)) : highlights;
+ let title = filter?.[0] ?? (arrivals.length ? 'New arrivals' : 'Bestsellers');
+ if (!filter && c.id === 'power') {
+   title = 'Discover our <em class="heading-switch" data-endings="bestsellers.|power banks.">new arrivals.</em>';
+ } else if (!filter && c.id === 'gear') {
+   title = 'A ring mouse for <em class="heading-switch" data-endings="your next talk.|your travel kit.">your desk.</em>';
+ }
+ const allLink = `shop.html?category=${c.id}${filter ? "&filter=" + filterKey : ""}`;
+ const controls = featured.length > 1 ? `
+   <button class="arr" type="button" data-dir="-1" aria-label="Previous products" aria-controls="launch-rail" disabled>${ARROW}</button>
+   <button class="arr" type="button" data-dir="1" aria-label="Next products" aria-controls="launch-rail">${ARROW}</button>` : '';
+ return `<div class="panel-in"><div class="panel-top"><h2 class="h2">${title}</h2>
+   <div class="panel-nav"><a class="link" href="${allLink}">${rollLabel('View All')}</a>${controls}</div></div>
+   <div class="launch-rail" id="launch-rail" role="region" aria-label="${c.n} highlights">${featured.map(id => launchCard(P[id])).join('')}</div></div>`;
+}
+function select(id,first,filterKey=''){
+ if(id===cur && filterKey===currentFilter) return;
+ cur=id; currentFilter=filterKey; const c=CATS.find(x=>x.id===id);
+ clearTimeout(panelSwap);clearTimeout(panelResize);
+ thumbEls.forEach(t=>{const on=t.dataset.cat===id;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1});
+ panel.setAttribute('aria-labelledby','cat-tab-'+id);
+ const t=thumbEls.find(x=>x.dataset.cat===id); if(!first&&t.scrollIntoView) t.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});
+ if(first||reduce){panel.innerHTML=panelHTML(c,filterKey);panel.classList.add('show');updateLaunchControls();return}
+ const h0=panel.offsetHeight; panel.style.height=h0+'px'; panel.classList.remove('show');
+ panelSwap=setTimeout(()=>{panel.innerHTML=panelHTML(c,filterKey);updateLaunchControls();const h1=panel.firstElementChild.offsetHeight; panel.style.height=h1+'px';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>panel.classList.add('show')));
+  panelResize=setTimeout(()=>panel.style.height='',560);},220);
+}
+thumbEls.forEach(t=>t.addEventListener('click',()=>select(t.dataset.cat)));
+thumbs.addEventListener('keydown',e=>{const i=thumbEls.indexOf(document.activeElement);if(i<0)return;
+ const next={ArrowRight:(i+1)%thumbEls.length,ArrowLeft:(i-1+thumbEls.length)%thumbEls.length,Home:0,End:thumbEls.length-1}[e.key];
+ if(next!==undefined){e.preventDefault();const n=thumbEls[next];n.focus({preventScroll:true});select(n.dataset.cat)}});
+function followShopRoute() {
+  const [section,id,filter=''] = location.hash.slice(1).split('/');
+  if (section!=='shop') return;
+  const category = CATS.find(c => c.id === id);
+  if (!category) return;
+  const matchingFilter = Object.hasOwn(shopFilters,filter) && category.items?.some(item => shopFilters[filter][1].includes(item));
+  select(id,true,matchingFilter ? filter : '');
+  const target = filter ? panel : document.getElementById('switcher');
+  target.setAttribute('tabindex','-1');
+  target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start',behavior:reduce?'instant':'smooth'});
+}
+addEventListener('hashchange', followShopRoute);
+document.addEventListener('click', event => {
+  const link = event.target.closest('a[href^="#shop/"]');
+  if (link && link.hash===location.hash && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+    event.preventDefault();
+    followShopRoute();
+  }
+});
+select('power',true);
+if (location.hash.startsWith('#shop/')) requestAnimationFrame(followShopRoute);
+
+/* categories */
+const gallery = $('#cats');
+gallery.innerHTML = CATS.map(category => {
+  const count = category.items?.length;
+  const status = count ? `${count} product${count === 1 ? '' : 's'}` : 'Coming soon';
+  return `<a class="cat" href="shop.html?category=${category.id}">
+    <img src="assets/category-lifestyle/${category.id}.webp" width="800" height="1000" loading="lazy" decoding="async" alt="">
+    <span class="cat-name">${category.n}</span>
+    <strong class="cat-line">${category.line}</strong>
+    <span class="cat-foot">${status}<span class="circle-arrow" aria-hidden="true">${ARROW}</span></span>
+  </a>`;
+}).join('');
+const galleryCards = $$('.cat', gallery);
+const galleryButtons = $$('[data-category-step]');
+function updateGalleryControls() {
+  galleryButtons[0].disabled = gallery.scrollLeft <= 1;
+  const lastCard = galleryCards[galleryCards.length - 1];
+  galleryButtons[1].disabled = lastCard.getBoundingClientRect().right <= gallery.getBoundingClientRect().right + 1;
+}
+galleryButtons.forEach(button => button.addEventListener('click', () => {
+  const step = galleryCards[1].offsetLeft - galleryCards[0].offsetLeft;
+  gallery.scrollBy({left: Number(button.dataset.categoryStep) * step, behavior: reduce ? 'instant' : 'smooth'});
+}));
+gallery.addEventListener('scroll', updateGalleryControls, {passive:true});
+new ResizeObserver(updateGalleryControls).observe(gallery);
+
+/* bestsellers rail */
+const rail=$('#rail');
+const railFilters = $('#railChips');
+const filterButtons = $$('button', railFilters);
+function alignFilterPill() {
+  const selected = railFilters.querySelector('[aria-pressed="true"]');
+  const bounds = selected.getBoundingClientRect();
+  railFilters.style.setProperty('--pill-x', (bounds.left - railFilters.getBoundingClientRect().left) + 'px');
+  railFilters.style.setProperty('--pill-width', bounds.width + 'px');
+}
+const filterSizeObserver = new ResizeObserver(alignFilterPill);
+filterButtons.forEach(button => filterSizeObserver.observe(button));
+function renderRail(filter) {
+  const ids = bestsellerIds.filter(id => filter === 'all' || P[id].cat === filter);
+  rail.style.setProperty('--cols', 4);
+  rail.innerHTML = ids.map((id, index) => card(P[id], index)).join('');
+  rail.scrollLeft = 0;
+  for (const button of filterButtons) {
+    button.setAttribute('aria-pressed', String(button.dataset.f === filter));
+  }
+  alignFilterPill();
+}
+renderRail('all');
+$('#railChips').addEventListener('click',e=>{const b=e.target.closest('button[data-f]');if(b)renderRail(b.dataset.f)});
+let down=false,moved=0,startX=0,startL=0;
+rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('button'))return;down=true;moved=0;startX=e.clientX;startL=rail.scrollLeft});
+addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-startX;moved=Math.abs(dx);if(moved>4){rail.classList.add('drag');rail.scrollLeft=startL-dx}});
+addEventListener('pointerup',()=>{if(!down)return;down=false;setTimeout(()=>rail.classList.remove('drag'),0)});
+rail.addEventListener('click',e=>{if(moved>6){e.preventDefault();e.stopPropagation()}},true);
+$$('[data-rail]').forEach(b=>b.addEventListener('click',()=>rail.scrollBy({left:+b.dataset.rail*rail.clientWidth*.6,behavior:reduce?'auto':'smooth'})));
+
+/* new arrivals */
+
+/* setup */
+const SETS = {
+  work: {
+    title: 'The work set',
+    alt: 'Forge 130, Arc ring mouse, Engine 240 and Qi Surface on a walnut desk',
+    items: [
+      {id: 'forge', x: 30.5, y: 29}, {id: 'arc', x: 67, y: 28},
+      {id: 'engine', x: 28, y: 68}, {id: 'qi', x: 66, y: 67}
+    ]
+  },
+  travel: {
+    title: 'The travel set',
+    alt: 'Core 30, Sigma 35, Qi Surface and Axis 67 in a carry-on packing tray',
+    items: [
+      {id: 'core', x: 36, y: 32}, {id: 'sigma', x: 59, y: 38},
+      {id: 'qi', x: 32, y: 65}, {id: 'axis', x: 64, y: 68}
+    ]
+  }
+};
+let setKey = $('#setChoices input:checked').value;
+let hoveredSetProduct = '';
+let focusedSetProduct = '';
+let selectedSetProduct = '';
+function highlightSetPair() {
+  const active = hoveredSetProduct || focusedSetProduct || selectedSetProduct;
+  for (const button of $$('#setup [data-product]')) {
+    button.classList.toggle('is-highlighted', button.dataset.product === active);
+  }
+}
+function renderSet() {
+  hoveredSetProduct = focusedSetProduct = selectedSetProduct = '';
+  const set = SETS[setKey];
+  $('#setTitle').textContent = set.title;
+  $('#setPhoto').src = 'assets/product-sets/' + setKey + '.webp';
+  $('#setPhoto').alt = set.alt;
+  $('#setTotal').textContent = inr(set.items.reduce((sum, item) => sum + P[item.id].price, 0));
+  $('#setMarkers').innerHTML = set.items.map(({id, x, y}, index) => `
+    <button type="button" class="set-marker" data-product="${id}" aria-controls="set-row-${id}"
+      aria-pressed="false" aria-label="Highlight ${P[id].n}" style="left:${x}%;top:${y}%">${index + 1}</button>`).join('');
+  $('#setItems').innerHTML = set.items.map(({id}) => {
+    const product = P[id];
+    return `<li id="set-row-${id}"><button class="set-item" type="button" data-product="${id}" aria-pressed="false">
+      <span class="set-thumb"><img src="assets/products/${id}.webp" alt="" width="50" height="50"></span>
+      <span class="set-item-info"><strong>${product.n}</strong><small>${product.spec}</small></span>
+      <span class="set-line-price">${inr(product.price)}</span>
+    </button></li>`;
+  }).join('');
+  for (const button of $$('#setup [data-product]')) {
+    button.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'touch') return;
+      hoveredSetProduct = button.dataset.product;
+      highlightSetPair();
+    });
+    button.addEventListener('pointerleave', () => {
+      hoveredSetProduct = '';
+      highlightSetPair();
+    });
+    button.addEventListener('focus', () => {
+      focusedSetProduct = button.matches(':focus-visible') ? button.dataset.product : '';
+      highlightSetPair();
+    });
+    button.addEventListener('blur', () => {
+      focusedSetProduct = '';
+      highlightSetPair();
+    });
+  }
+}
+$('#setChoices').addEventListener('change', event => {
+  setKey = event.target.value;
+  renderSet();
+});
+$('#setup').addEventListener('click', event => {
+  const trigger = event.target.closest('[data-product]');
+  if (!trigger) return;
+  selectedSetProduct = selectedSetProduct === trigger.dataset.product ? '' : trigger.dataset.product;
+  for (const button of $$('#setup [data-product]')) {
+    button.setAttribute('aria-pressed', String(button.dataset.product === selectedSetProduct));
+  }
+  highlightSetPair();
+});
+$('#addSet').addEventListener('click', event => {
+  SETS[setKey].items.forEach(({id}) => add(id));
+  done(event.currentTarget);
+  openCart(event.currentTarget);
+});
+renderSet();
+
+
+/* faq */
+const QA=[
+ ['How long is the warranty?','GRAVL power banks carry a 4-year warranty. Register your product on the warranty page after purchase.','warranty'],
+ ['Can I take a GRAVL power bank on a flight?','Power banks under 100Wh need no airline approval. Between 100Wh and 160Wh needs approval from the airline. Above 160Wh is not allowed on board. The Engine 240 is 97.2Wh.','products'],
+ ['Which power bank charges a laptop?','The Axis 67 delivers 67W, the Forge 130 delivers 130W across two 65W ports, and the Engine 240 delivers up to 240W.','products'],
+ ['What is a semi-solid power bank?','The Core 30 uses semi-solid cells in place of conventional liquid-electrolyte cells. GRAVL builds it for heat and long service life.','products'],
+ ['When can I reach support?','Monday to Friday, 8am to 8:30pm. The average reply time is 24 hours.','support']
+];
+const faqTabs = $$('#faqTabs button');
+const faqQuestions = $('#qas');
+const {faqCards,setFAQExpanded,animateFAQLayout} = gravlStorefront.setupFAQ(faqQuestions,QA,'faq',0);
+function selectFAQCategory(tab) {
+  if (tab.getAttribute('aria-selected') === 'true') return;
+  const category = tab.dataset.faqCategory;
+  $('#faqTabs').style.setProperty('--active',faqTabs.indexOf(tab));
+  for (const button of faqTabs) {
+    const selected = button === tab;
+    button.setAttribute('aria-selected',String(selected));
+    button.tabIndex = selected ? 0 : -1;
+  }
+  faqQuestions.setAttribute('aria-labelledby',tab.id);
+  animateFAQLayout(()=>{
+    let firstVisible = true;
+    for (const card of faqCards) {
+      const visible = category === 'general' || card.dataset.faqCategory === category;
+      card.hidden = !visible;
+      setFAQExpanded(card,visible && firstVisible,false);
+      if (visible) firstVisible = false;
+    }
+  },true);
+}
+$('#faqTabs').addEventListener('click',event=>{
+  const tab = event.target.closest('button[data-faq-category]');
+  if (tab) selectFAQCategory(tab);
+});
+$('#faqTabs').addEventListener('keydown',event=>{
+  const index = faqTabs.indexOf(document.activeElement);
+  if (index < 0) return;
+  const next = {ArrowRight:(index+1)%faqTabs.length,ArrowLeft:(index-1+faqTabs.length)%faqTabs.length,Home:0,End:faqTabs.length-1}[event.key];
+  if (next === undefined) return;
+  event.preventDefault();
+  faqTabs[next].focus();
+  selectFAQCategory(faqTabs[next]);
+});
+
+
+watch(document);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="GRAVL. Power banks and tech essentials built for long-term reliability, backed by a 4-year warranty.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>GRAVL | Power banks and tech essentials</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: off-white storefront; 1280px column; ink and teal reserved for chapters. */
+:root{
+  --cream:#F5F4E9;
+  --teal:#49C09F; --ink:#0C0F19; --slate:#2A2F3A; --paper:#F9F9F7; --white:#FFFFFF;
+  --grey:#B7BDC6; --terra:#C96A4A;
+  --muted:#5A606B; --line:rgba(12,15,25,.12); --line-inv:rgba(243,239,233,.16);
+  --display:"Funnel Display","Work Sans",system-ui,sans-serif;
+  --body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --frame:0px; --r-card:12px; --r-btn:4px;
+  --button-fill:#111312;
+  --button-ink:var(--white);
+  --button-hover-fill:var(--teal);
+  --button-hover-ink:var(--white);
+  --button-transition:300ms ease-out;
+  --button-colour-transition:background-color var(--button-transition),color var(--button-transition);
+  --button-radius:999px;
+  --button-inverse-fill:var(--white);
+  --button-inverse-ink:#111312;
+  --button-inverse-hover-fill:var(--teal);
+  --button-inverse-hover-ink:var(--white);
+  /* button sizes: height / inset / left padding / gap / font size */
+  --btn-h:50px; --btn-inset:6px; --btn-pad:22px; --btn-gap:22px; --btn-fs:15px;
+  --btn-sm-h:44px; --btn-sm-inset:5px; --btn-sm-pad:16px; --btn-sm-gap:12px; --btn-sm-fs:14px;
+  --btn-xs-h:40px; --btn-xs-inset:4px; --btn-xs-pad:14px; --btn-xs-gap:10px; --btn-xs-fs:13px;
+  --btn-text-pad:16px; --btn-round:40px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+h1,h2,h3,p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button,.btn,.bbar a{text-transform:uppercase;letter-spacing:-.04em}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.on-dark :focus-visible,.on-dark:focus-visible{outline-color:var(--paper)}
+svg{display:block}
+main,.foot{--page-gutter:clamp(48px,calc(10vw - 36px),108px)}
+.after-trust{background:var(--white)}
+.wrap{max-width:1920px;margin-inline:auto;padding-left:max(var(--page-gutter,32px),env(safe-area-inset-left,0px));padding-right:max(var(--page-gutter,32px),env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(56px,8vw,112px)}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:8px}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--teal);display:block}
+.h2{font-family:var(--display);font-weight:300;font-size:clamp(32px,4.6vw,56px);line-height:1.02;letter-spacing:-.035em;text-wrap:balance}
+.h2 em{font-style:normal;color:var(--muted)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(24px,3.5vw,44px)}
+.sec-head>div{display:grid;gap:14px;min-width:0}
+.hint{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.link{position:relative;font-weight:500;font-size:15px;display:inline-flex;gap:8px;align-items:center;padding-block:4px}
+.link::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(.0);transform-origin:left;transition:transform .35s var(--ease)}
+.link:hover::after,.link:focus-visible::after{transform:scaleX(1)}
+.link svg{width:14px;height:14px;transition:transform .3s var(--ease)}
+.link:hover svg{transform:translateX(3px)}
+
+/* reveal */
+.anim [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease);transition-delay:calc(var(--i,0)*60ms)}
+.anim [data-reveal].in{opacity:1;transform:none}
+.anim .h2[data-reveal]{filter:blur(8px);transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease)}
+.anim .h2[data-reveal].in{filter:none}
+
+/* announce + header */
+.announce{background:var(--ink);color:var(--paper);font-size:13px;height:36px;overflow:hidden;position:relative}
+.announce span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s var(--ease)}
+.announce span.on{opacity:1;transform:none}
+.announce b{font-weight:500;color:var(--teal)}
+.header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:transform .4s var(--ease)}
+.header.hide{transform:translateY(-100%)}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:20px;height:56px;transition:height .3s var(--ease)}
+.header.small .bar{height:48px}
+.logo{display:flex;align-items:center;width:124px;min-width:0;color:var(--teal)}
+.logo svg{width:100%;height:auto}
+.bar>.logo{grid-column:2;grid-row:1;justify-self:center;width:100px}
+.tabs,.bar>.menu-btn{grid-column:1;grid-row:1;justify-self:start}
+.tabs{display:flex;align-items:center;gap:clamp(14px,1.2vw,24px)}
+.tab{position:relative;height:40px;font-size:14px;font-weight:500;display:flex;align-items:center;white-space:nowrap}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.tab:hover::after,.tab.open::after,.tab:focus-visible::after{transform:scaleX(1)}
+.tab.soon{color:var(--muted)}
+.tools{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:8px}
+.help-link{display:inline-flex;align-items:center;min-height:40px;font-size:14px}
+.help-link:hover{text-decoration:underline}
+.tools .icon-btn{width:38px;height:38px;border:1px solid rgba(12,15,25,.2)}
+.tools .icon-btn svg{width:17px;height:17px}
+.icon-btn{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;position:relative;transition:background .2s}
+.icon-btn:hover{background:var(--teal);color:var(--white)}
+.icon-btn svg{width:20px;height:20px}
+.count{position:absolute;top:2px;right:0;min-width:18px;height:18px;border-radius:9px;background:var(--teal);font-size:11px;font-weight:600;display:grid;place-items:center;padding-inline:4px}
+.count.bump{animation:bump .45s var(--ease)}
+@keyframes bump{40%{transform:scale(1.45)}}
+.menu-btn{display:none}
+/* Header shopping menus */
+.mega{
+  position:absolute;top:100%;left:50%;translate:-50% 0;width:min(1240px,calc(100% - 64px));
+  background:var(--white);border:1px solid var(--line);border-radius:0 0 16px 16px;
+  box-shadow:0 14px 32px rgba(20,23,27,.09);overflow:auto;max-height:calc(100dvh - 100px);
+  display:none;opacity:0;transform:translateY(-5px);transition:opacity .18s ease-out,transform .18s ease-out;
+}
+.mega.open{display:block;opacity:1;transform:none}
+@starting-style{.mega.open{opacity:0;transform:translateY(-5px)}}
+.mega-in{display:grid}
+.shop-index{display:grid;grid-template-columns:clamp(195px,18vw,240px) minmax(0,1fr);padding:20px;gap:26px}
+.shop-shortcuts{display:grid;align-content:start;gap:3px;padding-right:18px;border-right:1px solid var(--line)}
+.shop-shortcuts a,.menu-category,.shop-group a{font-size:14px;line-height:1.3;font-weight:500;letter-spacing:-.02em;text-transform:none}
+.shop-shortcuts a{display:flex;align-items:center;min-height:36px;padding:7px 12px;border-radius:9px}
+.shop-shortcuts a:first-child{background:#FAF8F5}
+.shop-shortcuts a:hover,.shop-shortcuts a:focus-visible{background:#F8F6F2}
+.shop-heading,.shop-group h3{font:600 16px/1.25 var(--display);letter-spacing:-.02em;margin:2px 0 14px}
+.shop-tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.menu-category{display:grid;grid-template-rows:auto 1fr;gap:9px;justify-items:center;align-items:start;min-width:0;text-align:center}
+.menu-thumb{position:relative;width:100%;aspect-ratio:1.45;overflow:hidden;background:#f7f6f4;border-radius:10px}
+.menu-thumb img{position:absolute;inset:0;margin:auto;width:83%;height:76%;object-fit:contain;transition:transform .25s ease-out}
+.menu-category:is(:hover,:focus-visible) img{transform:scale(1.045)}
+.shop-group a:is(:hover,:focus-visible){color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:3px}
+.shop-category-menu{display:grid;grid-template-columns:1.95fr repeat(3,minmax(0,1fr));align-items:stretch}
+.cat.menu-feature{aspect-ratio:auto;min-height:clamp(220px,18vw,260px);margin:12px 0 12px 12px;padding:22px}
+.cat.menu-feature::before{background:linear-gradient(155deg,rgba(9,11,13,.78),rgba(9,11,13,.42) 34%,transparent 62%),linear-gradient(0deg,rgba(9,11,13,.26),transparent 30%)}
+.menu-feature[data-feature="gear"] img{object-position:50% 62%}
+.menu-feature .cat-line{max-width:13ch}
+.menu-feature .circle-arrow{align-self:flex-end;margin-top:auto}
+.shop-group{padding:30px 12px 24px clamp(16px,1.9vw,30px)}
+.shop-group h3{margin:0 0 12px}
+.shop-group a{display:block;width:fit-content;padding-block:5px}
+#bestsellers,#setup,#panel{scroll-margin-top:76px}
+.mobile-shop-groups{display:grid;gap:2px;margin-top:18px}
+.mobile-shop-groups details{border-top:1px solid var(--line)}
+.mobile-shop-groups summary{padding:14px 2px;font-weight:500;cursor:pointer}
+@media(max-width:1050px){
+  .mmenu .shop-index{display:flex;flex-direction:column;padding:0;gap:20px}
+  .mmenu .shop-shortcuts{padding:0 0 14px;border-right:0;border-bottom:1px solid var(--line)}
+  .mmenu .shop-tiles{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px}
+  .mmenu .menu-category,.mmenu .shop-shortcuts a,.mmenu .shop-group a,.mmenu .menu-feature{text-transform:none}
+  .mmenu .shop-category-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mmenu .menu-feature{grid-column:1/-1;margin:0;min-height:clamp(205px,52vw,250px);padding:20px}
+  .mmenu .shop-group{padding:15px 8px}
+}
+
+/* hero banner */
+.banner{position:relative;overflow:hidden;aspect-ratio:21/9;min-height:440px;max-width:100%;width:100%;background:var(--ink);isolation:isolate}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .8s ease,visibility .8s}
+.slide.on{opacity:1;visibility:visible;z-index:1}
+.slide-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,9,15,.42),rgba(5,9,15,.12) 42%,transparent 65%);pointer-events:none}
+.slide.on .slide-bg{animation:kb 7s linear forwards}
+@keyframes kb{to{transform:scale(1.035)}}
+.slide-copy{position:absolute;left:clamp(20px,4.5vw,64px);top:50%;translate:0 -50%;max-width:min(560px,54%);display:grid;gap:18px;justify-items:start;z-index:2}
+.slide{color:var(--white)}
+.slide h1,.slide .h1{font-family:var(--display);font-weight:300;font-size:clamp(38px,6.2vw,88px);line-height:.96;letter-spacing:-.045em;text-wrap:balance}
+.slide .sub{font-size:clamp(15px,1.4vw,18px);max-width:42ch;opacity:.85}
+.slide-copy>*{opacity:0;transform:translateY(22px)}
+.slide.on .slide-copy>*{opacity:1;transform:none;transition:opacity .7s var(--ease) calc(.25s + var(--i)*80ms),transform .7s var(--ease) calc(.25s + var(--i)*80ms),background-color var(--button-transition),color var(--button-transition)}
+.hero-ui{position:absolute;left:clamp(20px,4.5vw,64px);right:clamp(20px,4.5vw,64px);bottom:20px;display:flex;align-items:center;gap:16px;z-index:3;color:var(--paper)}
+.segs{display:flex;gap:6px;flex:1;max-width:240px}
+.seg{flex:1;height:14px;display:flex;align-items:center;cursor:pointer}
+.seg::before{content:"";display:block;width:100%;height:2px;background:currentColor;opacity:.28}
+.seg span{position:absolute}
+.seg{position:relative}
+.seg b{position:absolute;left:0;top:6px;height:2px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left}
+.seg.on b{animation:fill 6s linear forwards}
+.seg.done b{transform:scaleX(1)}
+.banner.paused .seg.on b,.banner.paused .slide.on .slide-bg{animation-play-state:paused}
+@keyframes fill{to{transform:scaleX(1)}}
+.hero-ui .num{font-size:12px;letter-spacing:.14em;font-variant-numeric:tabular-nums}
+.arrow.prev svg{transform:rotate(180deg)}
+
+/* switcher */
+.thumbs-scroll{overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none}
+.thumbs-scroll::-webkit-scrollbar{display:none}
+.thumbs{
+  --category-image-width:clamp(108px,8.4vw,150px);
+  /* Keep the six images at full size and halve the space between them. */
+  width:calc(50% + 3 * var(--category-image-width));
+  min-width:calc(6 * (72px + var(--category-image-width) / 2) + 20px);
+  margin-inline:auto;
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(0,1fr);
+  padding-block:4px;
+  column-gap:4px;
+}
+.thumb{display:grid;justify-items:center;align-content:start;gap:16px;padding:6px 3px;scroll-snap-align:center;text-align:center;color:var(--muted);font-size:14px;line-height:1.3;font-weight:500;transition:color .25s ease-out}
+.thumb img{width:var(--category-image-width);height:clamp(74px,5.6vw,98px);object-fit:contain;object-position:center bottom;filter:grayscale(1);opacity:.58;transition:filter .3s ease-out,opacity .3s ease-out}
+.thumb[aria-selected="true"]{color:var(--ink);font-weight:650}
+.thumb[aria-selected="true"] img{filter:none;opacity:1}
+.thumb:focus-visible{outline-offset:-2px;border-radius:6px}
+@media(max-width:720px){.thumbs{width:max-content;min-width:0;grid-auto-columns:119px;column-gap:2px}.thumb{gap:12px;font-size:13px}}
+.panel{margin-top:20px;overflow:hidden;transition:height .5s var(--ease)}
+.panel-in{display:grid;gap:20px}
+.panel-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.panel-top p{font-family:var(--display);font-weight:300;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.02em}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.panel .card,.panel .soon-box{opacity:0;transform:translateY(18px);transition:opacity .5s var(--ease),transform .5s var(--ease);transition-delay:calc(var(--i,0)*60ms)}
+.panel.show .card,.panel.show .soon-box{opacity:1;transform:none}
+.soon-box{background:var(--white);border-radius:var(--r-card);padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,48px);align-items:center}
+.soon-box .art{width:clamp(96px,14vw,160px);height:clamp(96px,14vw,160px);opacity:.7}
+.soon-box h3{font-family:var(--display);font-weight:300;font-size:clamp(24px,3vw,36px);letter-spacing:-.03em;line-height:1.05}
+.soon-box p{color:var(--muted);margin-block:8px 18px;max-width:46ch}
+.notify{display:flex;gap:8px;flex-wrap:wrap}
+.notify input{height:48px;flex:1 1 220px;min-width:0;border:1px solid var(--line);border-radius:var(--r-btn);padding-inline:14px;font:inherit;background:var(--paper);color:var(--ink)}
+
+/* product card */
+.card{background:var(--white);border-radius:var(--r-card);overflow:hidden;display:flex;flex-direction:column;min-width:0;position:relative}
+.card-media{position:relative;aspect-ratio:1/1;max-width:100%;background:linear-gradient(160deg,#fff 0%,var(--paper) 100%);display:grid;place-items:center;overflow:hidden}
+.card-media::before{content:"";position:absolute;inset:0;background:var(--teal);opacity:0;transition:opacity .4s}
+.card:hover .card-media::before{opacity:1}
+.card-media .art{position:relative;width:72%;height:72%;transition:transform .6s var(--ease)}
+.tag{position:absolute;left:12px;top:12px;z-index:1;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;background:var(--ink);color:var(--paper);padding:5px 8px;border-radius:3px}
+.tag.new{background:var(--teal);color:var(--ink)}
+.card-body{padding:16px;display:grid;gap:4px;flex:1}
+.card-body h3{font-size:16px;font-weight:500}
+.spec{font-size:13px;color:var(--muted)}
+.rate{font-size:13px;color:var(--slate);display:flex;gap:6px;align-items:center;min-height:20px}
+.rate svg{width:13px;height:13px;color:var(--terra)}
+.add:where(:not(.shop)){margin:0 16px 16px}
+.add .b,.add.done .a,.add .icon-check,.add.done .icon-arrow{display:none}
+.add.done .b,.add.done .icon-check{display:inline}
+
+/* categories */
+#categories{scroll-margin-top:76px}
+.cats{
+  --gallery-gap:clamp(12px,1.3vw,20px);
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:clamp(275px,29.6vw,485px);
+  gap:var(--gallery-gap);
+  margin-inline-end:calc(-1 * var(--page-gutter));
+  padding-inline-end:var(--page-gutter);
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:none;
+}
+.cats::-webkit-scrollbar{display:none}
+.cat{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  aspect-ratio:4 / 5;
+  border-radius:var(--r-card);
+  padding:clamp(20px,1.8vw,32px);
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  color:white;
+  background:#262522;
+  scroll-snap-align:start;
+}
+.cat img,.cat::before{position:absolute;inset:0;width:100%;height:100%}
+.cat img{z-index:-2;object-fit:cover;transition:transform .6s var(--ease)}
+.cat::before{
+  z-index:-1;
+  content:"";
+  background:linear-gradient(180deg,rgba(13,15,16,.67),rgba(13,15,16,.34) 25%,transparent 50%,transparent 72%,rgba(13,15,16,.55));
+}
+.cat-name{font-size:13px;font-weight:500;line-height:1.4;color:#fff}
+.cat-line{max-width:19ch;margin-top:8px;font:400 clamp(23px,1.8vw,32px)/1.12 var(--display);letter-spacing:-.035em;text-wrap:balance}
+.cat-foot{align-self:stretch;margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px}
+.circle-arrow{
+  width:44px;height:44px;flex:none;
+  display:grid;place-items:center;
+  border:1px solid currentColor;border-radius:50%;
+  color:inherit;background:transparent;
+  transition:color .25s ease-out,background-color .25s ease-out;
+}
+.circle-arrow svg{width:20px;height:20px}
+.cat:focus-visible .circle-arrow,.launch-buy:focus-visible,.launch-buy.done{background:#fff;border-color:#fff;color:#000}
+@media(hover:hover){.cat:hover .circle-arrow,.launch-card:hover .circle-arrow{background:#fff;border-color:#fff;color:#000}}
+.cat:focus-visible{outline:3px solid white;outline-offset:-6px}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.cat:hover img{transform:scale(1.035)}}
+.sec-head>.category-controls{display:flex;gap:8px}
+.category-controls button:disabled{opacity:.3;cursor:default}
+
+/* rail */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,calc((100% - 48px)/4));gap:16px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;cursor:grab}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.rail.drag a{pointer-events:none}
+.rail>*{scroll-snap-align:start}
+.sec-head>.rail-ctl{display:flex;gap:8px;align-items:center}
+
+/* new arrivals */
+.wide2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wcard{background:var(--white);border-radius:var(--r-card);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;min-width:0}
+.wcard .card-media{aspect-ratio:auto;min-height:280px}
+.wcard .card-body{align-content:center;padding:clamp(18px,2.4vw,32px);gap:6px}
+.wcard h3{font-family:var(--display);font-weight:300;font-size:clamp(24px,2.6vw,34px);letter-spacing:-.03em;line-height:1.05}
+.wcard .add{margin:14px 0 0}
+
+/* setup */
+.seg-tabs,.sec-head>.seg-tabs{position:relative;display:inline-grid;grid-template-columns:repeat(var(--segments,2),minmax(0,1fr));gap:0;background:var(--white);border-radius:999px;padding:4px}
+.seg-tabs button{position:relative;z-index:1;height:40px;padding-inline:26px;font-weight:500;font-size:14px;border-radius:999px;color:var(--muted);transition:color .3s}
+.seg-tabs button:is([aria-selected="true"],[aria-pressed="true"]){color:var(--paper)}
+.seg-tabs .pill{position:absolute;top:4px;left:4px;width:calc((100% - 8px)/var(--segments,2));height:40px;border-radius:999px;background:var(--ink);pointer-events:none;transform:translateX(calc(100% * var(--active,0)));transition:transform .5s var(--ease)}
+.seg-tabs[data-i="1"]{--active:1}
+.seg-tabs[data-i="2"]{--active:2}
+@keyframes slidein{to{opacity:1;transform:none}}
+
+/* Customer testimonials */
+#reviews,#video-testimonials{padding-top:0;scroll-margin-top:80px}
+.review-track{
+  display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 42px)/4);gap:14px;
+  overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;
+}
+.review-track::-webkit-scrollbar{display:none}
+.review-track.is-looping{scroll-snap-type:none}
+.review-controls [hidden]{display:none}
+.review-track>*{min-width:0;scroll-snap-align:start}
+.review-track:focus-visible{outline-offset:3px}
+.review-controls{display:flex;align-items:center;gap:8px;margin-left:auto}
+.review-controls button:disabled{opacity:.3;cursor:default;transform:none}
+.review-card{margin:0;border-radius:12px;padding:clamp(22px,1.9vw,34px);min-block-size:clamp(370px,29vw,560px);display:flex;flex-direction:column;gap:48px;background:#1a1b1a;color:#f7f5ec}
+.review-card blockquote{margin:0;font:500 clamp(24px,1.92vw,37px)/1.12 var(--display);letter-spacing:-.043em}
+.review-card blockquote em{font-style:normal;color:var(--teal)}
+.review-card figcaption{margin-top:auto;border-top:1px solid #373a37;padding-top:clamp(18px,1.9vw,32px);display:flex;align-items:center;gap:12px}
+.review-avatar{display:block;width:44px;height:44px;flex:none;border-radius:50%;object-fit:cover;background:#292d2b}
+.review-credit{display:grid;gap:3px;min-width:0}
+.review-credit strong{font:600 14px/1.25 var(--body);text-transform:uppercase}
+.review-credit a{font-size:13px;line-height:1.4;color:#c4c8c4;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#646d68}
+.review-credit a:is(:hover,:focus-visible){color:var(--teal);text-decoration-color:currentColor}
+.review-credit a:focus-visible{outline-color:var(--teal)}
+@media(max-width:1050px){.review-track{grid-auto-columns:calc((100% - 14px)/2)}.review-card{min-block-size:320px}}
+@media(max-width:600px){.review-track{grid-auto-columns:84%}.review-card{min-block-size:300px;gap:36px;padding:24px}}
+
+.video-review-heading{
+  display:flex; align-items:baseline; justify-content:space-between; gap:10px 24px;
+  flex-wrap:wrap; margin-bottom:clamp(16px,1.2vw,24px);
+}
+#video-testimonials{padding-bottom:clamp(40px,4vw,72px)}
+#video-reviews{grid-auto-columns:calc((100% - 70px)/6)}
+.video-review{position:relative;overflow:hidden;isolation:isolate;aspect-ratio:9/16;border-radius:12px;background:#171a19}
+.video-review video{display:block;width:100%;height:100%;object-fit:cover}
+.video-review video[src$="mobile-work.mp4"]{object-position:40% center}
+.video-review video[src$="office-call.mp4"]{object-position:37% center}
+.video-review-play{
+  position:absolute;inset:0;display:grid;place-items:center;color:white;
+}
+.video-review-play[hidden]{display:none}
+.video-product {
+  position:absolute;inset:auto 8px 8px;
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;
+  padding:6px 9px 6px 6px;border-radius:12px;background:var(--white);color:var(--ink);
+}
+.video-product img {
+  width:clamp(36px,3.15vw,60px);height:auto;aspect-ratio:1;object-fit:contain;
+  padding:4px;border-radius:8px;background:#f5f4f0;
+}
+.video-product-copy {display:grid;gap:3px;font:500 14px/1.2 var(--display)}
+.video-product-copy strong {font-weight:650}
+.video-product-arrow {
+  width:28px;height:28px;display:grid;place-items:center;
+  border:1px solid currentColor;border-radius:50%;transition:background-color .2s ease-out;
+}
+.video-product-arrow svg {width:15px;height:15px;transform:rotate(-45deg)}
+.video-product:is(:hover,:focus-visible) .video-product-arrow {background:var(--teal);border-color:var(--teal)}
+.video-product:focus-visible {outline:3px solid var(--teal);outline-offset:1px}
+.video-review:has(video[controls]) .video-product {bottom:64px}
+.video-play-disc{
+  display:grid;place-items:center;flex:none;width:36px;height:36px;border:1px solid currentColor;
+  border-radius:50%;background:rgba(0,0,0,.25);transition:background-color .2s ease-out,color .2s ease-out;
+}
+.video-play-disc::after{content:"";margin-left:3px;border-block:6px solid transparent;border-left:10px solid currentColor}
+.video-review-play:is(:hover,:focus-visible) .video-play-disc{color:#101413;background:var(--teal);border-color:var(--teal)}
+.video-review-play:focus-visible,.video-review video:focus-visible{outline:2px solid white;outline-offset:-6px}
+@media(max-width:1199px){#video-reviews{grid-auto-columns:calc((100% - 42px)/4)}}
+@media(max-width:850px){#video-reviews{grid-auto-columns:calc((100% - 28px)/3)}}
+@media(max-width:600px){#video-reviews{grid-auto-columns:72%}}
+
+/* faq */
+.faq{--faq-cream:var(--cream);--faq-radius:20px;--faq-card-radius:12px;width:100%;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,5vw,80px);align-items:start}
+.faq-intro{display:grid;align-content:start;gap:24px;min-width:0}
+.faq-title{font-family:var(--display);font-size:clamp(36px,4.3vw,60px);font-weight:600;line-height:1.04;letter-spacing:-.04em}
+.faq-title em{display:block;font-style:normal;color:var(--teal)}
+.faq-panel{background:var(--faq-cream);border-radius:var(--faq-radius);padding:10px}
+.faq-tabs.seg-tabs{--segments:4;display:grid;width:min(100%,440px);margin:0 auto 10px;padding:4px}
+.faq-tabs button{min-width:0;height:40px;padding:0 10px;border-radius:999px;color:var(--muted);font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:-.04em;transition:color .24s var(--ease)}
+.faq-tabs button:hover:not([aria-selected="true"]){color:var(--ink)}
+.faq-tabs button[aria-selected="true"]{color:var(--paper)}
+.faq-tabs .pill{transition:transform .36s var(--ease)}
+.faq-tabs button:focus-visible{outline-offset:0}
+.faq-questions{display:grid;align-content:start;gap:10px;min-width:0;border-radius:var(--faq-card-radius);overflow:hidden}
+.qa{min-width:0;border-radius:var(--faq-card-radius);background:var(--white);overflow:hidden}
+.qa h3{font-size:inherit;font-weight:inherit}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;padding:24px;font-family:var(--display);font-weight:500;font-size:18px;line-height:1.35}
+.qa button:focus-visible{outline-offset:-4px;border-radius:var(--faq-card-radius)}
+.qa .pm{width:22px;height:22px;border-radius:50%;background:var(--faq-cream);display:grid;place-items:center;flex:none}
+.qa .pm svg{width:14px;height:14px}
+.qa .pm-v{transition:opacity .24s var(--ease)}
+.qa.open .pm-v{opacity:0}
+.qa-a{overflow:hidden}
+.qa-a p{padding:0 24px 26px;color:var(--muted);line-height:1.65}
+.faq .support{--support-avatar:clamp(28px,3.2vw,44px);background:var(--faq-cream);border-radius:var(--faq-radius);padding:clamp(18px,1.8vw,28px);display:grid;grid-template-columns:auto minmax(0,1fr);justify-items:start;align-items:center;gap:clamp(12px,1.3vw,20px);margin-top:8px}
+.support-avatars{display:flex;align-items:center;width:calc(2.4 * var(--support-avatar) + 8px);height:calc(var(--support-avatar) + 8px)}
+.support-avatar{position:relative;flex:none;width:var(--support-avatar);height:var(--support-avatar);overflow:hidden;border:2px solid var(--faq-cream);border-radius:50%}
+.support-avatar+.support-avatar{margin-left:calc(-.3 * var(--support-avatar))}
+.support-avatar:nth-child(2){width:calc(var(--support-avatar) + 8px);height:calc(var(--support-avatar) + 8px);z-index:1}
+.support-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:40% 25%;transform:translate(10%,22%) scale(2);transform-origin:40% 27%}
+.support-avatar:nth-child(2) img{object-position:30% 30%;transform:translate(19%,20%) scale(2);transform-origin:30% 30%}
+.support-copy{display:grid;gap:8px;min-width:0}
+.support-copy>p{color:var(--muted);font-size:12px!important;line-height:1.5}
+.support-contact{display:inline-flex;align-items:center;gap:6px;width:fit-content;max-width:100%;font-family:var(--display);font-size:clamp(14px,1.4vw,20px);font-weight:500;line-height:1.25;letter-spacing:-.035em;white-space:nowrap}
+.support-contact svg{width:22px;height:22px;flex:none;padding:5px;border-radius:50%;background:var(--teal);color:var(--ink)}
+.faq .support-contact span{font-size:inherit!important;font-weight:inherit!important}
+.support-contact:hover span{text-decoration:underline;text-underline-offset:4px}
+.support-copy .support-hours{font-size:11px!important}
+@media(max-width:900px){
+  .faq{grid-template-columns:1fr;gap:32px}
+  .faq-title{max-width:16ch;font-size:clamp(36px,7vw,56px)}
+  .support-contact{font-size:20px}
+}
+@media(max-width:600px){
+  .faq{--faq-radius:16px;--faq-card-radius:10px}
+  .faq-panel{padding:8px}
+  .faq-tabs button{padding-inline:4px;font-size:10px}
+  .qa button{padding:20px 18px;font-size:17px;gap:12px}
+  .qa-a p{padding:0 18px 22px}
+  .faq .support{--support-avatar:26px}
+  .support-contact{font-size:clamp(14px,3vw,18px)}
+  .support-contact svg{width:20px;height:20px;padding:4px}
+}
+@media(max-width:380px){
+  .faq-tabs button{padding-inline:2px;font-size:9px}
+  .faq .support{--support-avatar:24px;padding:16px;gap:10px}
+}
+@media(max-width:350px){.faq .support{grid-template-columns:1fr;gap:14px}}
+
+/* footer */
+.gift-section{padding-bottom:clamp(32px,4vw,72px);scroll-margin-top:76px}
+.gift-banner{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,35%);padding:clamp(16px,1.6vw,28px);min-height:clamp(360px,32vw,580px);overflow:hidden;border-radius:16px;background:#493a31}
+.gift-photo{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:32% center}
+.gift-panel{grid-column:2;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:clamp(30px,4vw,72px);padding:clamp(24px,2.5vw,44px);border-radius:var(--r-card);background:var(--white)}
+.gift-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font: 500 14px/1.2 var(--display);
+  letter-spacing: -.02em;
+}
+.gift-label-mark {
+  flex: none;
+  color: var(--teal);
+}
+.gift-panel .h2{max-width:13ch;font-size:clamp(32px,3.1vw,54px)}
+.gift-description{margin:14px 0 22px;max-width:37ch;color:var(--muted)}
+@media(max-width:760px){
+  .gift-banner{display:flex;flex-direction:column;min-height:0;padding:0}
+  .gift-photo{position:static;z-index:auto;height:clamp(190px,53vw,320px);object-position:15% center}
+  .gift-panel{position:relative;margin:-16px 10px 10px;gap:24px;padding:24px}
+}
+.foot{--footer-line:rgba(255,255,255,.13);--footer-muted:#A5A6A6;background:#101010;color:var(--white);margin:0 var(--frame) var(--frame);overflow:hidden}
+.footer-benefits{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;padding:0;list-style:none;border-bottom:1px solid transparent}
+.footer-benefits::after,.footer-legal::before{content:"";position:absolute;left:50%;width:100vw;height:1px;transform:translateX(-50%);background:var(--footer-line);pointer-events:none}
+.footer-benefits::after{bottom:-1px}
+.footer-legal::before{top:-1px}
+.footer-benefits li{display:grid;align-content:start;gap:6px;min-width:0;padding:26px clamp(18px,2.1vw,40px)}
+.footer-benefits li:first-child{padding-left:0}
+.footer-benefits li:last-child{padding-right:0}
+.footer-benefits li+li{border-left:1px solid var(--footer-line)}
+.footer-benefits b{position:relative;padding-left:14px;font-size:14px;font-weight:500;line-height:1.5}
+.footer-benefits b::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:1px;background:var(--teal)}
+.foot .footer-benefits small{padding-left:14px;color:var(--footer-muted);font-size:12px!important;line-height:1.6}
+.footer-main{display:grid;grid-template-columns:minmax(180px,1.3fr) repeat(3,minmax(0,.8fr)) minmax(240px,1.4fr);grid-template-areas:"brand shop help company signup";gap:clamp(24px,2.4vw,46px);padding-block:52px 60px}
+.footer-brand{grid-area:brand;display:grid;align-content:start;justify-items:start;gap:16px;min-width:0}
+.footer-logo{display:block;width:120px;max-width:100%;color:var(--white)}
+.footer-logo svg{width:100%;height:auto}
+.footer-brand>p{max-width:26ch;color:var(--footer-muted);line-height:1.6}
+.footer-contact{display:grid;gap:8px;font-style:normal;line-height:1.6}
+.footer-contact a{font-size:13px;overflow-wrap:anywhere}
+.footer-hours{font-size:12px;color:var(--footer-muted)}
+.footer-nav{min-width:0}
+.footer-nav--shop{grid-area:shop}
+.footer-nav--help{grid-area:help}
+.footer-nav--company{grid-area:company}
+.footer-nav h3{margin-bottom:16px;color:var(--footer-muted);font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
+.footer-nav ul{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.footer-nav a{position:relative;display:inline-flex;max-width:100%;padding-block:2px;font-size:13px;line-height:1.5;color:#E1E2E1}
+.footer-nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.footer-nav a:focus-visible::after{transform:scaleX(1)}
+@media(hover:hover){.footer-nav a:hover::after{transform:scaleX(1)}}
+.footer-contact a:hover,.footer-legal a:hover{color:var(--white);text-decoration:underline;text-underline-offset:4px}
+.footer-newsletter{grid-area:signup;min-width:0}
+.footer-newsletter h2{font-family:var(--display);font-size:19px;font-weight:600;line-height:1.2;letter-spacing:-.025em}
+.footer-newsletter>p{margin-top:12px;color:var(--footer-muted);line-height:1.6}
+.footer-form{display:flex;align-items:center;gap:4px;position:relative;margin-top:16px;padding:4px;border-radius:999px;background:var(--white)}
+.footer-form:focus-within{outline:2px solid var(--teal);outline-offset:4px}
+.footer-label{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.footer-form input{flex:1;min-width:0;width:100%;height:40px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:var(--ink);font:inherit;font-size:13px}
+.footer-form input::placeholder{color:#747A80;opacity:1}
+.footer-signup{flex:none}
+.footer-form input:focus-visible{outline:none}
+.footer-legal{position:relative;display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:22px;border-top:1px solid transparent;color:var(--footer-muted)}
+.footer-legal-copy{display:grid;gap:10px}
+.foot .footer-copyright{font-size:12px!important}
+.footer-legal-links{display:flex;flex-wrap:wrap;gap:20px;font-size:12px}
+.footer-region{display:flex;align-items:center;gap:24px;font-size:12px;white-space:nowrap}
+.footer-back-top{display:inline-flex;align-items:center;gap:8px;min-height:32px}
+.footer-back-top svg{width:14px;height:14px}
+@media(max-width:1200px){
+  .footer-main{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"brand brand signup signup" "shop help company .";gap:36px}
+}
+@media(max-width:900px){
+  .footer-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-benefits li{padding:22px}
+  .footer-benefits li:nth-child(odd){padding-left:0;border-left:0}
+  .footer-benefits li:nth-child(even){padding-right:0}
+  .footer-benefits li:nth-child(n+3){border-top:1px solid var(--footer-line)}
+  .footer-legal{align-items:flex-start;flex-wrap:wrap}
+}
+@media(max-width:700px){
+  .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"brand brand" "shop help" "company company" "signup signup";padding-block:36px 40px;gap:32px 24px}
+  .footer-nav--company ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-region{width:100%;justify-content:space-between;gap:16px}
+}
+@media(max-width:520px){
+  .footer-benefits{grid-template-columns:1fr}
+  .footer-benefits li{padding:18px 0!important;border-left:0!important}
+  .footer-benefits li+li{border-top:1px solid var(--footer-line)}
+}
+
+/* drawer, menu, toast, bottom bar */
+.scrim{position:fixed;inset:0;background:rgba(12,15,25,.5);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:70}
+.scrim.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--paper);z-index:80;transform:translateX(102%);transition:transform .5s var(--ease);display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) 20px;visibility:hidden}
+.drawer.on{transform:none;visibility:visible}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.drawer-head h2{font-family:var(--display);font-weight:300;font-size:28px;letter-spacing:-.02em}
+.lines{flex:1;overflow-y:auto;display:grid;gap:10px;align-content:start;padding-block:16px}
+.line{display:flex;gap:12px;align-items:center;background:var(--white);border-radius:10px;padding:10px;animation:slidein .45s var(--ease) both}
+.line .art{width:60px;height:60px;flex:none}
+.line div{flex:1;min-width:0}
+.line b{font-weight:500;display:block}
+.line small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:4px;font-variant-numeric:tabular-nums}
+.qty button{width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line);font-size:16px;line-height:1}
+.empty{color:var(--muted);padding:32px 0;text-align:center}
+.assure{display:flex;gap:10px;align-items:center;background:var(--teal);border-radius:10px;padding:12px;font-size:14px}
+.assure svg{width:18px;height:18px;flex:none}
+.sub{display:flex;justify-content:space-between;font-weight:500;font-size:18px;padding-block:14px;font-variant-numeric:tabular-nums}
+.drawer .btn{width:100%}
+.drawer .fine{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+.mmenu{position:fixed;inset:0;background:var(--paper);z-index:80;transform:translateY(-102%);transition:transform .55s var(--ease);visibility:hidden;display:flex;flex-direction:column;padding:calc(16px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));overflow-y:auto}
+.mmenu.on{transform:none;visibility:visible}
+.menu-links{display:flex;gap:24px;margin-top:24px}
+.mmenu-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.mrow{display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);opacity:0;transform:translateY(14px)}
+.mmenu.on .mrow{opacity:1;transform:none;transition:opacity .5s var(--ease) calc(.15s + var(--i)*50ms),transform .5s var(--ease) calc(.15s + var(--i)*50ms)}
+.mrow .art{width:56px;height:56px;background:var(--white);border-radius:8px;flex:none}
+.mrow b{font-family:var(--display);font-weight:300;font-size:24px;letter-spacing:-.02em;flex:1}
+.mrow small{color:var(--muted);font-size:12px}
+.toast{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom,0px));translate:-50% 0;background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:999px;font-size:14px;z-index:95;opacity:0;transform:translateY(16px);transition:opacity .3s,transform .4s var(--ease);pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.on{opacity:1;transform:none}
+.bbar{display:none}
+
+@media (max-width:1050px){
+  .tabs{display:none}.menu-btn{display:grid}.mega{display:none}
+}
+@media (max-width:1080px){
+  .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cats{grid-auto-columns:clamp(255px,38vw,405px)}
+}
+@media (max-width:760px){
+  .bar{gap:8px}
+  .bar .logo{width:88px}
+  .tools{gap:8px}
+  .banner{aspect-ratio:auto;height:580px;min-height:0}
+  .slide-bg{object-position:72% center}
+  .slide.s3 .slide-bg{object-position:84% center}
+  .slide::after{background:linear-gradient(90deg,rgba(5,9,15,.8),rgba(5,9,15,.51) 65%,rgba(5,9,15,.12))}
+  .slide-copy{max-width:440px;right:20px}
+  .cats{grid-auto-columns:min(76vw,350px)}
+  .rail{grid-auto-columns:74%}
+  .wide2,.faq{grid-template-columns:1fr}
+  .wcard{grid-template-columns:1fr}
+  .wcard .card-media{min-height:220px}
+  .soon-box{grid-template-columns:1fr}
+  .rail-ctl .arrow{display:none}
+  .bbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:65;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+  .bbar button,.bbar a{display:grid;justify-items:center;gap:2px;font-size:11px;font-weight:500;padding:6px 0;position:relative}
+  .bbar svg{width:20px;height:20px}
+  .bbar .count{right:calc(50% - 22px);top:0}
+  .foot{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+  .toast{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:520px){
+  .tools .help-link{display:none}
+  .bar .logo{width:80px}
+  .tools{gap:4px}
+  .tools .icon-btn{width:32px;height:32px}
+}
+@media (max-width:360px){
+  .bar{column-gap:4px}
+  .bar .logo{width:64px}
+  .tools{gap:3px}
+  .tools .icon-btn{width:28px;height:28px}
+}
+@media (max-width:480px){.grid4{gap:10px}.card-body{padding:12px}.card>.add{margin:0 8px 12px;padding-inline-start:10px;gap:5px}}
+@media (max-width:380px){.grid4{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0ms!important}
+  html{scroll-behavior:auto}
+}
+/* typography overrides: uppercase navbar, tighter nav tracking, 14px regular body */
+.tab,.help-link,.mega li a,.mega h3,.menu-links a,.mrow b,.tabs a,.mmenu a{text-transform:uppercase;letter-spacing:-.01em}
+p:not(.h1):not(.h2):not(.h3),li,small,.spec,.rate,.slide .sub,.fine,.assure,.support span,.rev small,.mini small,.cat-meta small,.mrow small,.panel-top p,.mega-note p{font-size:14px !important;font-weight:400 !important}
+/* product cards: match reference design (inset image, badge, price tab, Shop pill) + single-fold switcher */
+.card{border-radius:8px;padding:8px;background:var(--white)}
+.card-media{border-radius:8px;aspect-ratio:1/1;background:#ECECE8}
+.card-media::before{display:none}
+.card-media .art{width:78%;height:78%}
+.card-media .tag{top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;background:var(--white);color:var(--ink);border-radius:999px;padding:6px 12px 6px 10px;font-size:13px;font-weight:500;letter-spacing:0;text-transform:none;line-height:1.2}
+.card-media .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--terra)}
+.product-card{
+  --price-radius:8px;
+  border-radius:8px;
+  padding:5px 5px 8px;
+}
+.product-card .card-media{
+  border-radius:6.4px;
+  background:#F7F4EE;
+  isolation:isolate;
+}
+.product-photo{position:absolute;inset:0;display:grid;grid-template: minmax(0,1fr) / minmax(0,1fr);place-items:center;pointer-events:none}
+.product-photo img{grid-area:1/1;object-fit:contain}
+.product-photo .packshot{width:76%;height:76%}
+.product-photo .store-photo{width:100%;height:100%;opacity:0;mix-blend-mode:multiply}
+.product-photo.has-store-photo .packshot{visibility:hidden}
+.product-photo.has-store-photo .store-photo{opacity:1}
+.card-price{
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  min-height:44px;
+  padding-inline:16px;
+  background:var(--white);
+  border-bottom-left-radius:var(--price-radius);
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums;
+}
+/* Round the two places where the image edge meets the price cutout. */
+.card-price::before,
+.card-price::after{
+  content:"";
+  position:absolute;
+  width:var(--price-radius);
+  height:var(--price-radius);
+  background:radial-gradient(circle at left bottom, transparent calc(var(--price-radius) - .5px), var(--white) calc(var(--price-radius) + .5px));
+  pointer-events:none;
+}
+.card-price::before{right:100%;top:0}
+.card-price::after{right:0;top:100%}
+.card-body{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 6px 6px}
+.card-txt{display:grid;gap:4px;min-width:0}
+.card-txt h3{font-size:16px;font-weight:500}
+.card-txt .spec{color:var(--muted)}
+.shop-icon{display:block;width:18px;height:18px;flex:none}
+#switcher{padding-block:clamp(32px,3.5vw,64px);scroll-margin-top:76px}
+#switcher .panel{margin-top:clamp(28px,3vw,52px)}
+/* category panel: heading line, arrow controls, nav-style link hover, horizontal product row */
+.panel-nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.panel-nav .link::after{display:none}
+.panel-nav .arr:disabled{opacity:.3;cursor:default}
+.arr[data-dir="-1"] svg{transform:scaleX(-1)}
+.launch-rail{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:clamp(280px,23vw,410px);
+  gap:clamp(12px,1.1vw,20px);
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:none;
+}
+.launch-rail::-webkit-scrollbar{display:none}
+.launch-card{
+  --surface:#fcfbfa;
+  --control:rgba(0,0,0,.08);
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  aspect-ratio:4 / 5;
+  overflow:hidden;
+  scroll-snap-align:start;
+  padding:clamp(22px,1.65vw,32px);
+  border-radius:var(--r-card);
+  background:var(--surface);
+  color:#151619;
+}
+.launch-card.is-dark{
+  --surface:#090b0f;--control:rgba(255,255,255,.16);
+  color:#fff;
+}
+.launch-status{color:var(--teal);font-size:12px;font-weight:600;line-height:1.2;letter-spacing:.04em;text-transform:uppercase}
+.launch-name{margin:10px 0 0;font:500 clamp(25px,2vw,36px)/1.02 var(--display);letter-spacing:-.04em}
+.launch-spec{margin-top:8px;font-size:clamp(13px,1vw,16px);line-height:1.35;font-weight:500}
+.launch-price{margin-top:4px;font-size:14px;font-variant-numeric:tabular-nums}
+.launch-image{
+  position:absolute;inset:0;z-index:-1;
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .45s ease-out;
+}
+.launch-buy{position:absolute;right:16px;bottom:16px}
+.launch-buy .icon-check,.launch-buy.done svg:first-child{display:none}
+.launch-buy.done .icon-check{display:block}
+.launch-buy:focus-visible{outline-color:currentColor}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.launch-card:hover img{transform:translateY(-3px) scale(1.035)}}
+@media(max-width:650px){.launch-rail{grid-auto-columns:min(82%,340px)}.launch-card{min-height:322px;padding:19px}.launch-buy{right:12px;bottom:12px}}
+/* category arrows: match Most relied on arrows */
+/* FAQ questions: sentence case */
+.qa button{text-transform:none;letter-spacing:-.02em}
+/* section spacing: 80px between sections */
+section.sec{padding-top:80px !important;padding-bottom:80px !important}
+/* The following bestsellers section supplies the full 80px gap. */
+section#categories{padding-bottom:0 !important}
+/* product cards: one component, one size on every row and category */
+@media (min-width:901px){
+  .rail{grid-auto-columns:calc((100% - 48px)/4)}
+  .panel-in .grid4>.card{flex-basis:calc((100% - 48px)/4)}
+}
+@media (max-width:900px){
+  .rail{grid-auto-columns:calc((100% - 16px)/2)}
+  .panel-in .grid4>.card{flex-basis:calc((100% - 16px)/2)}
+}
+@media (max-width:480px){
+  .rail{grid-auto-columns:80%}
+  .panel-in .grid4>.card{flex-basis:80%}
+}
+/* product row category chips */
+#railChips{display:inline-flex;flex:none;width:max-content}
+#railChips button{flex:none;white-space:nowrap;padding-inline:24px;line-height:1.1}
+#railChips .pill{
+  left:0;width:var(--pill-width);
+  transform:translateX(var(--pill-x));
+  transition:transform .5s var(--ease),width .5s var(--ease);
+}
+.rail-ctl{max-width:100%}
+@media(max-width:560px){
+  #railChips button{font-size:clamp(10px,2.8vw,13px)}
+}
+/* product cards: name left, rating right, both to card edges */
+.card-body{display:block}
+.card-txt{width:100%}
+/* product cards: rating sits on the right of the product name */
+.card-txt{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name rate" "spec spec";column-gap:8px;align-items:center}
+.card-txt h3{grid-area:name}
+.card-txt .spec{grid-area:spec}
+.card-txt .rate{grid-area:rate;justify-self:end;white-space:nowrap}
+/* product cards: small star rating */
+.card-txt .rate{font-size:12px !important;font-weight:400 !important;color:var(--muted);display:flex;align-items:center;gap:4px;min-height:0}
+.card-txt .rate svg{width:11px;height:11px;color:var(--terra)}
+/* add to cart: overlays bottom of product image on hover */
+.card-visual{position:relative}
+.card .card-visual .add.shop{position:absolute;left:50%;bottom:14px;margin:0;translate:-50% 0;white-space:nowrap}
+/* product cards: add to cart shows on hover */
+.card .add.shop{opacity:0;visibility:hidden;transform:none;transition:opacity .3s var(--ease),visibility .3s,var(--button-colour-transition)}
+.card:hover .add.shop,.card:focus-within .add.shop{opacity:1;visibility:visible}
+@media (hover:none){.card .add.shop{opacity:1;visibility:visible}}
+/* section headings: beige accent words */
+.h2 em{color:var(--teal)}
+/* section headings: one size, semi-bold */
+.h2{font-size:clamp(32px,4.6vw,56px);font-weight:600}
+/* desktop header: logo left, categories centred */
+@media (min-width:1051px){.bar>.logo{grid-column:1;justify-self:start;width:100px}.tabs{grid-column:2;justify-self:center}}
+/* navbar font size */
+.tab{font-size:13px}
+
+</style>
+
+<link rel="stylesheet" href="assets/buttons.css">
+<link rel="stylesheet" href="assets/trust-section.css">
+<link rel="stylesheet" href="assets/product-sets.css">
+<link rel="stylesheet" href="assets/signup.css">
+<link rel="stylesheet" href="assets/trending.css">
+<script defer src="assets/signup.js"></script>
+<script defer src="assets/trust-section.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="button-arrow" viewBox="0 0 20 20"><path d="M3.5 10h12M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="button-check" viewBox="0 0 20 20"><path d="m4 10 4 4 8-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="gravl-logo" viewBox="0 0 576 135">
+      <path fill="currentColor" d="M136.157 0.641 L119.953 0.146 L9.277 51.755 C4.643 53.916 1.232 58.187 0.484 63.244 C-0.5 69.904 3.025 76.264 8.962 79.033 L126.504 133.844 C131.003 135.941 136.157 132.658 136.157 127.694 L136.157 67.503 L118.565 67.503 L118.565 112.97 L16.695 65.467 L126.674 14.184 Z
+        M284.822 63.413 L311.356 63.413 C316.068 63.413 319.824 62.456 322.518 60.568 C325.522 58.445 327.042 55.424 327.042 51.582 C327.042 47.735 325.6 44.782 322.755 42.806 C320.077 41.033 316.281 40.182 311.112 40.182 L284.822 40.182 Z
+        M322.754 101.104 L303.009 73.872 L284.822 73.872 L284.822 101.104 L270.245 101.104 L270.245 29.83 L313.184 29.83 C322.087 29.899 329.131 31.924 334.106 35.85 C339.085 39.79 341.544 45.014 341.619 51.82 C341.544 57.399 339.848 61.919 336.436 65.588 C333.012 69.269 328.048 71.78 321.683 73.051 L320.046 73.378 L318.254 73.542 L338.86 101.104 Z
+        M453.023 101.104 L416.127 29.831 L432.609 29.831 L459.789 84.187 L462.551 84.187 L489.609 29.831 L506.206 29.831 L469.196 101.104 Z
+        M516.988 101.104 L516.988 29.831 L531.565 29.831 L531.565 90.644 L575.93 90.644 L575.93 101.104 Z
+        M219.543 73.872 L240.293 73.872 L240.136 76.054 C239.763 81.219 237.365 85.292 232.992 88.167 C228.782 90.879 223.128 92.292 216.128 92.366 C207.997 92.215 201.343 89.706 196.352 84.911 C191.332 80.089 188.743 73.555 188.657 65.445 C188.743 57.382 191.332 50.847 196.34 46.036 C201.338 41.157 208.002 38.644 216.193 38.567 C222.182 38.645 227.235 40.069 231.219 42.803 C233.783 44.576 235.863 46.804 237.459 49.444 L252.565 49.444 C250.358 43.442 246.36 38.512 240.638 34.765 C234.179 30.488 225.941 28.284 216.2 28.215 C203.683 28.421 193.465 31.978 185.824 38.793 C178.271 45.462 174.321 54.437 174.081 65.467 C174.323 76.652 178.165 85.378 185.832 92.149 C193.46 98.953 203.669 102.509 216.178 102.719 C228.154 102.646 237.603 99.899 244.267 94.555 C250.894 89.243 254.153 81.976 254.23 72.355 L254.23 63.413 L219.543 63.413 Z
+        M388.222 45.026 L391.03 45.026 L404.844 73.87 L374.408 73.87 Z
+        M397.034 29.83 L382.097 29.83 L345.779 101.104 L361.29 101.104 L366.896 89.479 L369.381 84.329 L409.81 84.329 L412.234 89.479 L417.84 101.104 L433.468 101.104 Z"/>
+    </symbol>
+    <linearGradient id="gInk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a5262"/><stop offset=".5" stop-color="#2A2F3A"/><stop offset="1" stop-color="#10131c"/></linearGradient>
+    <linearGradient id="gSteel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f4f6"/><stop offset="1" stop-color="#b7bdc6"/></linearGradient>
+    <linearGradient id="gSage" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b5d9d1"/><stop offset="1" stop-color="#6fa79c"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="announce" aria-live="off">
+  <span class="on"><b>4-year warranty</b> on every GRAVL power bank</span>
+  <span>Airline compliant. Under 100Wh needs no approval</span>
+  <span>Support, Monday to Friday, 8am to 8:30pm</span>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap bar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+    <nav class="tabs" id="tabs" aria-label="Categories"></nav>
+    <a class="logo" href="#top" aria-label="GRAVL home"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></a>
+    <div class="tools">
+      <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></button>
+      <a class="icon-btn" href="#account" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.6 4-5.4 7.2-5.4s6 1.8 7.2 5.4"/></svg></a>
+      <button class="icon-btn" data-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6.500a3 3 0 016 0V8"/></svg><span class="count" data-count-badge hidden>0</span></button>
+    </div>
+  </div>
+  <div class="mega" id="mega"><div class="mega-in" id="megaIn"></div></div>
+</header>
+
+<main id="top">
+  <!-- 2 hero banner -->
+  <section class="hero" aria-label="Featured">
+    <div class="banner on-dark" id="banner">
+      <article class="slide s1 on">
+        <img class="slide-bg" src="assets/engine-studio.webp" alt="" width="1914" height="822" fetchpriority="high">
+        <div class="slide-copy">
+          <h1 style="--i:1">Power, built for years.</h1>
+          <p class="sub" style="--i:2">240W output. 27,000mAh. Backed by a 4-year warranty.</p>
+          <a class="btn btn--inverse" href="#switcher" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s2">
+        <img class="slide-bg" src="assets/core-summer.webp" alt="" width="1914" height="822" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Built for the Indian summer.</p>
+          <p class="sub" style="--i:2">Semi-solid cells in a 10,000mAh body. Engineered for heat, designed to last.</p>
+          <a class="btn btn--inverse" href="#switcher" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s3">
+        <img class="slide-bg" src="assets/sigma-courtyard.webp" alt="" width="1911" height="823" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Power after hours.</p>
+          <p class="sub" style="--i:2">Carry 10,000mAh in your pocket with the compact Sigma 35.</p>
+          <a class="btn btn--inverse" href="https://www.gravlspace.com/products/gravl-sigma-35" style="--i:3"><span class="roll-label"><span>Shop Sigma 35</span><span aria-hidden="true">Shop Sigma 35</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="slide s4">
+        <img class="slide-bg" src="assets/travel-warranty.webp" alt="" width="1914" height="822" decoding="async">
+        <div class="slide-copy">
+          <p class="h1" style="--i:1">Backed for four years.</p>
+          <p class="sub" style="--i:2">One warranty across the range. Register in two minutes.</p>
+          <a class="btn btn--inverse" href="#why" style="--i:3"><span class="roll-label"><span>Shop now</span><span aria-hidden="true">Shop now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </article>
+      <div class="hero-ui">
+        <div class="segs" id="segs"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 switcher -->
+  <section class="sec wrap" id="switcher" aria-label="Shop by category">
+    <div class="thumbs-scroll"><div class="thumbs" id="thumbs" role="tablist" aria-label="Product categories"></div></div>
+    <div class="panel" id="panel" role="tabpanel"></div>
+  </section>
+
+  <!-- 4 categories -->
+  <section class="sec wrap" id="categories" style="padding-top:0">
+    <div class="sec-head">
+      <div><h2 class="h2" data-reveal>Six categories. <em>One standard.</em></h2></div>
+      <div class="category-controls">
+        <button type="button" class="arrow prev" data-category-step="-1" aria-label="Previous categories" aria-controls="cats" disabled><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <button type="button" class="arrow" data-category-step="1" aria-label="Next categories" aria-controls="cats"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </div>
+    <div class="cats" id="cats" role="region" aria-label="Category gallery"></div>
+  </section>
+
+  <!-- 5 bestsellers -->
+  <section class="sec wrap" id="bestsellers" aria-labelledby="bestsellers-title" style="padding-top:0">
+    <div class="sec-head">
+      <div><h2 class="h2" id="bestsellers-title">Most <em>relied on.</em></h2></div>
+      <div class="rail-ctl">
+        <div class="seg-tabs" id="railChips" role="group" aria-label="Filter by category">
+          <span class="pill" aria-hidden="true"></span>
+          <button type="button" data-f="all" aria-controls="rail" aria-pressed="true">All</button>
+          <button type="button" data-f="power" aria-controls="rail" aria-pressed="false">Power banks</button>
+          <button type="button" data-f="gear" aria-controls="rail" aria-pressed="false">Productivity gear</button>
+        </div>
+        <button class="arrow prev" data-rail="-1" aria-label="Scroll bestsellers back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <button class="arrow" data-rail="1" aria-label="Scroll bestsellers forward"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Bestselling products"></div>
+  </section>
+
+  <section class="sec wrap" id="trending" aria-labelledby="trending-title" style="padding-top:0">
+    <div class="sec-head">
+      <h2 class="h2" id="trending-title">Trending <em>tech.</em></h2>
+    </div>
+    <div class="trend-collections">
+      <a class="trend-card on-dark" href="#shop/power/laptops" aria-label="Shop collection: Laptop power">
+        <img src="assets/trending/laptop-power.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Laptop power</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="#shop/power/travel" aria-label="Shop collection: Travel essentials">
+        <img src="assets/trending/travel-essentials.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Travel essentials</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="#shop/power/10k" aria-label="Shop collection: Pocket power">
+        <img src="assets/trending/pocket-power.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Pocket power</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="trend-card on-dark" href="#shop/gear" aria-label="Shop collection: Productivity gear">
+        <img src="assets/trending/productivity-gear.webp" width="1280" height="960" alt="" loading="lazy">
+        <div class="trend-caption">
+          <h3>Productivity gear</h3>
+          <span class="btn btn--inverse btn--compact trend-cta" aria-hidden="true"><span class="roll-label"><span>Shop collection</span><span aria-hidden="true">Shop collection</span></span><svg class="btn-icon" viewBox="0 0 20 20"><use href="#button-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="setup-pin">
+    <div class="wrap setup-frame">
+    <section class="sec on-dark" id="setup" aria-labelledby="setup-title">
+      <div class="sets-heading">
+        <h2 class="h2" id="setup-title">From work <em>to travel.</em></h2>
+        <fieldset class="set-switch seg-tabs" id="setChoices">
+          <legend>Choose a product set</legend>
+          <span class="pill" aria-hidden="true"></span>
+          <label><input type="radio" name="product-set" value="work" checked aria-controls="setDetails"><span>Work</span></label>
+          <label><input type="radio" name="product-set" value="travel" aria-controls="setDetails"><span>Travel</span></label>
+        </fieldset>
+      </div>
+      <div class="sets-layout">
+        <div class="set-scene">
+          <div class="set-photo-plane">
+            <img id="setPhoto" src="assets/product-sets/work.webp" alt="Four GRAVL accessories on a walnut desk" loading="lazy">
+            <div id="setMarkers"></div>
+          </div>
+        </div>
+        <div class="set-details" id="setDetails" role="region" aria-labelledby="setTitle">
+          <h3 id="setTitle">The work set</h3>
+          <ul class="set-items" id="setItems" aria-label="Products in the set"></ul>
+          <div class="set-checkout">
+            <div class="set-total"><span>Set total</span><strong id="setTotal"></strong></div>
+            <button class="btn btn--inverse btn--small add" id="addSet"><span class="a"><span class="roll-label"><span>Add to cart</span><span aria-hidden="true">Add to cart</span></span></span><span class="b"><span class="roll-label"><span>Added</span><span aria-hidden="true">Added</span></span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use class="icon-arrow" href="#button-arrow"/><use class="icon-check" href="#button-check"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <section class="trust" id="why" aria-labelledby="trust-title">
+    <div class="trust-stage">
+      <button class="trust-skip" type="button">Skip to all four features</button>
+      <h2 class="trust-title" id="trust-title"><span>Why put your trust</span> <span>in GRAVL?</span></h2>
+      <div class="wrap trust-content">
+        <div class="trust-grid">
+          <article class="trust-card trust-card--warranty">
+            <span class="trust-four" aria-hidden="true">4</span>
+            <h3>Four-year warranty</h3>
+            <ul class="trust-points" role="list">
+              <li>Full product coverage in year one</li>
+              <li>Battery coverage in years two to four</li>
+              <li>Register within 30 days of purchase</li>
+            </ul>
+          </article>
+          <article class="trust-card">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="12" width="35" height="24" rx="5"/><path d="M44 20v8m-20-12-7 10h8l-5 7"/>
+            </svg>
+            <h3>Battery protection</h3>
+            <ul class="trust-points" role="list">
+              <li>BIS-certified power banks</li>
+              <li>Built-in thermal protection</li>
+              <li>Semi-solid cells in the Core 30</li>
+            </ul>
+          </article>
+          <article class="trust-card trust-card--travel">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 27 35-16-14 30-6-13Zm15 1 20-17"/>
+            </svg>
+            <h3>Carry-on ready</h3>
+            <ul class="trust-points" role="list">
+              <li>Check your model’s watt-hour rating</li>
+              <li>Pack it in your cabin bag</li>
+              <li>Check your airline’s battery policy</li>
+            </ul>
+          </article>
+          <article class="trust-card trust-card--support">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 26v-4a17 17 0 0 1 34 0v4m-1 7c0 6-5 9-14 9"/><rect x="4" y="23" width="8" height="13" rx="3"/><rect x="36" y="23" width="8" height="13" rx="3"/>
+            </svg>
+            <h3>Talk to our team</h3>
+            <ul class="trust-points" role="list">
+              <li>Reach us Monday to Friday</li>
+              <li>Open from 8am to 8:30pm</li>
+              <li>Email care@gravlspace.com</li>
+            </ul>
+          </article>
+        </div>
+        <dl class="trust-stats" aria-label="GRAVL in numbers">
+          <div class="trust-stat">
+            <dt>Power bank warranty</dt>
+            <dd>4<span>years</span></dd>
+          </div>
+          <div class="trust-stat">
+            <dt>Peak output on Engine 240</dt>
+            <dd>240<span>W</span></dd>
+          </div>
+          <div class="trust-stat">
+            <dt>Engine 240 battery capacity</dt>
+            <dd>27,000<span>mAh</span></dd>
+          </div>
+          <div class="trust-stat">
+            <dt>Support each weekday</dt>
+            <dd>12.5<span>hours</span></dd>
+          </div>
+        </dl>
+        <div class="trust-actions">
+          <a class="btn" href="#shop/power"><span class="roll-label"><span>Shop power banks</span><span aria-hidden="true">Shop power banks</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-arrow"/></svg></a>
+          <a class="link" href="https://www.gravlspace.com/pages/register-warranty">Register your warranty</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="after-trust">
+  <section class="sec wrap" id="video-testimonials" aria-labelledby="video-reviews-title">
+    <div class="video-review-heading">
+      <h2 class="h2" id="video-reviews-title">Work that goes <em>wherever you do.</em></h2>
+      <div class="review-controls" data-track="video-reviews" data-item="testimonial"></div>
+    </div>
+    <div class="review-track" id="video-reviews" role="region" aria-roledescription="carousel" aria-labelledby="video-reviews-title" tabindex="0">
+      <!-- Pexels stock footage: Tima Miroshnichenko, 5992596; Kampus Production, 8347244. -->
+      <div class="video-review" data-video-product="engine">
+        <video controls playsinline preload="none" poster="assets/testimonials/mobile-work.jpg" src="assets/testimonials/mobile-work.mp4" aria-label="Working remotely, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: Working remotely" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="arc">
+        <video controls playsinline preload="none" poster="assets/testimonials/office-call.jpg" src="assets/testimonials/office-call.mp4" aria-label="At the office, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the office" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <!-- Pexels: Mikhail Nilov (7681584), Sora Shimazaki (5636789), Pavel Danilyuk (8639832). -->
+      <div class="video-review" data-video-product="forge">
+        <video controls playsinline preload="none" poster="assets/testimonials/cafe-work.jpg" src="assets/testimonials/cafe-work.mp4" aria-label="At the café, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the café" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="sigma">
+        <video controls playsinline preload="none" poster="assets/testimonials/city-call.jpg" src="assets/testimonials/city-call.mp4" aria-label="Around the city, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: Around the city" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="qi">
+        <video controls playsinline preload="none" poster="assets/testimonials/daily-desk.jpg" src="assets/testimonials/daily-desk.mp4" aria-label="At the desk, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: At the desk" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <!-- Pexels stock footage: Anna Pou (8114937) and George Milton (7011572). -->
+      <div class="video-review" data-video-product="vault">
+        <video controls playsinline preload="none" poster="assets/testimonials/sound-studio.jpg" src="assets/testimonials/sound-studio.mp4" aria-label="In the studio, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: In the studio" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+      <div class="video-review" data-video-product="axis">
+        <video controls playsinline preload="none" poster="assets/testimonials/photo-session.jpg" src="assets/testimonials/photo-session.mp4" aria-label="On a shoot, stock footage"></video>
+        <button class="video-review-play" type="button" aria-label="Play video: On a shoot" hidden><span class="video-play-disc" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Written testimonials -->
+  <section class="sec wrap" id="reviews" aria-labelledby="review-title">
+    <div class="video-review-heading">
+      <h2 class="h2" id="review-title">Why customers <em>chose GRAVL.</em></h2>
+      <div class="review-controls" data-track="written-reviews" data-item="review"></div>
+    </div>
+    <div class="review-track" id="written-reviews" role="region" aria-roledescription="carousel" aria-labelledby="review-title" tabindex="0">
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-engine-240">Took it on a work trip. Laptop and phone, <em>full by dinner.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/portrait-2379004.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Varun</strong><a href="https://www.gravlspace.com/products/gravl-engine-240">Engine 240</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-forge-130">Flying every week, <em>carry-on only.</em> Fits my backpack.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/office-call.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Sameer</strong><a href="https://www.gravlspace.com/products/gravl-forge-130">Forge 130</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">A <em>4 year warranty</em> made the decision easy.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/cafe-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Shruti</strong><a href="https://www.gravlspace.com/products/gravl-axis-67">Axis 67</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-forge-130">One charger, laptop and phone, <em>both at full speed.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/mobile-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Karthik</strong><a href="https://www.gravlspace.com/products/gravl-forge-130">Forge 130</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">Bought it for my husband, <em>his travel bag is sorted.</em></blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/daily-desk.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Neha</strong><a href="https://www.gravlspace.com/products/gravl-axis-67">Axis 67</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-sigma-35">Fits in the front pocket, <em>no bulky cables</em> in my bag.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/portrait-2379004.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Ritu</strong><a href="https://www.gravlspace.com/products/gravl-sigma-35">Sigma 35</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-engine-240">Ran my whole <em>client day on one charge,</em> phone at 100 by 6pm.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/daily-desk.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Arjun</strong><a href="https://www.gravlspace.com/products/gravl-engine-240">Engine 240</a></span></figcaption>
+      </figure>
+      <figure class="review-card">
+        <blockquote cite="https://www.gravlspace.com/products/gravl-axis-67">Works with my <em>desk, couch and café</em> setup. Same bag, every day.</blockquote>
+        <figcaption><img class="review-avatar" src="assets/testimonials/portraits/cafe-work.webp" width="44" height="44" alt="" loading="lazy"><span class="review-credit"><strong>Meera</strong><a href="https://www.gravlspace.com/products/gravl-axis-67">Axis 67</a></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 12 faq -->
+  <section class="sec wrap" id="faq" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="faq-intro">
+        <h2 class="faq-title" id="faq-title" data-reveal>Good questions. <em>Powerful answers.</em></h2>
+        <div class="support" data-reveal>
+          <div class="support-avatars" aria-hidden="true">
+            <span class="support-avatar"><img src="assets/testimonials/office-call.jpg" width="56" height="56" alt="" loading="lazy"></span>
+            <span class="support-avatar"><img src="assets/testimonials/cafe-work.jpg" width="64" height="64" alt="" loading="lazy"></span>
+            <span class="support-avatar"><img src="assets/testimonials/mobile-work.jpg" width="56" height="56" alt="" loading="lazy"></span>
+          </div>
+          <div class="support-copy">
+            <p>More questions? Reach out anytime.</p>
+            <a class="support-contact" href="mailto:care@gravlspace.com"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="m3 5 7 5 7-5"/></svg><span>care@gravlspace.com</span></a>
+            <p class="support-hours">Monday to Friday, 8am to 8:30pm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-panel" data-reveal>
+        <div class="faq-tabs seg-tabs" id="faqTabs" role="tablist" aria-label="FAQ categories">
+          <span class="pill" aria-hidden="true"></span>
+          <button type="button" id="faq-tab-general" role="tab" aria-selected="true" aria-controls="qas" data-faq-category="general">General</button>
+          <button type="button" id="faq-tab-products" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="products">Products</button>
+          <button type="button" id="faq-tab-warranty" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="warranty">Warranty</button>
+          <button type="button" id="faq-tab-support" role="tab" aria-selected="false" aria-controls="qas" tabindex="-1" data-faq-category="support">Support</button>
+        </div>
+        <div class="faq-questions" id="qas" role="tabpanel" aria-labelledby="faq-tab-general" tabindex="0"></div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap gift-section" id="corporate-gifting" aria-labelledby="gifting-title">
+    <div class="gift-banner">
+      <img class="gift-photo" src="assets/corporate-gifting.webp" width="2060" height="763" loading="lazy" decoding="async" alt="A GRAVL power bank being unboxed on a walnut desk.">
+      <div class="gift-panel">
+        <span class="gift-label">
+          <svg class="gift-label-mark" viewBox="0 0 138 136" width="17" height="17" overflow="hidden" aria-hidden="true" focusable="false"><use href="#gravl-logo" width="576" height="135"/></svg>
+          Corporate gifting
+        </span>
+        <div>
+          <h2 class="h2" id="gifting-title">A gift they’ll <em>reach for daily.</em></h2>
+          <p class="gift-description">Welcome a new teammate or thank a longtime client. Tell us how many gifts you need and when you need them.</p>
+          <a class="btn" href="mailto:care@gravlspace.com?subject=Corporate%20gifting%20enquiry"><span class="roll-label"><span>Contact us</span><span aria-hidden="true">Contact us</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</main>
+
+<!-- 13 footer -->
+<footer class="foot on-dark">
+  <div class="wrap">
+    <ul class="footer-benefits" aria-label="The GRAVL standard">
+      <li><b>4-year power bank warranty</b><small>Register within 30 days. Terms apply.</small></li>
+      <li><b>Built-in battery protection</b><small>Power banks with thermal protection.</small></li>
+      <li><b>Power that travels with you</b><small>Check your model and airline’s rules.</small></li>
+      <li><b>Support that answers</b><small>Mon–Fri, 8am to 8:30pm.</small></li>
+    </ul>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#top" aria-label="GRAVL home"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></a>
+        <p>Essentials built to be depended on. Protected progress.</p>
+        <address class="footer-contact"><a href="mailto:care@gravlspace.com">care@gravlspace.com</a><span class="footer-hours">Monday to Friday, 8am to 8:30pm.</span></address>
+      </div>
+      <nav class="footer-nav footer-nav--shop" aria-labelledby="footer-shop-title"><h3 id="footer-shop-title">Shop</h3><ul id="footShop"></ul></nav>
+      <nav class="footer-nav footer-nav--help" aria-labelledby="footer-help-title"><h3 id="footer-help-title">Help</h3><ul><li><a href="https://www.gravlspace.com/pages/register-warranty"><span class="roll-label"><span>Register warranty</span><span aria-hidden="true">Register warranty</span></span></a></li><li><a href="https://www.gravlspace.com/policies/shipping-policy"><span class="roll-label"><span>Shipping</span><span aria-hidden="true">Shipping</span></span></a></li><li><a href="#faq"><span class="roll-label"><span>Returns and refunds</span><span aria-hidden="true">Returns and refunds</span></span></a></li><li><a href="#faq"><span class="roll-label"><span>User manuals</span><span aria-hidden="true">User manuals</span></span></a></li></ul></nav>
+      <nav class="footer-nav footer-nav--company" aria-labelledby="footer-company-title"><h3 id="footer-company-title">Company</h3><ul><li><a href="https://www.gravlspace.com/pages/about-us"><span class="roll-label"><span>About GRAVL</span><span aria-hidden="true">About GRAVL</span></span></a></li><li><a href="#top"><span class="roll-label"><span>Buying guide</span><span aria-hidden="true">Buying guide</span></span></a></li><li><a href="mailto:care@gravlspace.com"><span class="roll-label"><span>Contact</span><span aria-hidden="true">Contact</span></span></a></li></ul></nav>
+      <div class="footer-newsletter">
+        <h2>BE THE FIRST TO KNOW</h2>
+        <p>New products, useful updates, and offers from GRAVL.</p>
+        <form class="footer-form" id="newsForm"><label class="footer-label" for="newsEmail">Email address</label><input id="newsEmail" type="email" name="email" autocomplete="email" placeholder="Email address" required><button class="btn btn--compact btn--text footer-signup" type="submit"><span class="roll-label"><span>Sign up</span><span aria-hidden="true">Sign up</span></span></button></form>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="footer-legal-copy"><p class="footer-copyright">© 2026 GRAVL. All rights reserved.</p><div class="footer-legal-links"><a href="https://www.gravlspace.com/policies/privacy-policy">Privacy</a><a href="https://www.gravlspace.com/policies/terms-of-service">Terms</a></div></div>
+      <div class="footer-region"><span>India (INR ₹)</span><a class="footer-back-top" href="#top">Back to top <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg></a></div>
+    </div>
+  </div>
+</footer>
+
+<dialog id="signup-dialog" class="signup-dialog" aria-labelledby="signup-title" aria-describedby="signup-description">
+  <div class="signup-layout">
+    <img class="signup-photo" src="assets/category-lifestyle/power.webp" width="800" height="1000" alt="" loading="lazy">
+    <button type="button" class="signup-close" aria-label="Close signup" data-dismiss-signup autofocus>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+    </button>
+    <div class="signup-copy">
+      <h2 class="h2" id="signup-title">Get first access to <em>GRAVL offers.</em></h2>
+      <p id="signup-description">Get new product launches and offers in your inbox.</p>
+      <form id="popup-signup">
+        <label class="footer-label" for="popup-email">Email address</label>
+        <input id="popup-email" name="email" type="email" autocomplete="email" placeholder="Email address" required>
+        <button type="submit" class="btn"><span class="roll-label"><span>Subscribe now</span><span aria-hidden="true">Subscribe now</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-arrow"/></svg></button>
+      </form>
+      <p class="signup-result" role="status" hidden>Thanks for trying the signup. This preview doesn’t send email.</p>
+      <button type="button" class="signup-later" data-dismiss-signup>Not now</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="closeCart" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="lines" id="lines"></div>
+  <div class="assure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.500-3 7.500-7 9-4-1.500-7-4.500-7-9V6l7-3z"/></svg>4-year warranty included on power banks.</div>
+  <div class="sub"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+  <button class="btn" id="checkout"><span class="roll-label"><span>Checkout</span><span aria-hidden="true">Checkout</span></span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></button>
+  <p class="fine">Checkout runs on Shopify's standard pages and is not part of this preview.</p>
+</aside>
+
+<aside class="mmenu" id="mmenu" aria-label="Menu" aria-hidden="true">
+  <div class="mmenu-head"><span class="logo" role="img" aria-label="GRAVL"><svg viewBox="0 0 576 135" aria-hidden="true" focusable="false"><use href="#gravl-logo"/></svg></span><button class="icon-btn" id="closeMenu" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <nav id="mrows" aria-label="Shop navigation"></nav>
+  <nav class="menu-links" aria-label="More links">
+    <a href="#shop/power/new"><span class="roll-label"><span>New</span><span aria-hidden="true">New</span></span></a>
+    <a href="#shop/power/offers"><span class="roll-label"><span>Offers</span><span aria-hidden="true">Offers</span></span></a>
+    <a href="https://www.gravlspace.com/pages/about-us"><span class="roll-label"><span>About Us</span><span aria-hidden="true">About Us</span></span></a>
+    <a href="#faq"><span class="roll-label"><span>Help</span><span aria-hidden="true">Help</span></span></a>
+  </nav>
+</aside>
+
+<nav class="bbar" aria-label="Quick navigation">
+  <a href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4v-9z"/></svg><span class="roll-label"><span>Home</span><span aria-hidden="true">Home</span></span></a>
+  <button id="bbCats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span class="roll-label"><span>Categories</span><span aria-hidden="true">Categories</span></span></button>
+  <button aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.500"/><path d="M16 16l4 4"/></svg><span class="roll-label"><span>Search</span><span aria-hidden="true">Search</span></span></button>
+  <button data-cart><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6.500a3 3 0 016 0V8"/></svg><span class="roll-label"><span>Cart</span><span aria-hidden="true">Cart</span></span><span class="count" data-count-badge hidden>0</span></button>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const reviewVideos = document.querySelectorAll('.video-review video');
+for (const video of reviewVideos) {
+  const playButton = video.nextElementSibling;
+  video.controls = false;
+  playButton.hidden = false;
+  playButton.addEventListener('click', () => {
+    playButton.hidden = true;
+    video.controls = true;
+    video.focus({preventScroll:true});
+    video.play().catch(() => {
+      if (!video.error) {
+        video.controls = false;
+        playButton.hidden = false;
+        playButton.focus({preventScroll:true});
+      }
+    });
+  });
+  video.addEventListener('play', () => {
+    for (const other of reviewVideos) if (other !== video) other.pause();
+  });
+  video.addEventListener('ended', () => {
+    const restoreFocus = document.activeElement === video;
+    video.load();
+    video.controls = false;
+    playButton.hidden = false;
+    if (restoreFocus) playButton.focus({preventScroll:true});
+  });
+}
+const inr=n=>'₹'+n.toLocaleString('en-IN');
+// Labels are site-owned copy. Only the first line contributes to the accessible name.
+const rollLabel=text=>`<span class="roll-label"><span>${text}</span><span aria-hidden="true">${text}</span></span>`;
+const ARROW='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>';
+
+function setupReviewMarquee(track, controls) {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const cards = [...track.children];
+  const copies = cards.map(card => {
+    const copy = card.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    copy.querySelectorAll('a').forEach(link => { link.tabIndex = -1; });
+    return copy;
+  });
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'arrow';
+  toggle.setAttribute('aria-controls', track.id);
+  controls.prepend(toggle);
+
+  const pixelsPerSecond = 30;
+  let cycle = 0, position = 0, lastFrame = 0, frame = 0, manualTimer = 0;
+  let paused = false, hovered = false, touching = false, onScreen = false;
+
+  function tick(time) {
+    position = (position + pixelsPerSecond * Math.min(time - lastFrame, 64) / 1000) % cycle;
+    track.scrollLeft = position;
+    lastFrame = time;
+    frame = requestAnimationFrame(tick);
+  }
+  function syncPlayback() {
+    cancelAnimationFrame(frame);
+    if (!cycle || paused || hovered || touching || manualTimer || !onScreen || document.hidden || track.contains(document.activeElement)) return;
+    position = track.scrollLeft;
+    lastFrame = performance.now();
+    frame = requestAnimationFrame(tick);
+  }
+  function allowManualScroll() {
+    clearTimeout(manualTimer);
+    manualTimer = setTimeout(() => { manualTimer = 0; syncPlayback(); }, 1000);
+    syncPlayback();
+  }
+  function measure() {
+    cycle = copies[0].isConnected
+      ? copies[0].getBoundingClientRect().left - cards[0].getBoundingClientRect().left
+      : 0;
+    syncPlayback();
+  }
+  function setMode() {
+    const looping = !reducedMotion.matches;
+    const offset = cycle ? track.scrollLeft % cycle : track.scrollLeft;
+    if (looping) track.append(...copies);
+    else copies.forEach(copy => copy.remove());
+    track.classList.toggle('is-looping', looping);
+    toggle.hidden = !looping;
+    track.scrollLeft = offset;
+    measure();
+  }
+  function updateToggle() {
+    toggle.setAttribute('aria-label', paused ? 'Play review animation' : 'Pause review animation');
+    const path = paused ? 'M5 3l8 5-8 5z' : 'M4 3h3v10H4zM10 3h3v10h-3z';
+    toggle.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="' + path + '"/></svg>';
+  }
+  toggle.addEventListener('click', () => { paused = !paused; updateToggle(); syncPlayback(); });
+  track.addEventListener('pointerenter', event => { hovered = event.pointerType === 'mouse'; syncPlayback(); });
+  track.addEventListener('pointerleave', () => { hovered = false; syncPlayback(); });
+  track.addEventListener('touchstart', () => { touching = true; syncPlayback(); }, {passive:true});
+  function endTouch() { touching = false; allowManualScroll(); }
+  track.addEventListener('touchend', endTouch, {passive:true});
+  track.addEventListener('touchcancel', endTouch, {passive:true});
+  track.addEventListener('wheel', allowManualScroll, {passive:true});
+  track.addEventListener('focusin', syncPlayback);
+  track.addEventListener('focusout', () => queueMicrotask(syncPlayback));
+  document.addEventListener('visibilitychange', syncPlayback);
+  reducedMotion.addEventListener('change', setMode);
+  new ResizeObserver(measure).observe(track);
+  new IntersectionObserver(([entry]) => { onScreen = entry.isIntersecting; syncPlayback(); }).observe(track);
+  updateToggle();
+  setMode();
+
+  return function stepLoop(direction) {
+    if (!cycle) return false;
+    allowManualScroll();
+    const stride = cycle / cards.length;
+    let start = track.scrollLeft % cycle;
+    if (direction < 0 && start < 1) start += cycle;
+    track.scrollLeft = start;
+    const target = direction > 0 ? Math.floor((start + 1) / stride) + 1 : Math.ceil((start - 1) / stride) - 1;
+    track.scrollTo({left: target * stride, behavior:'smooth'});
+    return true;
+  };
+}
+
+for (const controls of document.querySelectorAll('.review-controls')) {
+  const track = document.getElementById(controls.dataset.track);
+  const stepLoop = track.id === 'written-reviews' ? setupReviewMarquee(track, controls) : null;
+  const name = controls.dataset.item;
+  const buttons = [-1, 1].map(direction => {
+    const back = direction < 0;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = back ? 'arrow prev' : 'arrow';
+    button.setAttribute('aria-label', (back ? 'Previous ' : 'Next ') + name);
+    button.setAttribute('aria-controls', track.id);
+    button.innerHTML = ARROW;
+    button.addEventListener('click', () => step(direction));
+    controls.append(button);
+    return button;
+  });
+
+  function step(direction) {
+    if (stepLoop?.(direction)) return;
+    const stride = track.children[1].offsetLeft - track.children[0].offsetLeft;
+    const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    track.scrollBy({left: direction * stride, behavior});
+  }
+  function syncControls() {
+    if (track.classList.contains('is-looping')) {
+      buttons.forEach(button => { if (button.disabled) button.disabled = false; });
+      return;
+    }
+    const end = track.scrollWidth - track.clientWidth;
+    buttons[0].disabled = track.scrollLeft <= 1;
+    buttons[1].disabled = track.scrollLeft >= end - 1;
+  }
+  track.addEventListener('keydown', event => {
+    if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    step(event.key === 'ArrowLeft' ? -1 : 1);
+  });
+  track.addEventListener('scroll', syncControls, {passive:true});
+  new ResizeObserver(syncControls).observe(track);
+  if (stepLoop) new MutationObserver(syncControls).observe(track, {attributeFilter:['class']});
+  syncControls();
+}
+
+const STAR='<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.500l2 4.300 4.700.500-3.500 3.200 1 4.600L8 11.800l-4.200 2.300 1-4.600L1.300 6.300 6 5.800z"/></svg>';
+
+/* placeholder product art */
+const sh='<ellipse cx="100" cy="178" rx="52" ry="7" fill="#0C0F19" opacity=".12"/>';
+const leds=(x,y,c='var(--teal)')=>[0,1,2,3].map(i=>`<circle cx="${x+i*9}" cy="${y}" r="2" fill="${c}" opacity="${i<3?1:.35}"/>`).join('');
+const ART={
+ engine:`${sh}<rect x="36" y="48" width="128" height="104" rx="18" fill="url(#gInk)"/><rect x="50" y="62" width="62" height="26" rx="6" fill="#05070d"/><text x="58" y="81" font-family="Work Sans,sans-serif" font-size="15" font-weight="500" fill="var(--teal)">240W</text><rect x="124" y="66" width="26" height="8" rx="4" fill="#05070d"/><rect x="124" y="80" width="26" height="8" rx="4" fill="#05070d"/>${leds(52,134)}`,
+ forge:`${sh}<rect x="56" y="28" width="88" height="144" rx="16" fill="url(#gInk)"/><rect x="68" y="40" width="64" height="24" rx="6" fill="#05070d"/><text x="76" y="57" font-family="Work Sans,sans-serif" font-size="13" font-weight="500" fill="var(--teal)">85%</text>${leds(86,156)}`,
+ axis:`${sh}<rect x="60" y="32" width="80" height="136" rx="14" fill="url(#gInk)"/><rect x="70" y="150" width="60" height="4" rx="2" fill="#05070d"/>${leds(86,48)}`,
+ vault:`${sh}<rect x="44" y="40" width="112" height="120" rx="20" fill="url(#gSteel)"/><rect x="58" y="54" width="84" height="30" rx="7" fill="#0C0F19"/><text x="68" y="75" font-family="Work Sans,sans-serif" font-size="15" font-weight="500" fill="var(--teal)">100%</text><circle cx="100" cy="124" r="14" fill="none" stroke="#2A2F3A" stroke-width="2"/>`,
+ core:`${sh}<rect x="62" y="34" width="76" height="132" rx="20" fill="url(#gSage)"/><rect x="76" y="148" width="48" height="4" rx="2" fill="#0C0F19" opacity=".35"/>${leds(86,50,'#0C0F19')}`,
+ qi:`${sh}<rect x="58" y="34" width="84" height="132" rx="20" fill="url(#gSteel)"/><circle cx="100" cy="92" r="27" fill="none" stroke="#2A2F3A" stroke-width="3"/><rect x="97" y="126" width="6" height="22" rx="3" fill="#2A2F3A"/>`,
+ sigma:`${sh}<rect x="66" y="50" width="68" height="104" rx="18" fill="url(#gInk)"/>${leds(86,138)}<rect x="84" y="62" width="32" height="6" rx="3" fill="#05070d"/>`,
+ ring:`${sh}<ellipse cx="100" cy="112" rx="46" ry="50" fill="none" stroke="url(#gInk)" stroke-width="18"/><rect x="70" y="40" width="60" height="38" rx="14" fill="url(#gInk)"/><circle cx="100" cy="59" r="8" fill="var(--teal)"/>`,
+ charger:`${sh}<rect x="82" y="26" width="8" height="30" rx="3" fill="#B7BDC6"/><rect x="110" y="26" width="8" height="30" rx="3" fill="#B7BDC6"/><rect x="58" y="52" width="84" height="100" rx="18" fill="url(#gSteel)"/><rect x="84" y="132" width="32" height="8" rx="4" fill="#2A2F3A"/>`,
+ cable:`${sh}<path d="M60 150V96a40 40 0 0180 0v54" fill="none" stroke="#2A2F3A" stroke-width="8" stroke-linecap="round"/><rect x="48" y="140" width="24" height="34" rx="6" fill="url(#gInk)"/><rect x="128" y="140" width="24" height="34" rx="6" fill="url(#gInk)"/>`,
+ hub:`${sh}<rect x="28" y="84" width="144" height="40" rx="12" fill="url(#gInk)"/><rect x="42" y="98" width="20" height="10" rx="3" fill="#05070d"/><rect x="70" y="98" width="20" height="10" rx="3" fill="#05070d"/><rect x="98" y="98" width="14" height="10" rx="5" fill="#05070d"/><rect x="120" y="98" width="14" height="10" rx="5" fill="#05070d"/><circle cx="154" cy="103" r="3" fill="var(--teal)"/><path d="M100 84V56" stroke="#2A2F3A" stroke-width="6" stroke-linecap="round"/>`,
+ stand:`${sh}<path d="M44 150h112" stroke="url(#gSteel)" stroke-width="12" stroke-linecap="round"/><path d="M58 150l30-78h78" fill="none" stroke="#B7BDC6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><rect x="76" y="46" width="98" height="16" rx="5" fill="url(#gInk)" transform="rotate(-8 125 54)"/>`
+};
+const art=k=>`<svg class="art" viewBox="0 0 200 200" aria-hidden="true">${ART[k]||''}</svg>`;
+$$('[data-art]').forEach(e=>{const s=art(e.dataset.art); if(e.classList.contains('art')) e.innerHTML=`<svg viewBox="0 0 200 200" width="100%" height="100%" aria-hidden="true">${ART[e.dataset.art]}</svg>`; else e.innerHTML=s;});
+
+/* data: read from gravlspace.com on 13 Nov 2026 */
+const P={
+ engine:{n:'Engine 240',spec:'27,000mAh · 240W · 97.2Wh',price:6898,was:7665,r:4.8,rc:9,tag:'Bestseller',cat:'power'},
+ forge:{n:'Forge 130',spec:'20,000mAh · 130W dual port',price:6125,r:4.8,rc:5,cat:'power'},
+ axis:{n:'Axis 67',spec:'20,000mAh · 67W',price:4064,was:4515,r:4.7,rc:7,cat:'power'},
+ vault:{n:'Vault 200',spec:'20,000mAh · Laptop power bank',price:9945,was:17499,tag:'New',cat:'power'},
+ core:{n:'Core 30',spec:'10,000mAh · Semi-solid',price:2847,was:3797,r:5.0,rc:1,cat:'power'},
+ qi:{n:'Qi Surface',spec:'10,000mAh · 25W wireless',price:3748,was:4165,cat:'power'},
+ sigma:{n:'Sigma 35',spec:'10,000mAh · Compact',price:2756,was:3675,cat:'power'},
+ arc:{n:'Arc ring mouse',spec:'Wearable ring mouse',price:4199,was:5899,tag:'New',cat:'gear',art:'ring'}
+};
+Object.keys(P).forEach(k=>{P[k].id=k;P[k].art=P[k].art||k});
+// The preview uses the current storefront product pages until the new PDPs are ready.
+const videoProductHandles = {
+  engine: 'gravl-engine-240',
+  arc: 'gravl-arc-ring-mouse',
+  forge: 'gravl-forge-130',
+  sigma: 'gravl-sigma-35',
+  qi: 'gravl-qi-surface',
+  vault: 'gravl-vault-200',
+  axis: 'gravl-axis-67'
+};
+for (const clip of document.querySelectorAll('[data-video-product]')) {
+  const id = clip.dataset.videoProduct;
+  const product = P[id];
+  const shop = document.createElement('a');
+  shop.className = 'video-product';
+  shop.href = 'https://www.gravlspace.com/products/' + videoProductHandles[id];
+  shop.setAttribute('aria-label', 'Shop ' + product.n + ', ' + inr(product.price));
+  shop.innerHTML = `
+    <img src="assets/products/${id}.webp" alt="" loading="lazy" width="60" height="60">
+    <span class="video-product-copy"><span>${product.n}</span><strong>${inr(product.price)}</strong></span>
+    <span class="video-product-arrow" aria-hidden="true">${ARROW}</span>`;
+  clip.append(shop);
+}
+const CATS=[
+ {id:'power',n:'Power Banks',lead:'engine',line:'Lasts all day, no cap.',subs:['Laptop','Compact','Semi Solid','MagSafe'],items:['engine','forge','axis','core','vault','qi','sigma']},
+ {id:'chargers',n:'Chargers & Adapters',lead:'charger',line:'One charger, all devices. Easy.',subs:['Wall chargers','Desktop chargers','Travel adapters']},
+ {id:'cables',n:'Cables',lead:'cable',line:'Built to last. Certified goated.',subs:['USB-C','Braided','Multi-device']},
+ {id:'hubs',n:'Hubs & Docks',lead:'hub',line:'Desk setup? Served.',subs:['Desk hubs','Laptop docks','Card readers']},
+ {id:'stands',n:'Stands & Mounts',lead:'stand',line:'Stable AF. Zero drama.',subs:['Laptop stands','Phone stands','MagSafe mounts']},
+ {id:'gear',n:'Productivity Gear',lead:'ring',line:'Small tools, big vibes.',subs:['Ring mouse','Desk tools'],items:['arc']}
+];
+const storePhotos = {
+  engine: 'GravlEngine2401.webp?v=1792132927',
+  forge: 'Forge_130_1.webp?v=1792132040',
+  axis: 'Axis_67_1.webp?v=1792132515',
+  core: 'Core301.png?v=1781605134',
+  qi: 'GravlQiSurface1.webp?v=1792133493',
+  sigma: 'Sigma_35_1.webp?v=1792131603'
+};
+function productPhoto(product) {
+  const file = storePhotos[product.id];
+  if (!file) return art(product.art);
+  const url = 'https://www.gravlspace.com/cdn/shop/files/' + file + '&amp;width=900';
+  return `<span class="product-photo">
+    <img class="packshot" src="assets/products/${product.id}.webp" alt="" loading="lazy" decoding="async">
+    <img class="store-photo" src="${url}" alt="" loading="lazy" decoding="async">
+  </span>`;
+}
+// Keep the local packshot visible until the storefront photo has actually loaded.
+document.addEventListener('load', event => {
+  if (event.target instanceof HTMLImageElement && event.target.classList.contains('store-photo')) {
+    event.target.parentElement.classList.add('has-store-photo');
+  }
+}, true);
+const card=(p,i=0)=>`<article class="card product-card" style="--i:${i}">
+ <div class="card-visual"><a class="card-media" href="#switcher" aria-label="${p.n}">${p.tag?`<span class="tag ${p.tag==='New'?'new':''}">${p.tag==='Bestseller'?'Best seller':p.tag}</span>`:''}<span class="card-price">${inr(p.price)}</span>${productPhoto(p)}</a><button type="button" class="btn add shop" data-add="${p.id}"><span class="a">${rollLabel('Add to cart')}</span><span class="b">${rollLabel('Added')}</span><svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use class="icon-arrow" href="#button-arrow"/><use class="icon-check" href="#button-check"/></svg></button></div>
+ <div class="card-body"><div class="card-txt"><h3>${p.n}</h3><span class="spec">${p.spec}</span>${p.r?`<span class="rate">${STAR}${p.r.toFixed(1)} · ${p.rc} review${p.rc>1?'s':''}</span>`:''}</div></div></article>`;
+
+const bestsellerIds = ['engine','forge','axis','core','qi','sigma','arc'];
+const darkStudioPhotos = new Set(['vault','forge','core','sigma']);
+function launchCard(product) {
+  const isDark = darkStudioPhotos.has(product.id);
+  const status = product.tag === 'New' ? 'New arrival' : 'Best seller';
+  return `<article class="launch-card${isDark ? ' is-dark' : ''}" data-product="${product.id}">
+    <img class="launch-image" src="assets/launch-studio/${product.id}.webp" srcset="assets/launch-studio/${product.id}.webp 960w, assets/launch-studio/${product.id}-2k.webp 2048w" sizes="(max-width:650px) 82vw, clamp(280px,23vw,410px)" width="2048" height="2560" alt="" loading="lazy" decoding="async">
+    <span class="launch-status">${status}</span>
+    <h4 class="launch-name">${product.n}</h4>
+    <span class="launch-spec">${product.spec}</span>
+    <span class="launch-price">${inr(product.price)}</span>
+    <button class="launch-buy circle-arrow" type="button" data-add="${product.id}" aria-label="Add ${product.n} to cart" title="Add to cart">
+      ${ARROW}
+      <svg class="icon-check" viewBox="0 0 20 20" aria-hidden="true"><use href="#button-check"/></svg>
+    </button>
+  </article>`;
+}
+/* reveal */
+document.documentElement.classList.add('anim');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);count(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+const watch=r=>$$('[data-reveal]',r).forEach(e=>io.observe(e));
+/* count up */
+function count(root){
+ const els=[...(root.matches&&root.matches('[data-num]')?[root]:[]),...$$('[data-num]',root)];
+ els.forEach(el=>{ if(el.dataset.done) return; el.dataset.done=1;
+  const to=parseFloat(el.dataset.num),pre=el.dataset.pre||'',dec=+(el.dataset.dec||0);
+  const fmt=v=>pre+(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-IN'));
+  if(reduce){el.textContent=fmt(to);return}
+  const t0=performance.now(),d=900;
+  const step=t=>{const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=fmt(to*e);if(k<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step)});
+}
+const numIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){count(e.target);numIO.unobserve(e.target)}}),{threshold:.4});
+$$('[data-num]').forEach(e=>numIO.observe(e));
+
+/* announce */
+const ann=$$('.announce span');let ai=0;
+if(!reduce) setInterval(()=>{ann[ai].classList.remove('on');ai=(ai+1)%ann.length;ann[ai].classList.add('on')},5000);
+
+/* header: tabs, mega, shrink, hide */
+const tabs = $('#tabs'), mega = $('#mega'), megaIn = $('#megaIn'), header = $('#header');
+const quickLinks = [
+  ['Shop All Products', '#categories'], ['New Arrivals', '#shop/power/new'],
+  ['Best Sellers', '#bestsellers'], ['Deals & Offers', '#shop/power/offers'], ['Bundles', '#setup']
+];
+const shopFilters = {
+  offers: ['Power bank offers', Object.keys(P).filter(id => P[id].was > P[id].price)],
+  new: ['New arrivals', ['vault','arc']],
+  '10k': ['10,000 mAh', ['core','qi','sigma']],
+  '20k': ['20,000 mAh', ['forge','axis','vault']],
+  '27k': ['27,000 mAh+', ['engine']],
+  laptops: ['For laptops', ['engine','forge','axis','vault']],
+  phones: ['For phones', ['core','qi','sigma']],
+  travel: ['For travel', ['sigma','core','qi']],
+  fast: ['Fast charging', ['engine','vault','forge','axis']],
+  multi: ['Multi-device', ['engine','vault','forge']],
+  pd: ['USB-C PD', ['engine','forge','axis']],
+  ring: ['Ring mouse', ['arc']]
+};
+const categoryMenus = {
+  power: {title:'Power Banks', line:'Power that keeps up.', groups:[
+    ['By Capacity', ['10k','20k','27k']], ['By Use', ['laptops','phones','travel']], ['By Feature', ['fast','multi','pd']]
+  ]},
+  gear: {title:'Productivity Gear', line:'Control at your fingertips.', groups:[
+    ['By Type', ['ring']], ['Featured', ['new']], ['Explore', [['The work set','#setup'],['Gear overview','#shop/gear']]]
+  ]}
+};
+function shopIndexMarkup() {
+  const links = quickLinks.map(([name,href]) => `<a href="${href}">${rollLabel(name)}</a>`).join('');
+  const tiles = CATS.map(c => `<a class="menu-category" href="#shop/${c.id}"><span class="menu-thumb"><img src="assets/categories/${c.id}.webp" width="150" height="98" alt=""></span>${rollLabel(c.n)}</a>`).join('');
+  return `<div class="shop-index"><div class="shop-shortcuts">${links}</div><div><h3 class="shop-heading">Browse by Category</h3><div class="shop-tiles">${tiles}</div></div></div>`;
+}
+function categoryMenuMarkup(id) {
+  const menu = categoryMenus[id];
+  const groups = menu.groups.map(([name,entries]) => {
+    const links = entries.map(entry => {
+      const [label,href] = Array.isArray(entry) ? entry : [shopFilters[entry][0],`#shop/${id}/${entry}`];
+      return `<a href="${href}">${rollLabel(label)}</a>`;
+    }).join('');
+    return `<div class="shop-group"><h3>${name}</h3>${links}</div>`;
+  }).join('');
+  return `<div class="shop-category-menu"><a class="cat menu-feature" data-feature="${id}" href="#shop/${id}"><img src="assets/category-lifestyle/${id}.webp" width="960" height="1200" loading="lazy" alt=""><span class="cat-name">${menu.title}</span><strong class="cat-line">${menu.line}</strong><span class="circle-arrow" aria-hidden="true">${ARROW}</span></a>${groups}</div>`;
+}
+function menuButton(id,label) {
+  return `<button type="button" class="tab" data-menu="${id}" aria-controls="mega" aria-expanded="false">${rollLabel(label)}</button>`;
+}
+tabs.innerHTML = [
+  menuButton('all','Shop all'), ...Object.entries(categoryMenus).map(([id,menu])=>menuButton(id,menu.title)),
+  `<a class="tab" href="#shop/power/new">${rollLabel('New')}</a>`, `<a class="tab" href="#shop/power/offers">${rollLabel('Offers')}</a>`,
+  `<a class="tab" href="https://www.gravlspace.com/pages/about-us">${rollLabel('About Us')}</a>`
+].join('');
+const menuButtons = $$('[data-menu]',tabs);
+let activeTrigger = null, pinned = false, dismissTimer;
+function closeMega() {
+  clearTimeout(dismissTimer);
+  if (!activeTrigger) return;
+  activeTrigger.setAttribute('aria-expanded','false');
+  activeTrigger.classList.remove('open');
+  mega.classList.remove('open');
+  mega.inert = true;
+  activeTrigger = null;
+  pinned = false;
+}
+function showMega(button) {
+  clearTimeout(dismissTimer);
+  if (activeTrigger === button) return;
+  closeMega();
+  activeTrigger = button;
+  megaIn.innerHTML = button.dataset.menu === 'all' ? shopIndexMarkup() : categoryMenuMarkup(button.dataset.menu);
+  button.setAttribute('aria-expanded','true');
+  button.classList.add('open');
+  mega.inert = false;
+  mega.classList.add('open');
+}
+mega.inert = true;
+menuButtons.forEach(button => {
+  button.addEventListener('pointerenter', e => {if(e.pointerType==='mouse') showMega(button)});
+  button.addEventListener('click', () => {
+    if (activeTrigger === button && pinned) return closeMega();
+    showMega(button);
+    pinned = true;
+  });
+  button.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown' || (e.key === 'Tab' && !e.shiftKey && activeTrigger === button)) {
+      e.preventDefault(); showMega(button); pinned = true; megaIn.querySelector('a').focus(); return;
+    }
+  });
+});
+header.addEventListener('pointerleave', () => {
+  if (!pinned && !mega.contains(document.activeElement)) dismissTimer = setTimeout(closeMega,140);
+});
+mega.addEventListener('pointerenter', () => clearTimeout(dismissTimer));
+header.addEventListener('focusout', e => {if (!header.contains(e.relatedTarget)) closeMega()});
+for (const item of $$('.tab[href], .bar>.logo, .tools',header)) {
+  item.addEventListener('pointerenter',closeMega);
+  item.addEventListener('focusin',closeMega);
+}
+document.addEventListener('pointerdown', e => {if (!header.contains(e.target)) closeMega()});
+header.addEventListener('keydown', e => {
+  if (!activeTrigger || e.defaultPrevented) return;
+  const trigger = activeTrigger;
+  if (e.key==='Escape') {closeMega();trigger.focus();e.preventDefault();return}
+  if (e.key==='Tab' && mega.contains(e.target)) {
+    const links = $$('a',megaIn);
+    if (e.shiftKey && e.target===links[0]) {e.preventDefault();closeMega();trigger.focus()}
+    if (!e.shiftKey && e.target===links[links.length-1]) {e.preventDefault();closeMega();trigger.nextElementSibling.focus()}
+  }
+});
+mega.addEventListener('click', e=>{if (e.target.closest('a')) closeMega()});
+matchMedia('(max-width:1050px)').addEventListener('change',closeMega);
+let lastY=0,tick=false;
+function onScroll(){
+ const y=scrollY;
+ header.classList.toggle('small',y>40);
+ if(!mega.classList.contains('open')) header.classList.toggle('hide',y>lastY&&y>500);
+ lastY=y;
+ tick=false;
+}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
+
+/* hero banner */
+const banner=$('#banner'),slides=$$('.slide',banner),segs=$('#segs');
+segs.innerHTML=slides.map((_,i)=>`<button class="seg" aria-label="Go to banner ${i+1}"><b></b></button>`).join('');
+const segEls=$$('.seg',segs);let hi=0,hT;
+function go(n){hi=(n+slides.length)%slides.length;
+ slides.forEach((s,i)=>s.classList.toggle('on',i===hi));
+ segEls.forEach((s,i)=>{s.classList.remove('on','done');if(i<hi)s.classList.add('done')});
+ void segEls[hi].offsetWidth; segEls[hi].classList.add('on');
+ clearTimeout(hT); if(!reduce&&!banner.classList.contains('paused')) hT=setTimeout(()=>go(hi+1),6000);}
+segEls.forEach((s,i)=>s.addEventListener('click',()=>go(i)));
+const pause=p=>{banner.classList.toggle('paused',p);clearTimeout(hT);if(!p&&!reduce)hT=setTimeout(()=>go(hi+1),3000)};
+banner.addEventListener('mouseenter',()=>pause(true));banner.addEventListener('mouseleave',()=>pause(false));
+banner.addEventListener('focusin',()=>pause(true));banner.addEventListener('focusout',()=>pause(false));
+let sx=null;banner.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+banner.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(hi+(dx<0?1:-1));sx=null});
+go(0);
+
+/* switcher */
+const thumbs=$('#thumbs'),panel=$('#panel');
+thumbs.innerHTML=CATS.map(c=>`<button type="button" class="thumb" role="tab" id="cat-tab-${c.id}" aria-controls="panel" aria-selected="false" tabindex="-1" data-cat="${c.id}"><img src="assets/categories/${c.id}.webp" width="150" height="98" alt="" decoding="async" draggable="false">${rollLabel(c.n)}</button>`).join('');
+const thumbEls=$$('.thumb',thumbs);let cur=null, currentFilter='', panelSwap, panelResize;
+function updateLaunchControls() {
+  const row = panel.querySelector('.launch-rail');
+  const next = panel.querySelector('[data-dir="1"]');
+  if (!next) return;
+  panel.querySelector('[data-dir="-1"]').disabled = row.scrollLeft <= 1;
+  next.disabled = row.scrollLeft >= row.scrollWidth - row.clientWidth - 1;
+}
+panel.addEventListener('scroll', updateLaunchControls, true);
+new ResizeObserver(updateLaunchControls).observe(panel);
+panel.addEventListener('click', event => {
+  const button = event.target.closest('.panel-nav [data-dir]');
+  if (!button) return;
+  const row = panel.querySelector('.launch-rail');
+  const [first, second] = row.children;
+  const step = second.offsetLeft - first.offsetLeft;
+  row.scrollBy({left:step * Number(button.dataset.dir), behavior:reduce ? 'instant' : 'smooth'});
+});
+function panelHTML(c, filterKey){
+ if(!c.items) return `<div class="panel-in"><div class="soon-box" style="--i:0">${art(c.lead)}<div><span class="eyebrow"><i></i>Coming soon</span><h3>${c.n}</h3><p>${c.line} This category is in development. Leave an email to hear when it is ready.</p><form class="notify" data-notify="${c.n}"><input id="notify-${c.id}" type="email" required placeholder="Email address" aria-label="Email address"><button class="btn" type="submit">${rollLabel('Notify me')}<svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><use href="#button-arrow"/></svg></button></form></div></div></div>`;
+ const arrivals = c.items.filter(id => P[id].tag === 'New');
+ const bestsellers = bestsellerIds.filter(id => c.items.includes(id) && !arrivals.includes(id));
+ const filter = shopFilters[filterKey];
+ const highlights = [...arrivals, ...bestsellers];
+ const featured = filter ? highlights.filter(id => filter[1].includes(id)) : highlights;
+ const title = filter ? filter[0] : (arrivals.length ? 'New arrivals' : 'Bestsellers');
+ const subtitle = !filter && arrivals.length && bestsellers.length ? ' &amp; bestsellers' : '';
+ const allLink = filter ? `#shop/${c.id}` : '#categories';
+ const controls = featured.length > 1 ? `
+   <button class="arr" type="button" data-dir="-1" aria-label="Previous products" aria-controls="launch-rail" disabled>${ARROW}</button>
+   <button class="arr" type="button" data-dir="1" aria-label="Next products" aria-controls="launch-rail">${ARROW}</button>` : '';
+ return `<div class="panel-in"><div class="panel-top"><h3 class="h2">${title}<em>${subtitle}</em></h3>
+   <div class="panel-nav"><a class="link" href="${allLink}">${rollLabel('View All')}</a>${controls}</div></div>
+   <div class="launch-rail" id="launch-rail" role="region" aria-label="${c.n} highlights">${featured.map(id => launchCard(P[id])).join('')}</div></div>`;
+}
+function select(id,first,filterKey=''){
+ if(id===cur && filterKey===currentFilter) return;
+ cur=id; currentFilter=filterKey; const c=CATS.find(x=>x.id===id);
+ clearTimeout(panelSwap);clearTimeout(panelResize);
+ thumbEls.forEach(t=>{const on=t.dataset.cat===id;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1});
+ panel.setAttribute('aria-labelledby','cat-tab-'+id);
+ const t=thumbEls.find(x=>x.dataset.cat===id); if(!first&&t.scrollIntoView) t.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});
+ if(first||reduce){panel.innerHTML=panelHTML(c,filterKey);panel.classList.add('show');updateLaunchControls();return}
+ const h0=panel.offsetHeight; panel.style.height=h0+'px'; panel.classList.remove('show');
+ panelSwap=setTimeout(()=>{panel.innerHTML=panelHTML(c,filterKey);updateLaunchControls();const h1=panel.firstElementChild.offsetHeight; panel.style.height=h1+'px';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>panel.classList.add('show')));
+  panelResize=setTimeout(()=>panel.style.height='',560);},220);
+}
+thumbEls.forEach(t=>t.addEventListener('click',()=>select(t.dataset.cat)));
+thumbs.addEventListener('keydown',e=>{const i=thumbEls.indexOf(document.activeElement);if(i<0)return;
+ const next={ArrowRight:(i+1)%thumbEls.length,ArrowLeft:(i-1+thumbEls.length)%thumbEls.length,Home:0,End:thumbEls.length-1}[e.key];
+ if(next!==undefined){e.preventDefault();const n=thumbEls[next];n.focus({preventScroll:true});select(n.dataset.cat)}});
+function followShopRoute() {
+  const [section,id,filter=''] = location.hash.slice(1).split('/');
+  if (section!=='shop') return;
+  const category = CATS.find(c => c.id === id);
+  if (!category) return;
+  const matchingFilter = Object.hasOwn(shopFilters,filter) && category.items?.some(item => shopFilters[filter][1].includes(item));
+  select(id,true,matchingFilter ? filter : '');
+  const target = filter ? panel : document.getElementById('switcher');
+  target.setAttribute('tabindex','-1');
+  target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start',behavior:reduce?'instant':'smooth'});
+}
+addEventListener('hashchange', followShopRoute);
+document.addEventListener('click', event => {
+  const link = event.target.closest('a[href^="#shop/"]');
+  if (link && link.hash===location.hash && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+    event.preventDefault();
+    followShopRoute();
+  }
+});
+select('power',true);
+if (location.hash.startsWith('#shop/')) requestAnimationFrame(followShopRoute);
+
+/* categories */
+const gallery = $('#cats');
+gallery.innerHTML = CATS.map(category => {
+  const count = category.items?.length;
+  const status = count ? `${count} product${count === 1 ? '' : 's'}` : 'Coming soon';
+  return `<a class="cat" href="#switcher" data-cat="${category.id}">
+    <img src="assets/category-lifestyle/${category.id}.webp" width="800" height="1000" loading="lazy" decoding="async" alt="">
+    <span class="cat-name">${category.n}</span>
+    <strong class="cat-line">${category.line}</strong>
+    <span class="cat-foot">${status}<span class="circle-arrow" aria-hidden="true">${ARROW}</span></span>
+  </a>`;
+}).join('');
+const galleryCards = $$('.cat', gallery);
+galleryCards.forEach(card => card.addEventListener('click', () => select(card.dataset.cat)));
+const galleryButtons = $$('[data-category-step]');
+function updateGalleryControls() {
+  galleryButtons[0].disabled = gallery.scrollLeft <= 1;
+  const lastCard = galleryCards[galleryCards.length - 1];
+  galleryButtons[1].disabled = lastCard.getBoundingClientRect().right <= gallery.getBoundingClientRect().right + 1;
+}
+galleryButtons.forEach(button => button.addEventListener('click', () => {
+  const step = galleryCards[1].offsetLeft - galleryCards[0].offsetLeft;
+  gallery.scrollBy({left: Number(button.dataset.categoryStep) * step, behavior: reduce ? 'instant' : 'smooth'});
+}));
+gallery.addEventListener('scroll', updateGalleryControls, {passive:true});
+new ResizeObserver(updateGalleryControls).observe(gallery);
+$('#footShop').innerHTML=CATS.map(c=>`<li><a href="#switcher" data-cat="${c.id}">${rollLabel(c.n)}</a></li>`).join('');
+$$('#footShop a').forEach(a=>a.addEventListener('click',()=>select(a.dataset.cat)));
+
+/* bestsellers rail */
+const rail=$('#rail');
+const railFilters = $('#railChips');
+const filterButtons = $$('button', railFilters);
+function alignFilterPill() {
+  const selected = railFilters.querySelector('[aria-pressed="true"]');
+  const bounds = selected.getBoundingClientRect();
+  railFilters.style.setProperty('--pill-x', (bounds.left - railFilters.getBoundingClientRect().left) + 'px');
+  railFilters.style.setProperty('--pill-width', bounds.width + 'px');
+}
+const filterSizeObserver = new ResizeObserver(alignFilterPill);
+filterButtons.forEach(button => filterSizeObserver.observe(button));
+function renderRail(filter) {
+  const ids = bestsellerIds.filter(id => filter === 'all' || P[id].cat === filter);
+  rail.style.setProperty('--cols', 4);
+  rail.innerHTML = ids.map((id, index) => card(P[id], index)).join('');
+  rail.scrollLeft = 0;
+  for (const button of filterButtons) {
+    button.setAttribute('aria-pressed', String(button.dataset.f === filter));
+  }
+  alignFilterPill();
+}
+renderRail('all');
+$('#railChips').addEventListener('click',e=>{const b=e.target.closest('button[data-f]');if(b)renderRail(b.dataset.f)});
+let down=false,moved=0,startX=0,startL=0;
+rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('button'))return;down=true;moved=0;startX=e.clientX;startL=rail.scrollLeft});
+addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-startX;moved=Math.abs(dx);if(moved>4){rail.classList.add('drag');rail.scrollLeft=startL-dx}});
+addEventListener('pointerup',()=>{if(!down)return;down=false;setTimeout(()=>rail.classList.remove('drag'),0)});
+rail.addEventListener('click',e=>{if(moved>6){e.preventDefault();e.stopPropagation()}},true);
+$$('[data-rail]').forEach(b=>b.addEventListener('click',()=>rail.scrollBy({left:+b.dataset.rail*rail.clientWidth*.6,behavior:reduce?'auto':'smooth'})));
+
+/* new arrivals */
+
+/* setup */
+const SETS = {
+  work: {
+    title: 'The work set',
+    alt: 'Forge 130, Arc ring mouse, Engine 240 and Qi Surface on a walnut desk',
+    items: [
+      {id: 'forge', x: 30.5, y: 29}, {id: 'arc', x: 67, y: 28},
+      {id: 'engine', x: 28, y: 68}, {id: 'qi', x: 66, y: 67}
+    ]
+  },
+  travel: {
+    title: 'The travel set',
+    alt: 'Core 30, Sigma 35, Qi Surface and Axis 67 in a carry-on packing tray',
+    items: [
+      {id: 'core', x: 36, y: 32}, {id: 'sigma', x: 59, y: 38},
+      {id: 'qi', x: 32, y: 65}, {id: 'axis', x: 64, y: 68}
+    ]
+  }
+};
+let setKey = $('#setChoices input:checked').value;
+let hoveredSetProduct = '';
+let focusedSetProduct = '';
+let selectedSetProduct = '';
+function highlightSetPair() {
+  const active = hoveredSetProduct || focusedSetProduct || selectedSetProduct;
+  for (const button of $$('#setup [data-product]')) {
+    button.classList.toggle('is-highlighted', button.dataset.product === active);
+  }
+}
+function renderSet() {
+  hoveredSetProduct = focusedSetProduct = selectedSetProduct = '';
+  const set = SETS[setKey];
+  $('#setTitle').textContent = set.title;
+  $('#setPhoto').src = 'assets/product-sets/' + setKey + '.webp';
+  $('#setPhoto').alt = set.alt;
+  $('#setTotal').textContent = inr(set.items.reduce((sum, item) => sum + P[item.id].price, 0));
+  $('#setMarkers').innerHTML = set.items.map(({id, x, y}, index) => `
+    <button type="button" class="set-marker" data-product="${id}" aria-controls="set-row-${id}"
+      aria-pressed="false" aria-label="Highlight ${P[id].n}" style="left:${x}%;top:${y}%">${index + 1}</button>`).join('');
+  $('#setItems').innerHTML = set.items.map(({id}) => {
+    const product = P[id];
+    return `<li id="set-row-${id}"><button class="set-item" type="button" data-product="${id}" aria-pressed="false">
+      <span class="set-thumb"><img src="assets/products/${id}.webp" alt="" width="50" height="50"></span>
+      <span class="set-item-info"><strong>${product.n}</strong><small>${product.spec}</small></span>
+      <span class="set-line-price">${inr(product.price)}</span>
+    </button></li>`;
+  }).join('');
+  for (const button of $$('#setup [data-product]')) {
+    button.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'touch') return;
+      hoveredSetProduct = button.dataset.product;
+      highlightSetPair();
+    });
+    button.addEventListener('pointerleave', () => {
+      hoveredSetProduct = '';
+      highlightSetPair();
+    });
+    button.addEventListener('focus', () => {
+      focusedSetProduct = button.matches(':focus-visible') ? button.dataset.product : '';
+      highlightSetPair();
+    });
+    button.addEventListener('blur', () => {
+      focusedSetProduct = '';
+      highlightSetPair();
+    });
+  }
+}
+$('#setChoices').addEventListener('change', event => {
+  setKey = event.target.value;
+  renderSet();
+});
+$('#setup').addEventListener('click', event => {
+  const trigger = event.target.closest('[data-product]');
+  if (!trigger) return;
+  selectedSetProduct = selectedSetProduct === trigger.dataset.product ? '' : trigger.dataset.product;
+  for (const button of $$('#setup [data-product]')) {
+    button.setAttribute('aria-pressed', String(button.dataset.product === selectedSetProduct));
+  }
+  highlightSetPair();
+});
+$('#addSet').addEventListener('click', event => {
+  SETS[setKey].items.forEach(({id}) => add(id, true));
+  done(event.currentTarget);
+  openCart();
+});
+renderSet();
+
+
+/* faq */
+const QA=[
+ ['How long is the warranty?','GRAVL power banks carry a 4-year warranty. Register your product on the warranty page after purchase.','warranty'],
+ ['Can I take a GRAVL power bank on a flight?','Power banks under 100Wh need no airline approval. Between 100Wh and 160Wh needs approval from the airline. Above 160Wh is not allowed on board. The Engine 240 is 97.2Wh.','products'],
+ ['Which power bank charges a laptop?','The Axis 67 delivers 67W, the Forge 130 delivers 130W across two 65W ports, and the Engine 240 delivers up to 240W.','products'],
+ ['What is a semi-solid power bank?','The Core 30 uses semi-solid cells in place of conventional liquid-electrolyte cells. GRAVL builds it for heat and long service life.','products'],
+ ['When can I reach support?','Monday to Friday, 8am to 8:30pm. The average reply time is 24 hours.','support']
+];
+const faqTabs = $$('#faqTabs button');
+const faqQuestions = $('#qas');
+faqQuestions.innerHTML=QA.map(([q,a,category],i)=>`<article class="qa ${i===0?'open':''}" data-faq-category="${category}"><h3><button type="button" id="faq-question-${i}" aria-expanded="${i===0}" aria-controls="faq-answer-${i}"><span>${q}</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 8h10"/><path class="pm-v" d="M8 3v10"/></svg></span></button></h3><div class="qa-a" id="faq-answer-${i}" role="region" aria-labelledby="faq-question-${i}" aria-hidden="${i!==0}"${i===0?'':' hidden inert'}><p>${a}</p></div></article>`).join('');
+const faqCards = $$('.qa',faqQuestions);
+const faqMotionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+const faqMotionOptions = {duration:360,easing:'cubic-bezier(.22,1,.36,1)',fill:'both'};
+const faqAnswerMotion = new WeakMap();
+let faqListMotion;
+function setFAQExpanded(card, expanded, animate=true) {
+  const answer = $('.qa-a',card);
+  if (animate && card.classList.contains('open') === expanded) return;
+  const height = answer.getBoundingClientRect().height;
+  const opacity = answer.hidden ? 0 : getComputedStyle(answer).opacity;
+  const transform = answer.hidden ? 'translateY(4px)' : getComputedStyle(answer).transform;
+  faqAnswerMotion.get(answer)?.cancel();
+  faqAnswerMotion.delete(answer);
+  card.classList.toggle('open',expanded);
+  $('button',card).setAttribute('aria-expanded',String(expanded));
+  answer.setAttribute('aria-hidden',String(!expanded));
+  answer.inert = !expanded;
+  answer.hidden = false;
+  if (!animate || faqMotionPreference.matches || !answer.animate) {
+    answer.hidden = !expanded;
+    return;
+  }
+  const animation = answer.animate([
+    {height:height+'px',opacity,transform},
+    {height:(expanded ? answer.scrollHeight : 0)+'px',opacity:expanded?1:0,transform:expanded?'none':'translateY(-4px)'}
+  ],faqMotionOptions);
+  faqAnswerMotion.set(answer,animation);
+  animation.onfinish=()=>{
+    if (faqAnswerMotion.get(answer) !== animation) return;
+    answer.hidden = !expanded;
+    animation.cancel();
+    faqAnswerMotion.delete(answer);
+  };
+}
+function animateFAQLayout(update, fade=false) {
+  const height = faqQuestions.getBoundingClientRect().height;
+  faqListMotion?.cancel();
+  update();
+  if (faqMotionPreference.matches || !faqQuestions.animate) return;
+  const visible = faqCards.filter(card=>!card.hidden);
+  const target = visible.reduce((total,card)=>total+$('h3',card).getBoundingClientRect().height+(card.classList.contains('open')?$('.qa-a',card).scrollHeight:0),0)+Math.max(0,visible.length-1)*10;
+  const animation = faqQuestions.animate([
+    {height:height+'px',opacity:fade?.65:1,transform:fade?'translateY(6px)':'none'},
+    {height:target+'px',opacity:1,transform:'none'}
+  ],faqMotionOptions);
+  faqListMotion = animation;
+  animation.onfinish=()=>{if(faqListMotion===animation){animation.cancel();faqListMotion=null}};
+}
+function selectFAQCategory(tab) {
+  if (tab.getAttribute('aria-selected') === 'true') return;
+  const category = tab.dataset.faqCategory;
+  $('#faqTabs').style.setProperty('--active',faqTabs.indexOf(tab));
+  for (const button of faqTabs) {
+    const selected = button === tab;
+    button.setAttribute('aria-selected',String(selected));
+    button.tabIndex = selected ? 0 : -1;
+  }
+  faqQuestions.setAttribute('aria-labelledby',tab.id);
+  animateFAQLayout(()=>{
+    let firstVisible = true;
+    for (const card of faqCards) {
+      const visible = category === 'general' || card.dataset.faqCategory === category;
+      card.hidden = !visible;
+      setFAQExpanded(card,visible && firstVisible,false);
+      if (visible) firstVisible = false;
+    }
+  },true);
+}
+$('#faqTabs').addEventListener('click',event=>{
+  const tab = event.target.closest('button[data-faq-category]');
+  if (tab) selectFAQCategory(tab);
+});
+$('#faqTabs').addEventListener('keydown',event=>{
+  const index = faqTabs.indexOf(document.activeElement);
+  if (index < 0) return;
+  const next = {ArrowRight:(index+1)%faqTabs.length,ArrowLeft:(index-1+faqTabs.length)%faqTabs.length,Home:0,End:faqTabs.length-1}[event.key];
+  if (next === undefined) return;
+  event.preventDefault();
+  faqTabs[next].focus();
+  selectFAQCategory(faqTabs[next]);
+});
+faqQuestions.addEventListener('click',event=>{
+  const button = event.target.closest('.qa button');
+  if (!button) return;
+  const card = button.closest('.qa');
+  const expanded = button.getAttribute('aria-expanded') !== 'true';
+  animateFAQLayout(()=>{for (const item of faqCards) setFAQExpanded(item,item === card && expanded)});
+});
+function settleFAQMotion() {
+  faqListMotion?.cancel();
+  faqListMotion = null;
+  for (const card of faqCards) setFAQExpanded(card,card.classList.contains('open'),false);
+}
+addEventListener('resize',settleFAQMotion,{passive:true});
+faqMotionPreference.addEventListener('change',settleFAQMotion);
+
+/* cart */
+const cart={},drawer=$('#drawer'),scrim=$('#scrim'),mmenu=$('#mmenu');
+function renderCart(){const ks=Object.keys(cart);const n=ks.reduce((a,k)=>a+cart[k],0);
+ $$('[data-count-badge]').forEach(b=>{b.textContent=n;b.hidden=!n;b.classList.remove('bump');void b.offsetWidth;b.classList.add('bump')});
+ $('#lines').innerHTML=ks.length?ks.map(k=>`<div class="line">${art(P[k].art)}<div><b>${P[k].n}</b><small>${inr(P[k].price)}</small></div><span class="qty"><button data-q="${k}" data-d="-1" aria-label="Remove one ${P[k].n}">−</button>${cart[k]}<button data-q="${k}" data-d="1" aria-label="Add one ${P[k].n}">+</button></span></div>`).join(''):'<p class="empty">Your cart is empty.</p>';
+ $('#subtotal').textContent=inr(ks.reduce((a,k)=>a+cart[k]*P[k].price,0));}
+function add(k,quiet){cart[k]=(cart[k]||0)+1;renderCart()}
+function done(btn){btn.classList.add('done');setTimeout(()=>btn.classList.remove('done'),1600)}
+function openCart(){closeAll();drawer.classList.add('on');drawer.setAttribute('aria-hidden',false);scrim.classList.add('on')}
+function closeAll(){drawer.classList.remove('on');drawer.setAttribute('aria-hidden',true);mmenu.classList.remove('on');mmenu.setAttribute('aria-hidden',true);$('#menuBtn').setAttribute('aria-expanded','false');scrim.classList.remove('on')}
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-add]');if(a){add(a.dataset.add);done(a);setTimeout(openCart,450);return}
+ const q=e.target.closest('[data-q]');if(q){const k=q.dataset.q;cart[k]+=+q.dataset.d;if(cart[k]<=0)delete cart[k];renderCart();return}
+ if(e.target.closest('[data-cart]')) openCart();});
+$('#closeCart').addEventListener('click',closeAll);scrim.addEventListener('click',closeAll);
+addEventListener('keydown',e=>{if(e.key==='Escape'){const wasMenu=mmenu.classList.contains('on');closeAll();if(wasMenu)mobileOpener?.focus()}});
+$('#checkout').addEventListener('click',()=>toast('Checkout is not part of this preview.'));
+renderCart();
+
+/* mobile menu */
+const mobileNav = $('#mrows');
+const mobileTrigger = $('#menuBtn');
+let mobileOpener;
+mobileNav.innerHTML = shopIndexMarkup() + '<div class="mobile-shop-groups">' +
+  Object.entries(categoryMenus).map(([id,menu]) => `<details><summary>${menu.title}</summary>${categoryMenuMarkup(id)}</details>`).join('') + '</div>';
+mmenu.addEventListener('click', e => {if(e.target.closest('a')) closeAll()});
+function openMenu(event) {
+  closeMega(); closeAll();
+  mobileOpener = event.currentTarget;
+  mmenu.classList.add('on'); mmenu.setAttribute('aria-hidden','false');
+  mobileTrigger.setAttribute('aria-expanded','true');
+  $('#closeMenu').focus();
+}
+mobileTrigger.addEventListener('click',openMenu);
+$('#bbCats').addEventListener('click',openMenu);
+$('#closeMenu').addEventListener('click',()=>{closeAll();mobileOpener?.focus()});
+
+/* forms + toast */
+let tT;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tT);tT=setTimeout(()=>t.classList.remove('on'),2800)}
+document.addEventListener('submit',e=>{const f=e.target;if(!f.matches('#newsForm, [data-notify]'))return;e.preventDefault();f.reset();
+ toast(f.dataset.notify?`Noted for ${f.dataset.notify}. Preview only, nothing is sent.`:'Subscribed. Preview only, nothing is sent.')});
+
+watch(document);onScroll();
+})();
+</script>
+
+</body>
+</html>
